@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "weights_words": 63,
+  "bias_words": 9,
+  "width": 512,
+  "original_NPZ_sha256": {
+    "PixelPoster": "e8872312a148d90696fe04e7a6d0034f5ebd9f937b387e7739ae526cdae3f930",
+    "TinyInk": "29d6ba40b0cda625ef360aaff8327b1aa89aeb2f798e0108dd8fdaaa7d5f7e3f",
+    "TinyNeon": "953c3025aa7862611498ad0f5b29fe8d33c40ba981c3dbfad2b33da6bbd3846d"
+  },
+  "asset_crc32": "e5a13d6f",
+  "training_WH": [
+    640,
+    480
+  ],
+  "extension_WH": [
+    1280,
+    720
+  ],
+  "new_training_or_C_native720_goldens": false,
+  "hardware_accessed": false
+}

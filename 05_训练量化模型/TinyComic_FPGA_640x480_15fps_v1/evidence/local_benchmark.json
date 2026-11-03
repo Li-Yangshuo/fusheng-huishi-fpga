@@ -1,0 +1,38 @@
+{
+  "scope": "640x480 RGB->pool4+edge->CNN->nearest4; CPU4threads; in-memory; no camera, disk or HDMI",
+  "pytorch": "2.8.0+cu128",
+  "onnxruntime": "1.22.0",
+  "timings": {
+    "pytorch_cpu_fp32": {
+      "runs": 40,
+      "median_ms": 3.201849998731632,
+      "p95_ms": 4.112779993010917,
+      "median_fps": 312.3194404472839
+    },
+    "pytorch_cpu_integer_reference": {
+      "runs": 40,
+      "median_ms": 5.426449999504257,
+      "p95_ms": 6.160695004655281,
+      "median_fps": 184.28254201021971
+    },
+    "onnxruntime_cpu_fp32": {
+      "runs": 40,
+      "median_ms": 11.405949997424614,
+      "p95_ms": 13.454074992478123,
+      "median_fps": 87.67353883067989
+    },
+    "numpy_int64_reference": {
+      "runs": 20,
+      "median_ms": 32.781350004370324,
+      "p95_ms": 34.922670009109424,
+      "median_fps": 30.50515002788728
+    },
+    "pytorch_cuda_fp32": {
+      "runs": 80,
+      "median_ms": 0.8935500009101816,
+      "p95_ms": 1.0714099946198983,
+      "median_fps": 1119.1315527742008
+    }
+  },
+  "FPGA_measurement": false
+}

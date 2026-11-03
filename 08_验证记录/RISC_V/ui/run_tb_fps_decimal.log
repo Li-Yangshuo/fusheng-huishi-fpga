@@ -1,0 +1,32 @@
+Reading D:/modeltech_10.2c/tcl/vsim/pref.tcl 
+
+# 10.2c
+
+# vsim -do {onerror {quit -code 1 -f};onbreak {quit -code 1 -f};run -all;quit -code 0 -f} -c work.tb_fps_decimal_opt 
+# //  ModelSim SE 10.2c Jul 18 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.tb_fps_decimal(fast)
+# Loading work.demo_fps_period(fast)
+# onerror {quit -code 1 -f} 
+#  Warning: onerror command for use within macro
+# onbreak {quit -code 1 -f} 
+#  Warning: onbreak command for use within macro
+# run -all 
+# DECIMAL_FPS_SAMPLE x10=300
+# DECIMAL_FPS_SAMPLE x10=299
+# DECIMAL_FPS_SAMPLE x10=297
+# DECIMAL_FPS_SAMPLE x10=278
+# DECIMAL_FPS_SAMPLE x10=250
+# DECIMAL_FPS_SAMPLE x10=300
+# DECIMAL_FPS_SAMPLE x10=999
+# DECIMAL_FPS PASS cases=7 changed_values=6 measured_intervals=8 rounding=nearest_tenth stop_zero=1 restart=1 saturate=99.9
+# ** Note: $finish    : D:/FUSHENG_TASK1_CODE_AUDIT_20261103/working/M7_RISCV_R8/verification/tb_fps_decimal.sv(28)
+#    Time: 810230 ns  Iteration: 1  Instance: /tb_fps_decimal

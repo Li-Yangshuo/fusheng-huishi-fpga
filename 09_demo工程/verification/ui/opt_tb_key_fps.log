@@ -1,0 +1,12 @@
+Model Technology ModelSim SE vopt 10.2c Compiler 2013.07 Jul 18 2013
+
+Top level modules:
+	tb_key_fps
+
+Analyzing design...
+-- Loading module tb_key_fps
+-- Loading module demo_key
+-- Loading module demo_fps
+-- Loading module demo_fps_period
+Incremental compilation check found no design-units have changed.
+Optimized design name is tb_key_fps_opt

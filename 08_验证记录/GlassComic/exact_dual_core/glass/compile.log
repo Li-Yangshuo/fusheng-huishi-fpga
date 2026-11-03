@@ -1,0 +1,10 @@
+Model Technology ModelSim SE vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module hd720_fused_core
+-- Compiling module tinycomic_fused_core
+-- Compiling module dualstyle_frame_engine
+-- Compiling module ab05_rgbx_axi_reader_prefetch
+-- Compiling module ab05_native_writer
+-- Compiling module tb
+
+Top level modules:
+	tb

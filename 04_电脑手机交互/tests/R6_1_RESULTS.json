@@ -1,0 +1,18 @@
+{
+  "python_regressions": {
+    "count": 19,
+    "status": "PASS",
+    "command": "python -X utf8 -m unittest test_video_recovery test_mobile test_studio -v (cwd tests)"
+  },
+  "javascript": "PASS node --check app.js; test_browser_pair.js: atomic pair, RGB565, truncated response, cache",
+  "recovery": "PASS same-session frame ID rewind; duplicate, reorder, CRC, timeout, wrap, session change, V1; real loopback UDP to HTTP pair",
+  "unchanged_accepted_modules": {
+    "recognition.py": "8c0bac8dca5c2363b339eea04dcf3856735e09ece8f0a2074f7e580029a4a68f",
+    "gesture_engine.py": "343f4803d2766135761a39c15723e900d6d142832ea6f03b38774167ba1348d1",
+    "studio_control.py": "daba6e5da0e7fea4fa75af02b98e800b3d7643ab8592a99df183e80cac6be80c",
+    "mobile_access.py": "fa55815aab90d7305564ac223c1683dc6edd3c5bb5f082968699cb87f3f66d4b",
+    "network_config.json": "88710e1d818ed04a6b7a4440ed025530a84a295b81f79291d4646250922a7ab4"
+  },
+  "physical_board_video_restored": false,
+  "note": "Loopback tests use synthetic pixels and do not prove live board restoration. Existing older result files are R6 baseline evidence."
+}

@@ -1,0 +1,33 @@
+Reading D:/modeltech_10.2c/tcl/vsim/pref.tcl 
+
+# 10.2c
+
+# vsim -do {onerror {quit -code 1 -f};onbreak {quit -code 1 -f};run -all;quit -code 0 -f} -c work.goldens 
+# //  ModelSim SE 10.2c Jul 18 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.tb(fast)
+# Loading work.dualstyle_frame_engine(fast)
+# Loading work.ab05_rgbx_axi_reader_prefetch(fast)
+# Loading work.hd720_fused_core(fast)
+# Loading work.tinycomic_fused_core(fast)
+# Loading work.ab05_native_writer(fast)
+# onerror {quit -code 1 -f} 
+#  Warning: onerror command for use within macro
+# onbreak {quit -code 1 -f} 
+#  Warning: onbreak command for use within macro
+# run -all 
+# HD720_FRAME PASS case=0 cycles=2735554 pixels=921600 pool=57600 hidden=1382400 low=172800
+# HD720_FRAME PASS case=1 cycles=2734636 pixels=921600 pool=57600 hidden=1382400 low=172800
+# HD720_FRAME PASS case=2 cycles=2734105 pixels=921600 pool=57600 hidden=1382400 low=172800
+# HD720_FRAME PASS case=3 cycles=2734461 pixels=921600 pool=57600 hidden=1382400 low=172800
+# HD720_ENGINE PASS cases=4
+# ** Note: $finish    : C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/exact_dual_core/comic/tb.sv(120)
+#    Time: 109388360 ns  Iteration: 1  Instance: /tb

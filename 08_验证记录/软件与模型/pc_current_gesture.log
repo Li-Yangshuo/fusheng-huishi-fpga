@@ -1,0 +1,12 @@
+test_brief_dropout_keeps_motion (__main__.CurrentGestureTests.test_brief_dropout_keeps_motion) ... ok
+test_large_swipe_both_directions (__main__.CurrentGestureTests.test_large_swipe_both_directions) ... ok
+test_palm_open_closed_and_short_list (__main__.CurrentGestureTests.test_palm_open_closed_and_short_list) ... ok
+test_random_back_and_forth_does_not_fire (__main__.CurrentGestureTests.test_random_back_and_forth_does_not_fire) ... ok
+test_rgb565_and_rgb888_frame_decode (__main__.CurrentGestureTests.test_rgb565_and_rgb888_frame_decode) ... ok
+test_static_hand_and_small_jitter_do_not_fire (__main__.CurrentGestureTests.test_static_hand_and_small_jitter_do_not_fire) ... ok
+test_swipe_not_repeated_until_release_and_cooldown (__main__.CurrentGestureTests.test_swipe_not_repeated_until_release_and_cooldown) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.573s
+
+OK

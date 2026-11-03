@@ -1,0 +1,41 @@
+{
+  "build_source_matches": {
+    "structure/board_r6/project/rtl/ti60f225_oob_top.v": {
+      "sha256": "91cfb661473cea22a9101646752d15f33e8880757913f51b2333955b3a1e342f",
+      "matches_build_final_binding": true
+    },
+    "rtl/pp2_white_balance.sv": {
+      "sha256": "0958db978bc6a78cfd7cc15b9c74e6bb448a0d9716dc712f210e6c81ca05af51",
+      "matches_build_final_binding": true
+    },
+    "structure/display/rtl/ab05_dual_preview_hdmi.sv": {
+      "sha256": "b9e5a988dfb47788492827bbf7587715b4068e9b535cbe06e92390aa49d2824f",
+      "matches_build_final_binding": true
+    },
+    "structure/board_r6/project/rtl/cam_i2c_ctrl/i2c/i2c_master_reg_rom.v": {
+      "sha256": "ca2d58e22d99e3c05b2f4d52060cf593b9113ce2bbe7157b319def2613ea582d",
+      "matches_build_final_binding": true
+    },
+    "structure/board_r6/project/rtl/cam_i2c_ctrl/i2c/i2c_master_ctrl_top.v": {
+      "sha256": "7e14413f26266ed9b68088d988a756cffe517ee01ac301a46b93a0b3b9b427ef",
+      "matches_build_final_binding": true
+    },
+    "structure/board_r6/project/ti60f225_oob.xml": {
+      "sha256": "32e9e92d174649573430d5fffd21adf337670d106d87d7261215dbbe82bef4c9",
+      "matches_build_final_binding": true
+    }
+  },
+  "exposure_registers": {
+    "0x3e00": "0x0",
+    "0x3e01": "0xba",
+    "0x3e02": "0xd0",
+    "0x320e": "0x5",
+    "0x320f": "0xdc"
+  },
+  "half_line_code": 2989,
+  "exposure_lines": 1494.5,
+  "nominal_exposure_ms_using_source_line_time_22_2us": 33.1779,
+  "vts": 1500,
+  "sensor_readback_performed": false,
+  "gamma_LUT_in_active_project": false
+}

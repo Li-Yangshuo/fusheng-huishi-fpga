@@ -1,0 +1,26 @@
+{
+  "pytorch": "2.8.0+cu128",
+  "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:26:47) [MSC v.1942 64 bit (AMD64)]",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "seed": 20261031,
+  "optimizer_steps": 7000,
+  "fp_steps": 4000,
+  "qat_steps": 3000,
+  "wall_seconds": 54.03773969999747,
+  "train_images": 300,
+  "train_split": "BSDS500 train + val",
+  "test_images_used_for_optimization": 0,
+  "best_qat_color_grid_mse": 0.004438355565071106,
+  "shifts": [
+    4,
+    4,
+    8
+  ],
+  "board_verified": false,
+  "training_kind": "supervised distillation of procedural pixel posterization teacher; random initialization, no pretrained model",
+  "teacher_runs_at_deployment": false,
+  "checkpoint_optimizer_step": 4800,
+  "selected_qat_step": 800,
+  "checkpoint_selection": "minimum synthetic color-grid MSE at logged evaluation steps; no BSDS test image used"
+}

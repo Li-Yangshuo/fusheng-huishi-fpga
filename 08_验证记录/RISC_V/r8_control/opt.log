@@ -1,0 +1,12 @@
+Model Technology ModelSim SE vopt 10.2c Compiler 2013.07 Jul 18 2013
+
+Top level modules:
+	tb_r8_control
+
+Analyzing design...
+-- Loading module tb_r8_control
+-- Loading module r8_control
+Optimizing 2 design-units (inlining 1 instances):
+-- Inlining module r8_control(fast)
+-- Optimizing module tb_r8_control(fast)
+Optimized design name is unit

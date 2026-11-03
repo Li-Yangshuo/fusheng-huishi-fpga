@@ -1,0 +1,38 @@
+{
+  "scope": "640x480 batch1; pooling + CNN + nearest x8; memory input/output, no disk/camera/HDMI; CPU threads=4; CUDA data already resident; computer timings are NOT FPGA timings",
+  "pytorch": "2.8.0+cu128",
+  "onnxruntime": "1.22.0",
+  "timings": {
+    "pytorch_cpu_fp32": {
+      "runs": 50,
+      "median_ms": 1.4389499992830679,
+      "p95_ms": 2.680760000657755,
+      "median_fps": 694.951180025875
+    },
+    "pytorch_cpu_integer_reference": {
+      "runs": 50,
+      "median_ms": 2.737199996772688,
+      "p95_ms": 3.2258149985864293,
+      "median_fps": 365.33684099775536
+    },
+    "onnxruntime_cpu_fp32": {
+      "runs": 50,
+      "median_ms": 10.096549998706905,
+      "p95_ms": 12.115120000817114,
+      "median_fps": 99.0437327728851
+    },
+    "numpy_int64_reference": {
+      "runs": 20,
+      "median_ms": 10.29000000198721,
+      "p95_ms": 11.195169998245547,
+      "median_fps": 97.18172981602328
+    },
+    "pytorch_cuda_fp32": {
+      "runs": 100,
+      "median_ms": 0.32544999703532085,
+      "p95_ms": 0.5037050024839117,
+      "median_fps": 3072.6686406805243
+    }
+  },
+  "board_verified": false
+}

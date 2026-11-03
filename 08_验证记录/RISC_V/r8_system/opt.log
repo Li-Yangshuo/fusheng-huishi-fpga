@@ -1,0 +1,91 @@
+Model Technology ModelSim SE vopt 10.2c Compiler 2013.07 Jul 18 2013
+
+Top level modules:
+	tb_scanout_service
+
+Analyzing design...
+-- Loading module tb_scanout_service
+-- Loading module demo_key
+-- Loading module ab13_rv32i_manager
+-- Loading module r8_control
+-- Loading module r8_camera_mmio
+-- Loading module i2c_16addr_8data
+-- Loading module i2c_master_top
+-- Loading module i2c_master_byte_ctrl
+-- Loading module i2c_master_bit_ctrl
+-- Loading module a_b_video_renderer_shared
+-- Loading module ab05_video_pipeline_shared
+-- Loading module ab05_video_ownership
+-- Loading module ab05_camera_selector
+-- Loading module ab05_async_stream
+-- Loading module ab05_capture_ingress
+-- Loading module ab05_native_writer
+-- Loading module dualstyle_frame_engine
+-- Loading module ab05_rgbx_axi_reader_prefetch
+-- Loading module hd720_fused_core
+-- Loading module ab05_axi_read_rr3
+-- Loading module ab05_axi_write_rr2
+-- Loading module ab05_job_watchdog
+-- Loading module ab05_hdmi_timing
+-- Loading module ab05_dual_preview_hdmi
+-- Loading module ab05_preview_scanout_r9
+-- Loading module ab05_display_async_stream
+-- Loading module ab05_display_snapshot
+Optimizing 32 design-units (inlining 41 instances):
+-- Inlining module demo_key(fast)
+-- Inlining module demo_key(fast__1)
+-- Inlining module ab13_rv32i_manager(fast)
+-- Inlining module r8_control(fast)
+-- Inlining module i2c_16addr_8data(fast)
+-- Inlining module i2c_master_bit_ctrl(fast)
+-- Inlining module i2c_master_byte_ctrl(fast)
+-- Inlining module i2c_master_top(fast)
+-- Inlining module r8_camera_mmio(fast)
+-- Inlining module ab05_video_ownership(fast)
+-- Inlining module ab05_async_stream(fast)
+-- Inlining module ab05_camera_selector(fast)
+-- Inlining module ab05_async_stream(fast__1)
+-- Inlining module ab05_native_writer(fast)
+-- Inlining module ab05_capture_ingress(fast)
+-- Inlining module ab05_rgbx_axi_reader_prefetch(fast)
+-- Inlining module hd720_fused_core(fast)
+-- Inlining module dualstyle_frame_engine(fast)
+-- Inlining module ab05_rgbx_axi_reader_prefetch(fast__1)
+-- Inlining module ab05_rgbx_axi_reader_prefetch(fast__2)
+-- Inlining module ab05_axi_read_rr3(fast)
+-- Inlining module ab05_axi_write_rr2(fast)
+-- Inlining module ab05_job_watchdog(fast)
+-- Inlining module ab05_video_pipeline_shared(fast)
+-- Inlining module a_b_video_renderer_shared(fast)
+-- Inlining module ab05_hdmi_timing(fast)
+-- Inlining module ab05_display_async_stream(fast)
+-- Inlining module ab05_display_async_stream(fast__1)
+-- Inlining module ab05_preview_scanout_r9(fast)
+-- Inlining module ab05_display_snapshot(fast)
+-- Inlining module ab05_dual_preview_hdmi(fast)
+-- Optimizing module tb_scanout_service(fast)
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(81): (vopt-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 97, found 84.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(81): (vopt-2718) [TFMPC] - Missing connection for port 'camera_selected_frames'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(81): (vopt-2718) [TFMPC] - Missing connection for port 'camera_skipped_frames'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(81): (vopt-2718) [TFMPC] - Missing connection for port 'missed_right_ticks'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(81): (vopt-2718) [TFMPC] - Missing connection for port 'missed_left_ticks'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(81): (vopt-2718) [TFMPC] - Missing connection for port 'capture_blocked_cycles'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(81): (vopt-2718) [TFMPC] - Missing connection for port 'output_allocated_mask'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(81): (vopt-2718) [TFMPC] - Missing connection for port 'input_allocated_mask'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(81): (vopt-2718) [TFMPC] - Missing connection for port 'network_stream_error_code'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(81): (vopt-2718) [TFMPC] - Missing connection for port 'network_error_code'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(81): (vopt-2718) [TFMPC] - Missing connection for port 'network_busy'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(81): (vopt-2718) [TFMPC] - Missing connection for port 'loader_error_code'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(81): (vopt-2718) [TFMPC] - Missing connection for port 'loader_error'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(81): (vopt-2718) [TFMPC] - Missing connection for port 'catalog_ready'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(104): (vopt-2685) [TFMPC] - Too few port connections for 'display'.  Expected 54, found 45.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(104): (vopt-2718) [TFMPC] - Missing connection for port 'net_rid'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(104): (vopt-2718) [TFMPC] - Missing connection for port 'net_lid'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(104): (vopt-2718) [TFMPC] - Missing connection for port 'net_y'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(104): (vopt-2718) [TFMPC] - Missing connection for port 'net_rx'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(104): (vopt-2718) [TFMPC] - Missing connection for port 'net_lx'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(104): (vopt-2718) [TFMPC] - Missing connection for port 'net_rr'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(104): (vopt-2718) [TFMPC] - Missing connection for port 'net_lr'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(104): (vopt-2718) [TFMPC] - Missing connection for port 'net_rv'.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\r8_system\tb.sv(104): (vopt-2718) [TFMPC] - Missing connection for port 'net_lv'.
+Optimized design name is system

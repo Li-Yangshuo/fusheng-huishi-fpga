@@ -1,0 +1,32 @@
+Reading D:/modeltech_10.2c/tcl/vsim/pref.tcl 
+
+# 10.2c
+
+# vsim -do {onerror {quit -code 1 -f};onbreak {quit -code 1 -f};run -all;quit -code 0 -f} -c work.case2 
+# //  ModelSim SE 10.2c Jul 18 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.tb_r8_firmware(fast)
+# Loading work.ab13_rv32i_manager(fast)
+# Loading work.r8_control(fast)
+# Loading work.r8_camera_mmio(fast)
+# Loading work.i2c_16addr_8data(fast)
+# Loading work.i2c_master_top(fast)
+# Loading work.i2c_master_byte_ctrl(fast)
+# Loading work.i2c_master_bit_ctrl(fast)
+# Loading work.hd720_fused_core(fast)
+# onerror {quit -code 1 -f} 
+#  Warning: onerror command for use within macro
+# onbreak {quit -code 1 -f} 
+#  Warning: onbreak command for use within macro
+# run -all 
+# R8_FIRMWARE PASS fault=2 rejected camera; C status=ee000100
+# ** Note: $finish    : D:/FUSHENG_TASK1_CODE_AUDIT_20261103/working/M7_RISCV_R8/verification/tb_r8_firmware.sv(94)
+#    Time: 2103815 ns  Iteration: 2  Instance: /tb_r8_firmware

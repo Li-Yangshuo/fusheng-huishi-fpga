@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "raminfo": "D:\\FUSHENG_TASK1_CODE_AUDIT_20261103\\working\\M7_RISCV_R8\\structure\\board_r6\\project\\outflow\\ti60f225_oob.raminfo.pb",
+  "raminfo_sha256": "a6cea787552fc61ce94d0387c434bcf148792798001e51fa50c2fc327ba8f2b4",
+  "boot_sha256": "0ab2771eb796484ca3fe843bbc3618a25b08a69d3b4f564d4238fcc15b10ccc5",
+  "words_checked": 2048,
+  "bytes_checked": 8192,
+  "word_mismatches": 0,
+  "expected_first_word": "00002117",
+  "mapped_first_word": "00002117",
+  "lanes": {
+    "1": {
+      "name": "cpu/cpu/boot_lane[1].mem",
+      "all_init_zero": false,
+      "logical_bytes_sha256": "f88a9bc33ba3faa35662a1085dc4ebe4a19aa451c85feed61df26a36a7268694"
+    },
+    "3": {
+      "name": "cpu/cpu/boot_lane[3].mem",
+      "all_init_zero": false,
+      "logical_bytes_sha256": "4f7ec120137f773a936bbf06126093644ce6ee043c3fb216df89168cd40a051b"
+    },
+    "0": {
+      "name": "cpu/cpu/boot_lane[0].mem",
+      "all_init_zero": false,
+      "logical_bytes_sha256": "d572b24e718c0aa4771d39768fed71cfe916e38ce10dde3d70328d88d32a932c"
+    },
+    "2": {
+      "name": "cpu/cpu/boot_lane[2].mem",
+      "all_init_zero": false,
+      "logical_bytes_sha256": "fa4a752ef34c8594d5f292f9e76bd3eb8149f558b4d363721270714c1c0aa57a"
+    }
+  }
+}

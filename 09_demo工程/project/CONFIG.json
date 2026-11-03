@@ -1,0 +1,41 @@
+{
+  "name": "M7_INTERACTIVE_STUDIO_20261101_R2",
+  "tag": "m7_studio_r2",
+  "styles": [
+    "PixelPoster",
+    "TinyInk",
+    "TinyNeon"
+  ],
+  "default_style": "PixelPoster",
+  "reset_layout": 0,
+  "style_key": {
+    "signal": "i_style_key_n",
+    "pin": "N14",
+    "gpio": "GPIOR_21",
+    "active_low": true,
+    "user_confirmed": false,
+    "inferred_from": "KEY1=P14 works on actual board; matches board manual rather than V4 schematic"
+  },
+  "layout_key": {
+    "signal": "i_view_key_n",
+    "pin": "P14",
+    "gpio": "GPIOR_22",
+    "unchanged": true
+  },
+  "moved_LED": {
+    "signal": "led[1]",
+    "old_pin": "N14",
+    "new_pin": "N13",
+    "new_gpio": "GPIOR_24",
+    "note": "Restored manual mapping; release N14 for KEY2"
+  },
+  "style_backup_key": {
+    "signal": "i_style_alt_key_n",
+    "pin": "A3",
+    "gpio": "GPIOL_03",
+    "active_low": true,
+    "role": "KEY3 same style toggle"
+  },
+  "baseline_name": "TRISTYLE_M7_20261031",
+  "network_status": "bidirectional interactive experiment; see root DELIVERY_STATUS.json"
+}

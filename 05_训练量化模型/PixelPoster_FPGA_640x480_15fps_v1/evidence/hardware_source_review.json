@@ -1,0 +1,30 @@
+{
+  "sources": [
+    {
+      "path": "C:\\Users\\Lenovo\\Desktop\\AB_TOTAL_MERGE_BOARD_20261026\\board_reference\\AB05\\evidence\\model_budget.json",
+      "sha256": "94960a099ba231e5fa9b7c7ff3ecbc2cc298e608df4584688dd7eef411691692"
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Desktop\\AB_TOTAL_MERGE_BOARD_20261026\\active\\R8\\incoming\\H28\\evidence\\canonical_h28\\map_video_r1_resources.json",
+      "sha256": "c31942cf0a2b79ffabc6bb793f8fe84cb3928f625f8a4b309245dc794352ed83"
+    },
+    {
+      "path": "D:\\weixin\\xwechat_files\\wxid_ce9fswu0sd3822_7144\\msg\\file\\2026-10\\AB_A19_FULL_INTEGRATION_20261031_R1\\AB_A19_FULL_INTEGRATION_20261031_R1\\START_HERE_完整工程说明.md",
+      "sha256": "cb19dda1c0cff703b2c6be0428e76f4a6cd304ae26464fe79a1b26ffecf34d89"
+    },
+    {
+      "path": "D:\\weixin\\xwechat_files\\wxid_ce9fswu0sd3822_7144\\msg\\file\\2026-10\\AB_A19_FULL_INTEGRATION_20261031_R1\\AB_A19_FULL_INTEGRATION_20261031_R1\\models\\C4_R2_BN_20k\\contract.json",
+      "sha256": "802cd60a76fa261ee7719e7e0c8d154276073f846468e2b113f3643a33d97d10"
+    },
+    {
+      "path": "D:\\weixin\\xwechat_files\\wxid_ce9fswu0sd3822_7144\\msg\\file\\2026-10\\AB_A19_FULL_INTEGRATION_20261031_R1\\AB_A19_FULL_INTEGRATION_20261031_R1\\models\\C4_R2_BN_20k\\training_record\\checkpoint_provenance.json",
+      "sha256": "19e5aa5ea8cfaffc831e12ab1f6d2dc0a58412a59a080c046dae7050d8dfbb86"
+    }
+  ],
+  "notes": [
+    "Historical AB05 at256x192=332660736MAC/frame; budget is a different model, not the new graph.",
+    "Latest supplied C4=145382400MAC at720p, 14 conv layers, quality_accepted=false; its trained weights not reused.",
+    "A19 source snapshot states57098/60800XLR,232RAM10,66DSP; those are OLD whole-design numbers, not a synthesis result for PixelPoster.",
+    "PixelPoster uses explicit UINT8, pool8, zero padding and1x1 layers; accelerator integration required."
+  ]
+}

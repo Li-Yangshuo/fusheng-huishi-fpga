@@ -1,0 +1,7 @@
+{
+  "identical_input_repeats": 15,
+  "identical_outputs": true,
+  "no_random_texture": true,
+  "camera_video_tested": false,
+  "note": "Static deterministic check only; motion and flicker require real video"
+}

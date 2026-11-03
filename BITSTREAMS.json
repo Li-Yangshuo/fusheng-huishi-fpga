@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "path": "01_M7_三风格/BIT/M7_HDMI_Bright_R7.bit",
+      "bytes": 2988729,
+      "sha256": "7ab356f4ef310935a1c523f4f28e5536642633050d1cd09f95678cc9627b79e6"
+    },
+    {
+      "path": "02_RISCV_软硬协同/BIT/ti60f225_oob_m7_riscv_r8.bit",
+      "bytes": 3056070,
+      "sha256": "f6ae449856cbcaf589ceeb533ccbefa51159faa792a3bbd1cf3d8054e596efd6"
+    },
+    {
+      "path": "03_HD6_玻璃漫画/BIT/GlassComic_HD6_M8.bit",
+      "bytes": 2845926,
+      "sha256": "bb0970c95b19fcf060efcd93821347ba4df4fdb5c0659e4d2b563bf420ec924d"
+    },
+    {
+      "path": "04_HD6_单玻璃/原始效果/BIT/ti60f225_oob_hd6.bit",
+      "bytes": 3113829,
+      "sha256": "14a6beb13d61bc91e7c18e2e1ff12442b2a3f0b931698fb066c4261d273b1cdc"
+    },
+    {
+      "path": "04_HD6_单玻璃/展示提亮/BIT/HD6_Showcase_Bright.bit",
+      "bytes": 3129906,
+      "sha256": "ddc48e362283aebd2ee6d82ac431238b8f4827a7a2de92256d81c960adec5647"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "full_input_output_WH": [
+    640,
+    480
+  ],
+  "learned_processing_WH": [
+    80,
+    60
+  ],
+  "trainable_parameters_deployment": 771,
+  "weight_elements": 736,
+  "weight_bytes_int8": 736,
+  "bias_bytes_int32": 140,
+  "conv_MAC_per_frame": 3532800,
+  "conv_MAC_per_second_at_15fps": 52992000,
+  "pool_additions_per_frame": 907200,
+  "activation_maps_bytes_each": {
+    "input_low": 14400,
+    "hidden0": 76800,
+    "hidden1": 76800,
+    "output_low": 14400
+  },
+  "hypothetical_schedule": {
+    "clock_MHz": 100,
+    "MAC_lanes": 1,
+    "conv_cycles": 3532800,
+    "capture_pool_input_cycles_at_1_RGB_per_cycle": 307200,
+    "upsample_write_cycles_at_1_RGB_per_cycle": 307200,
+    "ideal_total_ms": 41.472,
+    "slack_to_66_67ms": 25.19466666666667,
+    "note": "necessary capacity estimate only. Add instruction/control, BRAM/DSP packing, pooling scheduling, pipeline fill, DDR waits, camera/display arbitration and actual Fmax. Use 4+ MAC lanes for margin; no promised FPGA fps."
+  },
+  "DDR_raw_input_plus_output_MB_per_s_at_15fps": 27.648,
+  "reuse_old_C4_engine_without_changes": false,
+  "synthesized": false,
+  "pnr_passed": false,
+  "board_verified": false
+}

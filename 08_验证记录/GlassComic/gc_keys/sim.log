@@ -1,0 +1,26 @@
+Reading D:/modeltech_10.2c/tcl/vsim/pref.tcl 
+
+# 10.2c
+
+# vsim -do {onerror {quit -code 1 -f};onbreak {quit -code 1 -f};run -all;quit -code 0 -f} -c work.tb 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# //  ModelSim SE 10.2c Jul 18 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.tb(fast)
+# onerror {quit -code 1 -f} 
+#  Warning: onerror command for use within macro
+# onbreak {quit -code 1 -f} 
+#  Warning: onbreak command for use within macro
+# run -all 
+# PRODUCTION_KEY12_PASS four_layouts=1 original_models=1 independent=1 bounce_rejected=1 hold_once=1
+# ** Note: $finish    : C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_keys/tb.sv(32)
+#    Time: 4890 ns  Iteration: 1  Instance: /tb

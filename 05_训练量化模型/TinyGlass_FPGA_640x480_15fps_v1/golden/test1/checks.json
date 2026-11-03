@@ -1,0 +1,5 @@
+{
+  "file": "100039.jpg",
+  "numpy_torch_onnx_full_integer_exact": true,
+  "fp32_onnx_max_abs_error": 6.103515625e-05
+}

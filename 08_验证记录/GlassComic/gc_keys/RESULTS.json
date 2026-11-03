@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "production_control_sha256": "8c342b5489c855d9b831f7b63789266348c19382d986de14781d0f6f89872b98",
+  "source_sha256": {
+    "rtl\\demo_key.sv": "2188a8ccca5ff8ac4776a14dab0a18dafb2a90814609241d2261c3f0e94ec425",
+    "evidence\\gc_keys\\tb.sv": "67cacaca6f94f3cebc0d37f369a4b79b4919e0df02ab796a4c2159cfd7d8f930"
+  },
+  "receipts": [
+    "# PRODUCTION_KEY12_PASS four_layouts=1 original_models=1 independent=1 bounce_rejected=1 hold_once=1"
+  ]
+}

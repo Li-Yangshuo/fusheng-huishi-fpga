@@ -1,0 +1,14 @@
+usage: compare_standard_network_portable.py [-h] --data DATA [--output OUTPUT]
+                                            [--model MODEL]
+                                            [--baseline-source BASELINE_SOURCE]
+
+Reproduce the saved same-target network comparison; training needs CUDA,
+evaluation uses CPU.
+
+options:
+  -h, --help            show this help message and exit
+  --data DATA           BSDS500 directory containing train, val and test JPG
+                        directories
+  --output OUTPUT
+  --model MODEL
+  --baseline-source BASELINE_SOURCE

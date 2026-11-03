@@ -1,0 +1,27 @@
+{
+  "models": [
+    "TinyGlass"
+  ],
+  "model_mmio_id": "54473031",
+  "packed_asset_crc32": "837cf680",
+  "original_NPZ_sha256": "6f4206f3137e00669043e00ab4f327465f71ea657c147f9b031dbbfc0e95bb5d",
+  "training_contract_WH": [
+    640,
+    480
+  ],
+  "extension_WH": [
+    1280,
+    720
+  ],
+  "shifts": [
+    5,
+    5,
+    7
+  ],
+  "pool": 2,
+  "output_channels": 3,
+  "geometry": "signed/clamped64x64 RGB+lead; unchanged C ROM",
+  "target_results_fps": 15,
+  "board_verified": false,
+  "scope": "Inherited default-Glass CPU boot fixture only; current dual-model release identity is DELIVERY_STATUS.json and references/SOURCE_AUDIT.json."
+}

@@ -1,0 +1,41 @@
+Reading D:/modeltech_10.2c/tcl/vsim/pref.tcl 
+
+# 10.2c
+
+# vsim -do {onerror {quit -code 1 -f};onbreak {quit -code 1 -f};run -all;quit -code 0 -f} -c work.system 
+# //  ModelSim SE 10.2c Jul 18 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.tb_scanout_service(fast)
+# onerror {quit -code 1 -f} 
+#  Warning: onerror command for use within macro
+# onbreak {quit -code 1 -f} 
+#  Warning: onbreak command for use within macro
+# run -all 
+# DUALSTYLE_SERVICE_COMMIT id=1 cycle=5221776 job_cycles=2032661
+# DUALSTYLE_SERVICE_COMMIT id=2 cycle=9708766 job_cycles=3186302
+# DUALSTYLE_SERVICE_COMMIT id=3 cycle=13042150 job_cycles=3186366
+# DUALSTYLE_SERVICE_COMMIT id=4 cycle=15521061 job_cycles=2331915
+# DUALSTYLE_SERVICE_COMMIT id=5 cycle=19717724 job_cycles=3195274
+# DUALSTYLE_SERVICE_COMMIT id=6 cycle=23046855 job_cycles=3191077
+# DUALSTYLE_SERVICE_COMMIT id=7 cycle=25521198 job_cycles=2332034
+# DUALSTYLE_SERVICE_COMMIT id=8 cycle=29708675 job_cycles=3186234
+# DUALSTYLE_SERVICE_COMMIT id=9 cycle=33041966 job_cycles=3186192
+# DUALSTYLE_SERVICE_COMMIT id=10 cycle=35463718 job_cycles=2274570
+# DUALSTYLE_SERVICE_COMMIT id=11 cycle=39708457 job_cycles=3186001
+# DUALSTYLE_SERVICE_COMMIT id=12 cycle=43041013 job_cycles=3185232
+# R8_SYSTEM PASS actual_compiled_C=1 camera_writes=166 C_ISR=12 captures=12 computes=12 display_pairs=12 combinations=eff
+# SWITCH_CADENCE_MEASURED style=3 models_pp=4 models_ink=4 models_neon=4 model_layout_bitmap=eff max_commit_gap_ms=44.869900
+# SCANOUT_SERVICE PASS display_left_unique=12 display_right_unique=12 checked_left_pixels=10598400 checked_right_pixels=10598400 last_row_checks=29440 left_startup_underflows=4 right_startup_underflows=4
+# HD720_STEADY PASS warmup_commits=2 steady_commits=10 nn_steady_fps=30.001137 max_steady_gap=4244739 max_all_run_gap=4486990
+# HD720_RATE PASS style=3 frames=12 left_unique=12 right_unique=12 left_fps=30.000138 right_fps=29.999433 nn_fps=29.085727 max_job_cycles=3195274 max_commit_gap=4486990
+# DUALSTYLE_SERVICE PASS captures=12 unique_nn=12 left_frames=23 right_frames=23 left_pixels=5299200 right_pixels=5299200 max_job_cycles=3195274 max_commit_gap=4486990
+# ** Note: $finish    : D:/FUSHENG_TASK1_CODE_AUDIT_20261103/working/M7_RISCV_R8/evidence/r8_system/tb.sv(267)
+#    Time: 449897730 ns  Iteration: 1  Instance: /tb_scanout_service

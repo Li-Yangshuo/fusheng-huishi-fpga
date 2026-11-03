@@ -1,0 +1,28 @@
+{
+  "status": "C_BUILD_PASS",
+  "binary_bytes": 4544,
+  "boot_bytes": 8192,
+  "reserved_stack_bytes": 768,
+  "isa": "rv32i_zicsr",
+  "size_output": "   text\t   data\t    bss\t    dec\t    hex\tfilename\r\n   4544\t      0\t      4\t   4548\t   11c4\tD:\\FUSHENG_TASK1_CODE_AUDIT_20261103\\working\\M7_RISCV_R8\\firmware\\build\\firmware.elf\r\n",
+  "lane_check": {
+    "status": "PASS",
+    "source": "D:\\FUSHENG_TASK1_CODE_AUDIT_20261103\\working\\M7_RISCV_R8\\structure\\board_r6\\project\\cpu_boot.mem",
+    "source_sha256": "0ab2771eb796484ca3fe843bbc3618a25b08a69d3b4f564d4238fcc15b10ccc5",
+    "words": 2048,
+    "first_word": "00002117",
+    "lane_files": {
+      "cpu_boot.mem.lane0": "a9d192ca0df0982fbe4cf68143fdb7a02ae3c9a0ff9cef82574ba7168d1a9bc6",
+      "cpu_boot.mem.lane1": "c9c8de8bf7a870494152137e83e9ad00299482051abf41dd9b7b5872e15afad6",
+      "cpu_boot.mem.lane2": "e97d3891df7939afe4481d49e105221fbe1a6a3d5f3f42d87f0bfc041898059b",
+      "cpu_boot.mem.lane3": "f3072aa6fca9d5c2ef9cda4a4bff24a4be02d3ee2c601146c0957adff3201587"
+    }
+  },
+  "source_sha256": {
+    "main.c": "b6dc47034a8e3dee5484712ab3248feab658ddb3c769544331acff936074bdb3",
+    "startup.S": "82419974b0a52e1386b05ad3fe83da9e5e4fb1d45ec228a9c12cfadf3910b1f2",
+    "linker.ld": "a57d8ec3af55bbebd49b61fd87fabf4cce9dd9593655793b4d6b4f2a48635d76",
+    "catalog.h": "f86258279959bb11b0e40d20cd9e6a4e26291cfda176632ed4cbbfd738f836e3"
+  },
+  "hardware_accessed": false
+}

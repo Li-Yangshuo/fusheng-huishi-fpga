@@ -1,0 +1,12 @@
+Model Technology ModelSim SE vopt 10.2c Compiler 2013.07 Jul 18 2013
+
+Top level modules:
+	tb_hd_capture
+
+Analyzing design...
+-- Loading module tb_hd_capture
+-- Loading module ab720_capture_guard
+Optimizing 2 design-units (inlining 0 instances):
+-- Optimizing module tb_hd_capture(fast)
+-- Optimizing module ab720_capture_guard(fast)
+Optimized design name is capture

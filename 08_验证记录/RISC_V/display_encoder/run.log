@@ -1,0 +1,35 @@
+Reading D:/modeltech_10.2c/tcl/vsim/pref.tcl 
+
+# 10.2c
+
+# vsim -do {onerror {quit -code 1 -f};onbreak {quit -code 1 -f};run -all;quit -code 0 -f} -c work.display 
+# //  ModelSim SE 10.2c Jul 18 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.tb_display_chain(fast)
+# onerror {quit -code 1 -f} 
+#  Warning: onerror command for use within macro
+# onbreak {quit -code 1 -f} 
+#  Warning: onbreak command for use within macro
+# run -all 
+# TMDS_MISMATCH latency=57 pixel=1 encoded=2cc1332cc decoded=ab55ab expected=000000
+# TMDS_MISMATCH latency=57 pixel=2 encoded=2cc1332cc decoded=ab55ab expected=000000
+# TMDS_MISMATCH latency=58 pixel=1 encoded=2cc1332cc decoded=ab55ab expected=000000
+# TMDS_MISMATCH latency=60 pixel=1280 encoded=354354354 decoded=fdfdfd expected=000000
+# TMDS_MISMATCH latency=58 pixel=1281 encoded=2cc1332cc decoded=ab55ab expected=000000
+# TMDS_MISMATCH latency=60 pixel=2560 encoded=354354354 decoded=fdfdfd expected=000000
+# M7_SHOWCASE_GEOMETRY PASS pair_each=640x720 source_each=640x360 vertical_repeat=2 brightness_reference=independent all_styles_all_layouts=1
+# DUAL_KEY_DISPLAY PASS all_12_model_layout_combinations=1 midframe_style_requests=12 key2_and_key3_alias_tested=1 layout_independent=1
+# DECIMAL_FPS_CDC PASS values=25.0,30.0,33.3 changed=1
+# DEMO_DISPLAY PASS raw_pixels=23040000 original=6451200 same_scene_split=5529600 style=5529600 small_pair=5529600 bottom_row_pixels=32000 frame_boundary_switch=1
+# DEMO_TMDS PASS decoded_pixels=24883200 mismatches=0
+# M7_NETWORK_TAPS PASS pixels=2764800 left_frames=6 right_frames=6 packets=4324 zero_drops=1
+# ** Note: $finish    : D:/FUSHENG_TASK1_CODE_AUDIT_20261103/working/M7_RISCV_R8/evidence/display_encoder/tb.sv(244)
+#    Time: 450002859525954 fs  Iteration: 1  Instance: /tb_display_chain

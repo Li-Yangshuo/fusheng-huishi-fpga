@@ -1,0 +1,50 @@
+{
+  "full_input_output_WH": [
+    640,
+    480
+  ],
+  "learned_processing_WH": [
+    160,
+    120
+  ],
+  "parameters": 179,
+  "weight_elements": 160,
+  "int8_weight_bytes": 160,
+  "int32_bias_bytes": 76,
+  "conv_MAC_per_frame": 3072000,
+  "conv_MAC_per_second_15fps": 46080000,
+  "grayscale_preprocess": "77R+150G+29B can use shifts/adds; NOT counted in CNN MACs",
+  "pool_adds_per_frame": 288000,
+  "hypothetical_capacity": {
+    "clock_MHz": 100,
+    "effective_MACs_per_cycle": 1,
+    "conv_ms": 30.72,
+    "input_pass_ms_if_1_full_RGB_pixel_per_cycle": 3.072,
+    "output_pass_ms_if_1_full_RGB_pixel_per_cycle": 3.072,
+    "ideal_total_ms": 36.864,
+    "note": "excludes control, luma logic pipeline, BRAM port conflicts, DDR waits, screen arbitration and Fmax. Capacity estimate is not measured FPS. Recommend4 effective MAC lanes or more for headroom."
+  },
+  "activation_bytes": {
+    "input_low_gray": 19200,
+    "hidden0": 153600,
+    "hidden1": 153600,
+    "output_low_rgb": 57600
+  },
+  "streaming_storage_note": "first3x3 needs lowres line buffers; fuse downstream1x1 layers to avoid storing full hidden maps if implementing a stream accelerator",
+  "full_RGB_input_plus_output_MB_per_second_15fps": 27.648,
+  "synthesized": false,
+  "pnr_passed": false,
+  "board_verified": false,
+  "conv_MAC_per_second_30fps": 92160000,
+  "target_frame_budget_ms": {
+    "15fps": 66.66666666666667,
+    "30fps": 33.333333333333336
+  },
+  "hypothetical_4MAC_100MHz": {
+    "conv_ms": 7.68,
+    "input_plus_output_RGB_scan_ms": 6.144,
+    "ideal_total_ms": 13.824,
+    "measured": false
+  },
+  "competition_scope": "User staged style goal15fps at640x480. Supplied brief camera capture640x480@30fps and HDMI720p60 or1080p30 are separate full-system requirements; model files establish none of those board gates."
+}

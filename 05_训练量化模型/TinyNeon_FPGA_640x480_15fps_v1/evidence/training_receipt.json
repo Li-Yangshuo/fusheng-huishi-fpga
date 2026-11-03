@@ -1,0 +1,27 @@
+{
+  "pytorch": "2.8.0+cu128",
+  "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:26:47) [MSC v.1942 64 bit (AMD64)]",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "seed": 20261033,
+  "training_optimizer_steps_completed": 13000,
+  "fp_steps_completed": 8000,
+  "qat_steps_completed": 5000,
+  "selected_float_step": 7800,
+  "selected_qat_step": 2200,
+  "selected_checkpoint_lineage_steps": 10000,
+  "best_qat_validation_mse": 0.00028133249725215137,
+  "wall_seconds": 72.08645020000404,
+  "train_images": 280,
+  "checkpoint_selection_validation_images": 20,
+  "official_test_images_used_for_training_or_selection": 0,
+  "shifts": [
+    5,
+    4,
+    7
+  ],
+  "initialization": "random; no previous style weights used",
+  "training_kind": "supervised learning of deterministic local neon-contour teacher; teacher is only used for labels",
+  "teacher_runs_at_deployment": false,
+  "board_verified": false
+}

@@ -1,0 +1,29 @@
+{
+  "top": "ab05_dual_preview_hdmi",
+  "sources": [
+    "rtl/ab05_display_async_stream.sv",
+    "rtl/ab05_display_snapshot.sv",
+    "rtl/ab05_dual_preview_hdmi.sv",
+    "rtl/ab05_hdmi_timing.sv",
+    "rtl/ab05_preview_scanout_r9.sv"
+  ],
+  "timing_top": "ab05_hdmi_timing",
+  "selected_receipts": [
+    "runs/display_r9_04/result.json",
+    "runs/native_display_r9_01/result.json"
+  ],
+  "files": {
+    "docs/DISPLAY_INTEGRATION.md": "fff05ac64f18f7d1bf90688dbc02eddece2bcb617b060ee9d181d7ac2246c571",
+    "rtl/ab05_display_async_stream.sv": "8cef2757599ef2bac075a2769146e609fc7c6d6ebcf50469309650d0133d3dc0",
+    "rtl/ab05_display_snapshot.sv": "210e579e8ff6161baadd830515cb394049d885f7dfef3f8b50e44b788ebf996a",
+    "rtl/ab05_dual_preview_hdmi.sv": "aaa6c4f75973e8923973d3767abb3cbf2a97537c725b4064cb21dd1a7b4b3f68",
+    "rtl/ab05_hdmi_timing.sv": "43bbd975d0438386a1e5d113e251ac28a6c9edb5161fb3c418334ac49124bc63",
+    "rtl/ab05_preview_scanout_r9.sv": "8ad8dfa1a4962a8261d8f898e03757acf8f5aa9a037da9c8e4feb3ffd7a0f7a8",
+    "scripts/run_display.py": "6bedec0f20bfba309f044b3bfe8f2415e66f20ea43530e6d3894856654a3bd2d",
+    "scripts/run_native_display.py": "22220c209fd0eb98f97c18b1830d65c19d5ce50b56e81a2e29d0dd4300da3f4b",
+    "tests/tb_dual_preview_hdmi.sv": "a7ac8248e8d9e1b813c1c5bf2974901f5eba4f0f21ace2a10e252d82eb591e24",
+    "tests/tb_dual_preview_hdmi_native.sv": "3f3d9d5b47343eff77abc31a87e8f9eef840df7e014603f97c67d1fe33f51ada",
+    "tests/tb_hdmi_timing_native.sv": "e1397c39e00ced19ef17a6c0a579001b9f0a31180d560450382b6700137f6203",
+    "tests/tb_preview_scanout_legacy.sv": "692a72e68233a24b58d2890bfd150cccae78199286be376670da4eb075ebde9c"
+  }
+}

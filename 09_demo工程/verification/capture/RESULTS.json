@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "hardware_accessed": false,
+  "receipts": [
+    "# HD720_CAPTURE PASS pixels=921600 malformed=5 quarantine=1 reset_recovery=1"
+  ],
+  "source_sha256": {
+    "rtl/ab720_capture_guard.sv": "44cded9372516c5d61e45e761e9a08b6a15bd2b7b18d032b80514fba68b204ad",
+    "verification/tb_hd_capture.sv": "3242a7a55a63eb63dc85459c773151f6511844347a904b206a8abedef9749986"
+  }
+}

@@ -1,0 +1,10 @@
+Model Technology ModelSim SE vopt 10.2c Compiler 2013.07 Jul 18 2013
+
+Top level modules:
+	tb_fps_decimal
+
+Analyzing design...
+-- Loading module tb_fps_decimal
+-- Loading module demo_fps_period
+Incremental compilation check found no design-units have changed.
+Optimized design name is tb_fps_decimal_opt

@@ -1,0 +1,596 @@
+{
+  "status": "PASS",
+  "scope": "Full-board MAP ROM INIT reconstructed and compared word-for-word; does not establish physical FPGA ROM readout",
+  "raminfo_sha256": "a6cea787552fc61ce94d0387c434bcf148792798001e51fa50c2fc327ba8f2b4",
+  "ROMs": {
+    "core/biases": {
+      "name": "service/pipeline/network/core/biases",
+      "logical_words": 9,
+      "logical_width": 512,
+      "mismatches": 0,
+      "physical_slices": [
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            0,
+            19
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            500,
+            511
+          ],
+          "physical_width": 16
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            20,
+            39
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            40,
+            59
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            60,
+            79
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            80,
+            99
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            100,
+            119
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            120,
+            139
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            140,
+            159
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            160,
+            179
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            180,
+            199
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            200,
+            219
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            220,
+            239
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            240,
+            259
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            260,
+            279
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            280,
+            299
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            300,
+            319
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            320,
+            339
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            340,
+            359
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            360,
+            379
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            380,
+            399
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            400,
+            419
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            420,
+            439
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            440,
+            459
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            460,
+            479
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            480,
+            499
+          ],
+          "physical_width": 20
+        }
+      ]
+    },
+    "core/weights": {
+      "name": "service/pipeline/network/core/weights",
+      "logical_words": 63,
+      "logical_width": 512,
+      "mismatches": 0,
+      "physical_slices": [
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            0,
+            19
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            500,
+            511
+          ],
+          "physical_width": 16
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            20,
+            39
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            40,
+            59
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            60,
+            79
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            80,
+            99
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            100,
+            119
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            120,
+            139
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            140,
+            159
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            160,
+            179
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            180,
+            199
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            200,
+            219
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            220,
+            239
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            240,
+            259
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            260,
+            279
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            280,
+            299
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            300,
+            319
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            320,
+            339
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            340,
+            359
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            360,
+            379
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            380,
+            399
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            400,
+            419
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            420,
+            439
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            440,
+            459
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            460,
+            479
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            62
+          ],
+          "bit_range": [
+            480,
+            499
+          ],
+          "physical_width": 20
+        }
+      ]
+    }
+  },
+  "hardware_accessed": false
+}

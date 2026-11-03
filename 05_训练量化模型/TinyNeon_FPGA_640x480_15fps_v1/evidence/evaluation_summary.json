@@ -1,0 +1,66 @@
+{
+  "test_images": 200,
+  "test_used_for_training_or_checkpoint_selection": false,
+  "teacher": "deterministic procedural cyan/magenta neon contour teacher; only used as training labels",
+  "teacher_psnr_int8_global_db": 35.51055829144841,
+  "teacher_psnr_fp32_global_db": 37.83041044325052,
+  "raw_gray_teacher_psnr_db": 8.93022308684424,
+  "teacher_mse_reduction_vs_raw_gray_percent": 99.78023097596531,
+  "int8_vs_fp32_mae_0_255": 2.3600041269761407,
+  "mean_input_luma_vs_neon_brightness_correlation": 0.1511339846192669,
+  "minimum_output_std_0_255": 37.242258363805576,
+  "numpy_int64_vs_pytorch_bit_exact_images": 200,
+  "special_cases": [
+    {
+      "name": "black",
+      "bit_exact": true
+    },
+    {
+      "name": "white",
+      "bit_exact": true
+    },
+    {
+      "name": "ramp",
+      "bit_exact": true
+    },
+    {
+      "name": "noise",
+      "bit_exact": true
+    }
+  ],
+  "full_preprocess_checks": [
+    {
+      "name": "random",
+      "full_resolution_torch_numpy_onnx_bit_exact": true
+    },
+    {
+      "name": "white",
+      "full_resolution_torch_numpy_onnx_bit_exact": true
+    },
+    {
+      "name": "red",
+      "full_resolution_torch_numpy_onnx_bit_exact": true
+    }
+  ],
+  "onnx_full_frame_checks": [
+    {
+      "test_file": "100007.jpg",
+      "onnx_integer_vs_numpy_bit_exact": true,
+      "torch_full_integer_vs_onnx_bit_exact": true,
+      "onnx_fp32_max_abs_error": 0.0001373291015625
+    },
+    {
+      "test_file": "100039.jpg",
+      "onnx_integer_vs_numpy_bit_exact": true,
+      "torch_full_integer_vs_onnx_bit_exact": true,
+      "onnx_fp32_max_abs_error": 0.00019073486328125
+    }
+  ],
+  "max_observed_acc_per_layer": [
+    69113,
+    21376,
+    66146
+  ],
+  "worst_case_acc_bound": 159754,
+  "limits": "Teacher PSNR measures only fidelity to this simple target; correlation is a luma structure diagnostic, not semantic recognition, contest acceptance or camera/board proof."
+}

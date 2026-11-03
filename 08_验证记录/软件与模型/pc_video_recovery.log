@@ -1,0 +1,12 @@
+test_active_stream_and_reordering_do_not_reset (test_video_recovery.RecoveryTests.test_active_stream_and_reordering_do_not_reset) ... ok
+test_candidate_expiry_and_live_other_stream (test_video_recovery.RecoveryTests.test_candidate_expiry_and_live_other_stream) ... ok
+test_duplicates_and_single_stale_do_not_reset (test_video_recovery.RecoveryTests.test_duplicates_and_single_stale_do_not_reset) ... ok
+test_invalid_crc_and_nonzero_rows_do_not_reset (test_video_recovery.RecoveryTests.test_invalid_crc_and_nonzero_rows_do_not_reset) ... ok
+test_real_udp_atomic_pair_reset_and_stale (test_video_recovery.RecoveryTests.test_real_udp_atomic_pair_reset_and_stale) ... ok
+test_same_session_reset_recovers (test_video_recovery.RecoveryTests.test_same_session_reset_recovers) ... ok
+test_wrap_session_and_v1 (test_video_recovery.RecoveryTests.test_wrap_session_and_v1) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.743s
+
+OK

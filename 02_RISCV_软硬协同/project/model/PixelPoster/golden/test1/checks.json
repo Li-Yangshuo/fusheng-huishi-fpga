@@ -1,0 +1,16 @@
+{
+  "official_test_name": "100039.jpg",
+  "onnx_integer_bit_exact": true,
+  "onnx_fp32_max_abs_0_255": 0.0001678466796875,
+  "files": {
+    "expected.png": "0527de727ce90798c0f84c63b43f433e40c0125941696c7695853a5abbf1931e",
+    "expected_rgb_u8_chw.bin": "18e37ba5863c2aab596a82e24514abd436fe0bc608e68f926a5cf51204beea16",
+    "expected_rgb_u8_hwc.bin": "fe4c84e02dfbc4e2cc435ae286f4fe069144c1a0799ee6d28aad6b4c694bbe16",
+    "input.png": "aa5c6bfecceee4eb583f94de51d7b2b71f79efb2b31d6d12c8f4b66092bba542",
+    "input_rgb_u8_hwc.bin": "2c8a73d2be808cc42804b04c9622367672b11658d582b227ffee9e0bdf869799",
+    "layer0_u8_hwc.bin": "afbfec8381d9160e98f9f5d7d9862363e4ac2afa4198bfd3734ee6feac574e8f",
+    "layer1_u8_hwc.bin": "c9c6e4e3cafc2270a366378f6c034f49fd240278577c31c6638c55b30255fd23",
+    "layer2_u8_hwc.bin": "bd0996b8cf212501d8cee72ff477e0fd924602fffe4b28db66b6f139e470149c",
+    "pooled_u8_hwc.bin": "05245f48130c67e51ca3f3bb69b853eea5a297cc5d78c80e57463daaf2d82412"
+  }
+}

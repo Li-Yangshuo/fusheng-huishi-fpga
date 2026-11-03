@@ -1,0 +1,29 @@
+{
+  "pytorch": "2.8.0+cu128",
+  "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:26:47) [MSC v.1942 64 bit (AMD64)]",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "seed": 20261035,
+  "training_optimizer_steps_completed": 18000,
+  "fp_steps_completed": 12000,
+  "qat_steps_completed": 6000,
+  "selected_float_step": 11600,
+  "selected_qat_step": 4800,
+  "selected_checkpoint_lineage_steps": 16400,
+  "best_qat_validation_mse": 0.0003699369844980538,
+  "wall_seconds": 80.39879990000918,
+  "train_images": 280,
+  "checkpoint_selection_validation_images": 20,
+  "official_test_images_used_for_training_or_selection": 0,
+  "shifts": [
+    5,
+    5,
+    7
+  ],
+  "initialization": "random, none of the previous models reused",
+  "training_kind": "pointwise supervised color and lead-seam mapping on fixed geometric mosaic inputs; not perceptual style transfer",
+  "teacher_runs_at_deployment": false,
+  "fixed_geometry_preprocess_runs_at_deployment": true,
+  "crop_loss_ignores2px_border": true,
+  "board_verified": false
+}

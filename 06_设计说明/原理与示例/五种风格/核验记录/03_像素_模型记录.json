@@ -1,0 +1,210 @@
+{
+  "fpga/deployment_contract.json": {
+    "model_id": "PixelPoster_pool8_3x16x16x3_v1",
+    "style": "simple warm pixel poster, learned 5-tone procedural-teacher approximation",
+    "input": {
+      "shape_NCHW": [
+        1,
+        3,
+        480,
+        640
+      ],
+      "RGB_order": "RGB",
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ]
+    },
+    "preprocess": {
+      "operation": "8x8 nonoverlapping mean; floor((sum64+32)/64)",
+      "lowres_WH": [
+        80,
+        60
+      ],
+      "anchor_xy": [
+        0,
+        0
+      ]
+    },
+    "layers": [
+      {
+        "index": 0,
+        "weight_shape_OIHW": [
+          16,
+          3,
+          3,
+          3
+        ],
+        "kernel": 3,
+        "padding": 1,
+        "stride": 1,
+        "groups": 1,
+        "right_shift": 4,
+        "weight_scale": 0.0625,
+        "activation_scale": 0.00392156862745098,
+        "activation_zero_point": 0,
+        "activation": "clamp_0_255",
+        "weight_clipped_elements": 0,
+        "worst_case_acc_abs_bound": 39160,
+        "mac_per_frame": 2073600
+      },
+      {
+        "index": 1,
+        "weight_shape_OIHW": [
+          16,
+          16,
+          1,
+          1
+        ],
+        "kernel": 1,
+        "padding": 0,
+        "stride": 1,
+        "groups": 1,
+        "right_shift": 4,
+        "weight_scale": 0.0625,
+        "activation_scale": 0.00392156862745098,
+        "activation_zero_point": 0,
+        "activation": "clamp_0_255",
+        "weight_clipped_elements": 0,
+        "worst_case_acc_abs_bound": 92837,
+        "mac_per_frame": 1228800
+      },
+      {
+        "index": 2,
+        "weight_shape_OIHW": [
+          3,
+          16,
+          1,
+          1
+        ],
+        "kernel": 1,
+        "padding": 0,
+        "stride": 1,
+        "groups": 1,
+        "right_shift": 8,
+        "weight_scale": 0.00390625,
+        "activation_scale": 0.00392156862745098,
+        "activation_zero_point": 0,
+        "activation": "clamp_0_255",
+        "weight_clipped_elements": 0,
+        "worst_case_acc_abs_bound": 164184,
+        "mac_per_frame": 230400
+      }
+    ],
+    "postprocess": "repeat each final RGB pixel 8 times horizontally and 8 times vertically, nearest neighbor; NO style teacher, palette or extra color filter",
+    "integer_equation": "acc=sum(uint8_activation * int8_weight)+int32_bias; out=uint8(clip((acc+2^(shift-1)) arithmetic_right_shift shift,0,255))",
+    "rounding": "nearest, ties toward +infinity; applies to negative acc before saturation",
+    "weight_order": "OIHW C-order, signed two-complement int8; .bin one byte per weight",
+    "bias_order": "output channel, signed little-endian int32; .hex one 32-bit word per line",
+    "activation_order": "golden layers HWC; .bin RGB HWC and CHW variants explicitly named",
+    "padding": "zero at FIRST LOW-RES conv only, NOT reflect; input zero=0",
+    "accumulator_bits": 32,
+    "normalization": "2 training BatchNorm layers folded into conv weights and biases before QAT",
+    "onnx_note": "fp32.onnx is standard floating model; integer_reference.onnx uses FP32-valued INTEGER arithmetic for a portable golden, not QLinearConv or an FPGA bitstream",
+    "hardware_compatibility": "new graph and UINT8 activations; incompatible with prior C4 signed-INT8 residual/tanh graph, loader and BIT without accelerator integration",
+    "board_verified": false
+  },
+  "fpga/resource_and_throughput_budget.json": {
+    "full_input_output_WH": [
+      640,
+      480
+    ],
+    "learned_processing_WH": [
+      80,
+      60
+    ],
+    "trainable_parameters_deployment": 771,
+    "weight_elements": 736,
+    "weight_bytes_int8": 736,
+    "bias_bytes_int32": 140,
+    "conv_MAC_per_frame": 3532800,
+    "conv_MAC_per_second_at_15fps": 52992000,
+    "pool_additions_per_frame": 907200,
+    "activation_maps_bytes_each": {
+      "input_low": 14400,
+      "hidden0": 76800,
+      "hidden1": 76800,
+      "output_low": 14400
+    },
+    "hypothetical_schedule": {
+      "clock_MHz": 100,
+      "MAC_lanes": 1,
+      "conv_cycles": 3532800,
+      "capture_pool_input_cycles_at_1_RGB_per_cycle": 307200,
+      "upsample_write_cycles_at_1_RGB_per_cycle": 307200,
+      "ideal_total_ms": 41.472,
+      "slack_to_66_67ms": 25.19466666666667,
+      "note": "necessary capacity estimate only. Add instruction/control, BRAM/DSP packing, pooling scheduling, pipeline fill, DDR waits, camera/display arbitration and actual Fmax. Use 4+ MAC lanes for margin; no promised FPGA fps."
+    },
+    "DDR_raw_input_plus_output_MB_per_s_at_15fps": 27.648,
+    "reuse_old_C4_engine_without_changes": false,
+    "synthesized": false,
+    "pnr_passed": false,
+    "board_verified": false
+  },
+  "evidence/training_receipt.json": {
+    "pytorch": "2.8.0+cu128",
+    "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:26:47) [MSC v.1942 64 bit (AMD64)]",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "seed": 20261031,
+    "optimizer_steps": 7000,
+    "fp_steps": 4000,
+    "qat_steps": 3000,
+    "wall_seconds": 54.03773969999747,
+    "train_images": 300,
+    "train_split": "BSDS500 train + val",
+    "test_images_used_for_optimization": 0,
+    "best_qat_color_grid_mse": 0.004438355565071106,
+    "shifts": [
+      4,
+      4,
+      8
+    ],
+    "board_verified": false,
+    "training_kind": "supervised distillation of procedural pixel posterization teacher; random initialization, no pretrained model",
+    "teacher_runs_at_deployment": false,
+    "checkpoint_optimizer_step": 4800,
+    "selected_qat_step": 800,
+    "checkpoint_selection": "minimum synthetic color-grid MSE at logged evaluation steps; no BSDS test image used"
+  },
+  "evidence/evaluation_summary.json": {
+    "heldout_images": 200,
+    "trained_on_test": false,
+    "teacher_is": "procedural simple pixel posterization, not an artist-reference neural style model",
+    "integer_teacher_psnr_global_db": 23.998255391591123,
+    "float_teacher_psnr_global_db": 24.47514733581992,
+    "pixelated_identity_teacher_psnr_db": 22.5751130921053,
+    "teacher_mse_reduction_vs_pixelated_identity_percent": 27.941408307594084,
+    "int8_vs_fp32_mae_0_255": 4.820639347853947,
+    "style_change_mae_vs_pixelated_raw": 10.281325000000002,
+    "numpy_int64_vs_pytorch_exact_images": 200,
+    "special_cases": [
+      {
+        "name": "black",
+        "bit_exact": true
+      },
+      {
+        "name": "white",
+        "bit_exact": true
+      },
+      {
+        "name": "random",
+        "bit_exact": true
+      },
+      {
+        "name": "ramp",
+        "bit_exact": true
+      }
+    ],
+    "max_observed_acc_abs_per_layer": [
+      10606,
+      16502,
+      70789
+    ],
+    "worst_case_acc_abs_bound": 164184,
+    "float32_integer_exact_bound_pass": true,
+    "limitations": "Metrics measure fidelity to the chosen simple teacher. They do not establish competition scoring, board speed, display success or preference across styles."
+  }
+}

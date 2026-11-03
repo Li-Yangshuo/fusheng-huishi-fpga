@@ -1,0 +1,55 @@
+
+Elitestek FPGA Placement and Routing.
+Version: 2026.1.132.4.5 
+Date: Sun Nov  1 22:48:48 2026
+
+Copyright (C) 2013 - 2026 Efinix, Inc. All rights reserved.
+ 
+Family: Titanium 
+Device: Ti60F225
+Top-level Entity Name: ti60f225_oob
+
+---------- IO Interface Summary (begin) ----------
+
++------------------------+--------------+
+| Missing Interface Pins | Input/Output |
++------------------------+--------------+
+| mipi_dp_data0_LP_P_IN  |    Input     |
+| mipi_dp_data0_LP_N_IN  |    Input     |
+|      vid_clk_dvi2      |    Input     |
++------------------------+--------------+
+
+----------- IO Interface Summary (end) ----------
+
+
+---------- Module Resource Usage Distribution Estimates (begin) ----------
+
+'Module Resource Usage Distribution Estimates' table printed in: outflow\ti60f225_oob.hier_util.rpt
+
+----------- Module Resource Usage Distribution Estimates (end) ----------
+
+Elapsed time for packing: 0 hours 0 minutes 20 seconds
+---------- Resource Summary (begin) ----------
+Inputs: 121 / 1703 (7.11%)
+Outputs: 376 / 2267 (16.59%)
+Global Clocks (GBUF): 17 / 32 (53.12%)
+Regional Clocks (RBUF): 1 / 32 (3.12%)
+	RBUF: Core: 0 / 16 (0.00%)
+	RBUF: Periphery: 1 / 8 (12.50%)
+	RBUF: Multi-Region: 0 / 8 (0.00%)
+XLRs: 51457 / 60800 (84.63%)
+	XLRs needed for LUT4: 21245 / 60800 (34.94%)
+	XLRs needed for LUT4 + FF: 7610 / 60800 (12.52%)
+	XLRs needed for COMB4: 0 / 60800 (0.00%)
+	XLRs needed for COMB4 + FF: 0 / 60800 (0.00%)
+	XLRs needed for Adder: 3600 / 60800 (5.92%)
+	XLRs needed for Adder + FF: 1045 / 60800 (1.72%)
+	XLRs needed for SRL8: 3077 / 14720 (20.90%)
+	XLRs needed for SRL8 + FF: 0 / 14720 (0.00%)
+	XLRs needed for FF: 14880 / 60800 (24.47%)
+	XLRs needed for Routing: 0 / 60800 (0.00%)
+Memory Blocks: 248 / 256 (96.88%)
+DSP Blocks: 66 / 160 (41.25%)
+---------- Resource Summary (end) ----------
+
+Elapsed time for placement: 0 hours 3 minutes 2 seconds

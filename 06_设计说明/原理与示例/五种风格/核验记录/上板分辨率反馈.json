@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-02",
+  "source": "direct user feedback in this conversation",
+  "statement": "就是指在上板时的分辨率达到了1280*720",
+  "scope_styles": [
+    "霓虹",
+    "像素",
+    "水墨"
+  ],
+  "board_picture_resolution": [
+    1280,
+    720
+  ],
+  "status": "achieved according to user board feedback",
+  "independently_measured_by_assistant": false,
+  "board_native_CNN_input_resolution_confirmed": false,
+  "board_FPS_confirmed": false,
+  "local_model_input_output": [
+    640,
+    480
+  ],
+  "note": "Corrects earlier interpretation as comparison-image canvas only. Existing figures remain offline model examples, not board screenshots."
+}

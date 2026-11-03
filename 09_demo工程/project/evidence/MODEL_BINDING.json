@@ -1,0 +1,39 @@
+{
+  "models": {
+    "PixelPoster": {
+      "npz_sha256": "e8872312a148d90696fe04e7a6d0034f5ebd9f937b387e7739ae526cdae3f930",
+      "shifts": [
+        4,
+        4,
+        8
+      ],
+      "weight_bank_start": 0,
+      "bias_bank_start": 0
+    },
+    "TinyInk": {
+      "npz_sha256": "29d6ba40b0cda625ef360aaff8327b1aa89aeb2f798e0108dd8fdaaa7d5f7e3f",
+      "shifts": [
+        5,
+        2,
+        8
+      ],
+      "weight_bank_start": 21,
+      "bias_bank_start": 3
+    },
+    "TinyNeon": {
+      "npz_sha256": "953c3025aa7862611498ad0f5b29fe8d33c40ba981c3dbfad2b33da6bbd3846d",
+      "shifts": [
+        5,
+        4,
+        7
+      ],
+      "weight_bank_start": 42,
+      "bias_bank_start": 6
+    }
+  },
+  "packed_asset_crc32": "e5a13d6f",
+  "weights_words": 63,
+  "bias_words": 9,
+  "width": 512,
+  "hardware_accessed": false
+}

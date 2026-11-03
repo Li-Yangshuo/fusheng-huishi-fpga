@@ -1,0 +1,8 @@
+{
+  "file": "BIT/ti60f225_oob_m7_riscv_r8.bit",
+  "bytes": 3056070,
+  "sha256": "f6ae449856cbcaf589ceeb533ccbefa51159faa792a3bbd1cf3d8054e596efd6",
+  "device": "Ti60F225",
+  "source_project": "project/structure/board_r6/project/ti60f225_oob.xml",
+  "physical_board_verified": false
+}

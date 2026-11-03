@@ -1,0 +1,49 @@
+{
+  "full_WH": [
+    640,
+    480
+  ],
+  "learned_WH": [
+    320,
+    240
+  ],
+  "parameters": 139,
+  "weight_elements": 120,
+  "int8_weight_bytes": 120,
+  "int32_bias_bytes": 76,
+  "geometry_ROM_bytes": 12288,
+  "conv_MAC_per_frame": 9216000,
+  "conv_MAC_per_second_15fps": 138240000,
+  "conv_MAC_per_second_30fps": 276480000,
+  "pool_additions_per_frame": 691200,
+  "gather_RGB_reads_per_frame": 76800,
+  "activation_bytes": {
+    "pooled_RGB": 230400,
+    "mosaic_RGB_lead": 307200,
+    "hidden0": 614400,
+    "hidden1": 614400,
+    "output_low_RGB": 230400
+  },
+  "geometry_max_abs_offset_low_pixels": {
+    "x": 7,
+    "y": 7
+  },
+  "hypothetical_100MHz": {
+    "one_MAC_conv_ms": 92.16,
+    "four_MAC_conv_ms": 23.04,
+    "eight_MAC_conv_ms": 11.52,
+    "three_separate_RGB_scans_ms_input_plus_gather_plus_output": 6.912,
+    "four_MAC_ideal_total_ms": 29.951999999999998,
+    "eight_MAC_ideal_total_ms": 18.432,
+    "excludes": "ROM/read-port supply, pool/channel scheduling, controls, stalls, BRAM conflicts, DDR waits, buffering and achieved Fmax"
+  },
+  "target_frame_budget_ms": {
+    "15fps": 66.66666666666667,
+    "30fps": 33.333333333333336
+  },
+  "minimum_full_RGB_input_plus_output_MB_s_15fps": 27.648,
+  "streaming": "Pointwise layers may be fused; geometry gather requires lowres buffer or proven signed7-row offset line-buffer schedule. Do not allocate every hidden full map in BRAM by default.",
+  "synthesized": false,
+  "pnr_passed": false,
+  "board_verified": false
+}

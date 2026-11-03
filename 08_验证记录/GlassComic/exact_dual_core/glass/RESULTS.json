@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "receipts": [
+    "# HD720_FRAME PASS case=0 cycles=5662065 pixels=921600 pool=230400 hidden=3686400 low=691200",
+    "# HD720_FRAME PASS case=1 cycles=5660213 pixels=921600 pool=230400 hidden=3686400 low=691200",
+    "# HD720_FRAME PASS case=2 cycles=5661680 pixels=921600 pool=230400 hidden=3686400 low=691200",
+    "# HD720_FRAME PASS case=3 cycles=5660145 pixels=921600 pool=230400 hidden=3686400 low=691200",
+    "# HD720_ENGINE PASS cases=4",
+    "# HD720_FAULT PASS mode=1",
+    "# HD720_FAULT PASS mode=2"
+  ],
+  "source_sha256": {
+    "rtl\\hd720_fused_core.sv": "835ceef2c51090f260d9133e4a1b4dd840e30be0d5e970150162d4c135582867",
+    "rtl\\tinycomic_fused_core.sv": "6bab956f76e119e902f35a5c82ffbd3dfa56a027aa6eb48d8ae2bfdecbc068aa",
+    "rtl\\dualstyle_frame_engine.sv": "0ab199403e8db2e2a07a51c65150584af17ed09c1d45847f0f94d95d353e1c31",
+    "structure\\integration\\ab05_rgbx_axi_reader_prefetch.sv": "cecf1f11f13b88c121f450f2c2177cf618271e9f36079ecb250891a0d78b6005",
+    "structure\\integration\\ab05_native_writer_srl.sv": "5a82cd296c2fab0ae9d0aa388ee8609d8797a44592892e7b3b662c68c2eec97a",
+    "evidence\\exact_dual_core\\glass\\tb.sv": "8b2a988a57e23e1eae99a0066fd75bffc1271d500abf6adbfe244cfd633aa090"
+  },
+  "board_verified": false
+}

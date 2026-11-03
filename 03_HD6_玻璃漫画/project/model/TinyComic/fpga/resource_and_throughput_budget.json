@@ -1,0 +1,43 @@
+{
+  "full_WH": [
+    640,
+    480
+  ],
+  "learned_WH": [
+    160,
+    120
+  ],
+  "required_postprocess_palette_LUT_bytes": 256,
+  "parameters": 475,
+  "weight_elements": 448,
+  "int8_weight_bytes": 448,
+  "int32_bias_bytes": 108,
+  "edge_feature_bytes_per_frame": 19200,
+  "conv_MAC_per_frame": 8601600,
+  "conv_MAC_per_second_15fps": 129024000,
+  "conv_MAC_per_second_30fps": 258048000,
+  "activation_bytes": {
+    "input_rgb_edge": 76800,
+    "hidden0": 153600,
+    "hidden1": 153600,
+    "hidden2": 153600,
+    "output_low_rgb": 57600
+  },
+  "hypothetical_100MHz": {
+    "one_MAC_conv_ms": 86.016,
+    "four_MAC_conv_ms": 21.504,
+    "eight_MAC_conv_ms": 10.752,
+    "input_output_rgb_scan_ms_if_one_pixel_per_cycle": 6.144,
+    "four_MAC_ideal_total_ms": 27.648000000000003,
+    "eight_MAC_ideal_total_ms": 16.896,
+    "not_included": "edge feature generation, required palette LUT and ink selection, controls, buffering, DDR, stalls, actual Fmax"
+  },
+  "target_frame_budget_ms": {
+    "15fps": 66.66666666666667,
+    "30fps": 33.333333333333336
+  },
+  "rgb_input_output_MB_s_at15fps": 27.648,
+  "synthesized": false,
+  "pnr_passed": false,
+  "board_verified": false
+}

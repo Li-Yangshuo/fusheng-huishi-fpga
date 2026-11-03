@@ -1,0 +1,9 @@
+test_host_and_pin_scope (test_mobile.Tests.test_host_and_pin_scope) ... ok
+test_invalid_host_on_get (test_mobile.Tests.test_invalid_host_on_get) ... ok
+test_mobile_http_pair_video_and_control (test_mobile.Tests.test_mobile_http_pair_video_and_control) ... ok
+test_pair_and_lock (test_mobile.Tests.test_pair_and_lock) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.463s
+
+OK

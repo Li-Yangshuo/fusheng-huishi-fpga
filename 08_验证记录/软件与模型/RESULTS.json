@@ -1,0 +1,223 @@
+{
+  "status": "PASS",
+  "scope": "Tests run against curated copy; no board, live microphone, live camera or physical phone accessed.",
+  "models_verified": 6,
+  "python_tests": 37,
+  "javascript_checks": 2,
+  "comparison_cli_only": true,
+  "camera_writes_bound": 166,
+  "results": [
+    {
+      "name": "model_PixelPoster_FPGA_640x480_15fps_v1",
+      "command": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\PixelPoster_FPGA_640x480_15fps_v1\\src\\verify_release.py",
+        "--root",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\PixelPoster_FPGA_640x480_15fps_v1"
+      ],
+      "cwd": "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\PixelPoster_FPGA_640x480_15fps_v1",
+      "returncode": 0
+    },
+    {
+      "name": "model_TinyComic_FPGA_640x480_15fps_v1",
+      "command": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyComic_FPGA_640x480_15fps_v1\\src\\verify_release.py",
+        "--root",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyComic_FPGA_640x480_15fps_v1"
+      ],
+      "cwd": "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyComic_FPGA_640x480_15fps_v1",
+      "returncode": 0
+    },
+    {
+      "name": "model_TinyGlass_FPGA_640x480_15fps_v1",
+      "command": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyGlass_FPGA_640x480_15fps_v1\\src\\verify_release.py",
+        "--root",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyGlass_FPGA_640x480_15fps_v1"
+      ],
+      "cwd": "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyGlass_FPGA_640x480_15fps_v1",
+      "returncode": 0
+    },
+    {
+      "name": "model_TinyInk_FPGA_640x480_15fps_v1",
+      "command": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyInk_FPGA_640x480_15fps_v1\\src\\verify_release.py",
+        "--root",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyInk_FPGA_640x480_15fps_v1"
+      ],
+      "cwd": "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyInk_FPGA_640x480_15fps_v1",
+      "returncode": 0
+    },
+    {
+      "name": "model_TinyInk_FPGA_640x480_15fps_v2",
+      "command": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyInk_FPGA_640x480_15fps_v2\\src\\verify_release.py",
+        "--root",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyInk_FPGA_640x480_15fps_v2"
+      ],
+      "cwd": "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyInk_FPGA_640x480_15fps_v2",
+      "returncode": 0
+    },
+    {
+      "name": "model_TinyNeon_FPGA_640x480_15fps_v1",
+      "command": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyNeon_FPGA_640x480_15fps_v1\\src\\verify_release.py",
+        "--root",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyNeon_FPGA_640x480_15fps_v1"
+      ],
+      "cwd": "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\06_训练量化与五种风格\\TinyNeon_FPGA_640x480_15fps_v1",
+      "returncode": 0
+    },
+    {
+      "name": "pc_receiver",
+      "command": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "test_receiver",
+        "-v"
+      ],
+      "cwd": "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\05_电脑与手机上位机\\PC_VIEWER",
+      "returncode": 0
+    },
+    {
+      "name": "pc_studio",
+      "command": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_studio.py",
+        "-v"
+      ],
+      "cwd": "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\05_电脑与手机上位机",
+      "returncode": 0
+    },
+    {
+      "name": "pc_mobile",
+      "command": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_mobile.py",
+        "-v"
+      ],
+      "cwd": "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\05_电脑与手机上位机",
+      "returncode": 0
+    },
+    {
+      "name": "pc_video_recovery",
+      "command": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_video_recovery.py",
+        "-v"
+      ],
+      "cwd": "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\05_电脑与手机上位机",
+      "returncode": 0
+    },
+    {
+      "name": "pc_current_gesture",
+      "command": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-X",
+        "utf8",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\05_电脑与手机上位机\\tests\\test_current_gesture.py",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\05_电脑与手机上位机"
+      ],
+      "cwd": "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\05_电脑与手机上位机",
+      "returncode": 0
+    },
+    {
+      "name": "pc_js_syntax",
+      "command": [
+        "node",
+        "--check",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\05_电脑与手机上位机\\PC_VIEWER\\web\\app.js"
+      ],
+      "cwd": "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\05_电脑与手机上位机",
+      "returncode": 0
+    },
+    {
+      "name": "pc_js_atomic_pair",
+      "command": [
+        "node",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\05_电脑与手机上位机\\tests\\test_browser_pair.js"
+      ],
+      "cwd": "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\05_电脑与手机上位机",
+      "returncode": 0
+    },
+    {
+      "name": "comparison_cli",
+      "command": [
+        "C:/ProgramData/anaconda3/envs/yolo/python.exe",
+        "-X",
+        "utf8",
+        "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\08_标准网络比较\\compare_standard_network_portable.py",
+        "--help"
+      ],
+      "cwd": "D:\\FUSHENG_TASK1_CODE_REVIEW_20261103\\08_标准网络比较",
+      "returncode": 0
+    }
+  ],
+  "PC_source_sha256": {
+    "PC_VIEWER/check_network.py": "71af5003f49f5e94b441cba88a2410c3f8248461e457e1679220d72d98ffd3ba",
+    "PC_VIEWER/gesture_engine.py": "343f4803d2766135761a39c15723e900d6d142832ea6f03b38774167ba1348d1",
+    "PC_VIEWER/launcher.py": "62e548f205b64c05bb63dfd9623ff1e0db31bb66f75be9366bc254d73fb55a70",
+    "PC_VIEWER/mobile_access.py": "fa55815aab90d7305564ac223c1683dc6edd3c5bb5f082968699cb87f3f66d4b",
+    "PC_VIEWER/protocol.py": "9f4b29d75d8f76bc509ee3452684dad667441a5b455c5e81fd5b543e32a2dad9",
+    "PC_VIEWER/recognition.py": "8c0bac8dca5c2363b339eea04dcf3856735e09ece8f0a2074f7e580029a4a68f",
+    "PC_VIEWER/server.py": "60bff71a50fde44f3ce2713d7e6eadbd5dd78f983c4655f7c843f77a5edef94c",
+    "PC_VIEWER/stop_studio.py": "cdf66442c4afb4cb486e70addae5647db21c8b00238360bd7fee26f89cc12dc5",
+    "PC_VIEWER/studio_control.py": "daba6e5da0e7fea4fa75af02b98e800b3d7643ab8592a99df183e80cac6be80c",
+    "PC_VIEWER/test_receiver.py": "f106fc7dfe74b7d8c9f89d2ed267b1361446036b65ce5d46676790e22b822b4e",
+    "tests/test_browser_pair.js": "2642eb315ac4ee62c9ed402ab1f388e0e5d04a5984820a5788a7e1cf7a8b4b9c",
+    "tests/test_current_gesture.py": "7b424e0d29e077cbd6203513d26af484bb97d8bb4958ee5285d94e0e9cd74847",
+    "tests/test_lan_listener.py": "7e6a0a0f895798a235e3cbc496b5da5296f88456a2186801e64d40d656bce4eb",
+    "tests/test_mobile.py": "350ba1cc0d5afa65991a73f54e60c7af5c63d4e187c6182d839273f46a52611c",
+    "tests/test_studio.py": "a56b8302055538e19ba11be272135bbd406c29d0e9b0a4f118c3c2bd1f3cb85c",
+    "tests/test_video_recovery.py": "621ccb71597d390dc6399924cf84de2ad2d8a7d8b06f771f2c634a13dec7a0d3",
+    "PC_VIEWER/web/app.js": "c21c2be6b9c170a7797105beb3f78264fdc1f39cd85141c596dc6060ab7f32b3",
+    "PC_VIEWER/web/index.html": "747f81d52993fd58db2a0d7e96b2345dad41ed541b94155c9e525d62cc49621a",
+    "PC_VIEWER/web/style.css": "570f0f0e0af0b8fd3522a1e12b936a52ae3aaf23959b5a2e892d470ef869ffa6",
+    "tests/historical_worker_fixtures/test_models.py": "669bf6a1697c7988556566dce9728c248422c33ea63b0ba4063730d172ed01cb",
+    "tests/historical_worker_fixtures/test_recognition_workers.py": "686568f1a652ee889225d80cb866f3d717cb3bcfccea6e06878f78d012d1ce99"
+  }
+}

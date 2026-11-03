@@ -1,0 +1,106 @@
+{
+  "model_id": "TinyInk_v2_grayedge_pool4_2x8x8x1",
+  "style": "bright paper, broad layered gray washes and dark ink contours; warm ivory paper tint, no photo grayscale shortcut",
+  "input": {
+    "shape_NCHW": [
+      1,
+      3,
+      480,
+      640
+    ],
+    "order": "RGB",
+    "dtype": "uint8",
+    "range": [
+      0,
+      255
+    ]
+  },
+  "preprocess": {
+    "gray_fullres": "(77R+150G+29B+128)>>8 before pooling",
+    "pool": "(sum4x4gray+8)>>4",
+    "smooth": "3x3 replicate-border mean (sum9+4)//9",
+    "edge": "Sobel gx and gy of smoothed gray, replicate-border; min((abs(gx)+abs(gy)+2)//4,255)",
+    "cnn_input": "[smoothed_gray, edge] HWC UINT8",
+    "lowres_WH": [
+      160,
+      120
+    ]
+  },
+  "layers": [
+    {
+      "index": 0,
+      "weight_shape_OIHW": [
+        8,
+        2,
+        1,
+        1
+      ],
+      "kernel": 1,
+      "padding": 0,
+      "stride": 1,
+      "groups": 1,
+      "right_shift": 4,
+      "weight_scale": 0.0625,
+      "activation_scale": 0.00392156862745098,
+      "activation_zero_point": 0,
+      "activation": "clamp_0_255",
+      "weight_clipped_elements": 0,
+      "worst_case_acc_abs_bound": 43020,
+      "MAC_per_frame": 307200
+    },
+    {
+      "index": 1,
+      "weight_shape_OIHW": [
+        8,
+        8,
+        1,
+        1
+      ],
+      "kernel": 1,
+      "padding": 0,
+      "stride": 1,
+      "groups": 1,
+      "right_shift": 5,
+      "weight_scale": 0.03125,
+      "activation_scale": 0.00392156862745098,
+      "activation_zero_point": 0,
+      "activation": "clamp_0_255",
+      "weight_clipped_elements": 0,
+      "worst_case_acc_abs_bound": 104853,
+      "MAC_per_frame": 1228800
+    },
+    {
+      "index": 2,
+      "weight_shape_OIHW": [
+        1,
+        8,
+        1,
+        1
+      ],
+      "kernel": 1,
+      "padding": 0,
+      "stride": 1,
+      "groups": 1,
+      "right_shift": 8,
+      "weight_scale": 0.00390625,
+      "activation_scale": 0.00392156862745098,
+      "activation_zero_point": 0,
+      "activation": "clamp_0_255",
+      "weight_clipped_elements": 0,
+      "worst_case_acc_abs_bound": 138784,
+      "MAC_per_frame": 153600
+    }
+  ],
+  "postprocess": "q=((CNN_UINT8*5+127)//255)*51; RGB=[q,(q*253+127)//255,(q*245+127)//255]; nearest4; mandatory six-level wash/paper LUT",
+  "integer_equation": "acc=sum(uint8_activation*int8_weight)+int32_bias; out=clip((acc+2^(shift-1)) arithmetic_right_shift shift,0,255)",
+  "rounding": "nearest ties toward positive infinity",
+  "weight_order": "OIHW C-order signed int8; all3 layers1x1 groups1",
+  "bias_order": "output channel signed little-endian int32",
+  "activation_order": "HWC UINT8",
+  "padding": "no CNN padding; mean and Sobel use replicate border",
+  "normalization": "2 training BatchNorm layers folded before QAT",
+  "accumulator_bits": 32,
+  "hardware_compatibility": "different from TinyInk v1:2 input channels, all1x1, required integer blur/Sobel and RGB paper LUT; cannot only swap weights into old BIT",
+  "limits": "procedural ink-wash approximation; not perceptual traditional brush transfer; six-level washes can band, fine details may disappear; camera video not tested",
+  "board_verified": false
+}

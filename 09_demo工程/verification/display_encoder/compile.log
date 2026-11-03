@@ -1,0 +1,44 @@
+Model Technology ModelSim SE vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module demo_key
+-- Compiling module demo_fps
+-- Compiling module demo_fps_period
+-- Compiling module demo_osd
+-- Compiling module ab09_reset_release
+-- Compiling module ab09_fps_cdc
+-- Compiling module ab05_display_snapshot
+-- Compiling module ab05_dual_preview_hdmi
+-- Compiling module ab05_hdmi_timing
+-- Compiling module ab05_preview_scanout_r9
+-- Compiling module ab05_display_async_stream
+-- Compiling module hdmi_source_fixture
+-- Compiling module tb_display_chain
+-- Compiling module simple_dual_port_ram
+-- Compiling module m7_net_line
+-- Compiling module m7_udp_video
+-- Compiling module m7_control_rx
+-- Compiling module m7_style_control
+-- Compiling module ecc_calc_v1
+-- Compiling module audio_clock_regeneration_packet
+-- Compiling module audio_packet
+-- Compiling module audio_infoframe_packet
+-- Compiling module auxiliary_video_information_info_frame
+-- Compiling module efx_fifo
+-- Compiling module efx_fifo_datasync_92a0370cd9294c549c04578b1c7afbc1
+-- Compiling module efx_fifo_gray2bin_92a0370cd9294c549c04578b1c7afbc1
+-- Compiling module efx_fifo_bin2gray_92a0370cd9294c549c04578b1c7afbc1
+-- Compiling module efx_fifo_top_92a0370cd9294c549c04578b1c7afbc1
+-- Compiling module efx_fifo_ram_92a0370cd9294c549c04578b1c7afbc1
+-- Compiling module efx_fifo_ctl_92a0370cd9294c549c04578b1c7afbc1
+-- Compiling module Sc_Fifo_Slr8
+-- Compiling module packet_assembler
+-- Compiling module encode
+-- Compiling module tx_aux
+-- Compiling module dvi_encoder
+-- Compiling module EFX_SRL8
+
+Top level modules:
+	tb_display_chain
+	m7_style_control
+	ecc_calc_v1
+	audio_infoframe_packet
+	efx_fifo

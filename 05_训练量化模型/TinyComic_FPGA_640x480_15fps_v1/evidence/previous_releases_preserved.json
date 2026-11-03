@@ -1,0 +1,30 @@
+{
+  "previous_archives": [
+    {
+      "archive": "PixelPoster_FPGA_640x480_15fps_v1.zip",
+      "sha256": "8c052e78506848ecce4972c0db16a9ac172891ce3aca3f2a8c8c54f2d6906e26",
+      "unchanged": true
+    },
+    {
+      "archive": "TinyInk_FPGA_640x480_15fps_v1.zip",
+      "sha256": "868487dd911310d6e65fb4330df7058889c57910c23a7c2ae31def5bfaea792e",
+      "unchanged": true
+    },
+    {
+      "archive": "TinyNeon_FPGA_640x480_15fps_v1.zip",
+      "sha256": "006913b7576cff23079f0264bb4d38472563efcae6439846bc967d3ec98df6b6",
+      "unchanged": true
+    },
+    {
+      "archive": "TinyGogh_FPGA_640x480_15fps_v1.zip",
+      "sha256": "58afebecc521bfda8d0f0bedfc8acc8046a4c6683ab0dad575cc958a1cd80614",
+      "unchanged": true
+    },
+    {
+      "archive": "TinyGlass_FPGA_640x480_15fps_v1.zip",
+      "sha256": "285969d310c2100ff60e25247476316d731ab3a0565714e3333e2dfc5816dbb2",
+      "unchanged": true
+    }
+  ],
+  "older_outputs_modified": false
+}

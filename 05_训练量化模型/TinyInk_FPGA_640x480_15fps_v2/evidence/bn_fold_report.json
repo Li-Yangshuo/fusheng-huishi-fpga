@@ -1,0 +1,5 @@
+{
+  "max_abs_error_normalized": 6.854534149169922e-07,
+  "batchnorm_layers_folded": 2,
+  "passed": true
+}

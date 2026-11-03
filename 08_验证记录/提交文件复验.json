@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "projects": 5,
+  "models": 6,
+  "C_rebuild_boot_identical": true,
+  "boot_sha256": "0ab2771eb796484ca3fe843bbc3618a25b08a69d3b4f564d4238fcc15b10ccc5",
+  "submission_document_open_task_lists": 0,
+  "checks": [
+    {
+      "name": "all_project_dependencies",
+      "returncode": 0
+    },
+    {
+      "name": "PixelPoster_FPGA_640x480_15fps_v1",
+      "returncode": 0
+    },
+    {
+      "name": "TinyComic_FPGA_640x480_15fps_v1",
+      "returncode": 0
+    },
+    {
+      "name": "TinyGlass_FPGA_640x480_15fps_v1",
+      "returncode": 0
+    },
+    {
+      "name": "TinyInk_FPGA_640x480_15fps_v1",
+      "returncode": 0
+    },
+    {
+      "name": "TinyInk_FPGA_640x480_15fps_v2",
+      "returncode": 0
+    },
+    {
+      "name": "TinyNeon_FPGA_640x480_15fps_v1",
+      "returncode": 0
+    },
+    {
+      "name": "comparison_cli",
+      "returncode": 0
+    },
+    {
+      "name": "compiled_C_rebuild",
+      "returncode": 0
+    }
+  ]
+}

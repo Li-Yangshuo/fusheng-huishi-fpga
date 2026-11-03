@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "hardware_accessed": false,
+  "model": "TinyInk",
+  "cases": 2,
+  "WH": [
+    1280,
+    720
+  ],
+  "reference": "Independent NumPy native-size extension of unchanged 640x480-trained C weights; C did not supply native720 goldens",
+  "seconds": 41.43700000000172,
+  "receipts": [
+    "# HD720_FRAME PASS case=0 cycles=2906113 pixels=921600 pool=57600 hidden=921600 low=57600",
+    "# HD720_FRAME PASS case=1 cycles=2906226 pixels=921600 pool=57600 hidden=921600 low=57600",
+    "# HD720_ENGINE PASS cases=2",
+    "# HD720_FAULT PASS mode=1",
+    "# HD720_FAULT PASS mode=2"
+  ],
+  "source_sha256": {
+    "rtl/hd720_fused_core.sv": "28d0670a4090e4d9ba59bf3f647eb10089ce42fda328ea00aa18e36fcefbd5bf",
+    "rtl/dualstyle_frame_engine.sv": "73e49a635faae17b3a2ee9a402d63fb13813bef298b5a16895f0a37c7f67a85a",
+    "structure/integration/ab05_rgbx_axi_reader_prefetch.sv": "cecf1f11f13b88c121f450f2c2177cf618271e9f36079ecb250891a0d78b6005",
+    "structure/integration/ab05_native_writer_srl.sv": "5a82cd296c2fab0ae9d0aa388ee8609d8797a44592892e7b3b662c68c2eec97a",
+    "evidence/hd_ink/tb.sv": "0c49847124ca8a379a50fe6596e2379da82cdee0108823a36f67a268193a6ef1"
+  }
+}

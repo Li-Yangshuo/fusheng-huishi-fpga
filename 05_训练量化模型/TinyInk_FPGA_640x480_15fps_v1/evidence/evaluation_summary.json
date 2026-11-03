@@ -1,0 +1,66 @@
+{
+  "test_images": 200,
+  "test_used_for_training_or_checkpoint_selection": false,
+  "teacher": "deterministic procedural gray wash + dark gradient contours; only used as training labels",
+  "teacher_psnr_int8_global_db": 33.86910300214901,
+  "teacher_psnr_fp32_global_db": 34.464152900832865,
+  "raw_gray_teacher_psnr_db": 17.154656788168076,
+  "teacher_mse_reduction_vs_raw_gray_percent": 97.86913773513038,
+  "int8_vs_fp32_mae_0_255": 2.9461583082715945,
+  "mean_luma_structure_correlation": 0.7634348867875651,
+  "minimum_output_std_0_255": 19.706757565341622,
+  "numpy_int64_vs_pytorch_bit_exact_images": 200,
+  "special_cases": [
+    {
+      "name": "black",
+      "bit_exact": true
+    },
+    {
+      "name": "white",
+      "bit_exact": true
+    },
+    {
+      "name": "ramp",
+      "bit_exact": true
+    },
+    {
+      "name": "noise",
+      "bit_exact": true
+    }
+  ],
+  "full_preprocess_checks": [
+    {
+      "name": "random",
+      "full_resolution_torch_numpy_onnx_bit_exact": true
+    },
+    {
+      "name": "white",
+      "full_resolution_torch_numpy_onnx_bit_exact": true
+    },
+    {
+      "name": "red",
+      "full_resolution_torch_numpy_onnx_bit_exact": true
+    }
+  ],
+  "onnx_full_frame_checks": [
+    {
+      "test_file": "100007.jpg",
+      "onnx_integer_vs_numpy_bit_exact": true,
+      "torch_full_integer_vs_onnx_bit_exact": true,
+      "onnx_fp32_max_abs_error": 7.62939453125e-05
+    },
+    {
+      "test_file": "100039.jpg",
+      "onnx_integer_vs_numpy_bit_exact": true,
+      "torch_full_integer_vs_onnx_bit_exact": true,
+      "onnx_fp32_max_abs_error": 6.103515625e-05
+    }
+  ],
+  "max_observed_acc_per_layer": [
+    34075,
+    8665,
+    61374
+  ],
+  "worst_case_acc_bound": 126585,
+  "limits": "Teacher PSNR measures only fidelity to this simple target; correlation is a luma structure diagnostic, not semantic recognition, contest acceptance or camera/board proof."
+}

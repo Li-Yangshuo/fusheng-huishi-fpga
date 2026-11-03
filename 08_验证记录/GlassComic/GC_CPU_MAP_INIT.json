@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "raminfo": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-26\\ab\\branches\\glass_comic_hd6_m8_exact_20261101\\structure\\board_r6\\project\\outflow\\ti60f225_oob.raminfo.pb",
+  "raminfo_sha256": "94838e94262405ea0a5a0895d978a62e5973e83ccd85041d2f1f77ad86e4659b",
+  "boot_sha256": "fbd49dd0478fc3ba24b505b6252a10d91a1ce2506fcb4d5f5f4b5895cfe1548c",
+  "words_checked": 512,
+  "bytes_checked": 2048,
+  "word_mismatches": 0,
+  "expected_first_word": "f81002b7",
+  "mapped_first_word": "f81002b7",
+  "lanes": {
+    "0": {
+      "name": "cpu/cpu/boot_lane[0].mem",
+      "all_init_zero": false,
+      "logical_bytes_sha256": "c912629aa85988b9c4ac4510dcb418a9967d323d9fac885306f4f13c9132b9ad"
+    },
+    "3": {
+      "name": "cpu/cpu/boot_lane[3].mem",
+      "all_init_zero": false,
+      "logical_bytes_sha256": "3dfa74519ed6251b03126e179b88471020f540cb29e1918c0fc7c4b0a605ab8c"
+    },
+    "1": {
+      "name": "cpu/cpu/boot_lane[1].mem",
+      "all_init_zero": false,
+      "logical_bytes_sha256": "405d46ddf7eeca327a5533d53a1368d256851332c71c9bad9102aa49100b807a"
+    },
+    "2": {
+      "name": "cpu/cpu/boot_lane[2].mem",
+      "all_init_zero": false,
+      "logical_bytes_sha256": "80398cde29485be8ec784abf6903b5eea7620c160726ac13a288893f4e9f6699"
+    }
+  }
+}

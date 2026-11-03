@@ -1,0 +1,40 @@
+Reading D:/modeltech_10.2c/tcl/vsim/pref.tcl 
+
+# 10.2c
+
+# vsim -do {onerror {quit -code 1 -f};onbreak {quit -code 1 -f};run -all;quit -code 0 -f} -c work.joint 
+# //  ModelSim SE 10.2c Jul 18 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.tb_scanout_service(fast)
+# onerror {quit -code 1 -f} 
+#  Warning: onerror command for use within macro
+# onbreak {quit -code 1 -f} 
+#  Warning: onbreak command for use within macro
+# run -all 
+# DUALSTYLE_SERVICE_COMMIT id=1 cycle=4798336 job_cycles=2033304
+# DUALSTYLE_SERVICE_COMMIT id=2 cycle=8433982 job_cycles=2335613
+# DUALSTYLE_SERVICE_COMMIT id=3 cycle=11767550 job_cycles=2335853
+# DUALSTYLE_SERVICE_COMMIT id=4 cycle=15100319 job_cycles=2335301
+# DUALSTYLE_SERVICE_COMMIT id=5 cycle=18434052 job_cycles=2335678
+# DUALSTYLE_SERVICE_COMMIT id=6 cycle=21767335 job_cycles=2335659
+# DUALSTYLE_SERVICE_COMMIT id=7 cycle=25100551 job_cycles=2335519
+# DUALSTYLE_SERVICE_COMMIT id=8 cycle=28433962 job_cycles=2335604
+# DUALSTYLE_SERVICE_COMMIT id=9 cycle=31767537 job_cycles=2335844
+# DUALSTYLE_SERVICE_COMMIT id=10 cycle=35072485 job_cycles=2307471
+# DUALSTYLE_SERVICE_COMMIT id=11 cycle=38384336 job_cycles=2285976
+# DUALSTYLE_SERVICE_COMMIT id=12 cycle=41668143 job_cycles=2236472
+# SWITCH_CADENCE_MEASURED style=0 models_pp=12 models_ink=0 models_neon=0 model_layout_bitmap=00f max_commit_gap_ms=36.356460
+# SCANOUT_SERVICE PASS display_left_unique=12 display_right_unique=12 checked_left_pixels=11059200 checked_right_pixels=11059200 last_row_checks=30720 left_startup_underflows=3 right_startup_underflows=3
+# HD720_STEADY PASS warmup_commits=2 steady_commits=10 nn_steady_fps=30.099737 max_steady_gap=3333733 max_all_run_gap=3635646
+# HD720_RATE PASS style=0 frames=12 left_unique=12 right_unique=12 left_fps=28.695778 right_fps=28.695133 nn_fps=29.834710 max_job_cycles=2335853 max_commit_gap=3635646
+# DUALSTYLE_SERVICE PASS captures=12 unique_nn=12 left_frames=24 right_frames=24 left_pixels=5529600 right_pixels=5529600 max_job_cycles=2335853 max_commit_gap=3635646
+# ** Note: $finish    : D:/FUSHENG_TASK1_CODE_AUDIT_20261103/working/M7_RISCV_R8/evidence/scanout_style0/tb.sv(218)
+#    Time: 449897730 ns  Iteration: 1  Instance: /tb_scanout_service

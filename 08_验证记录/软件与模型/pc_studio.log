@@ -1,0 +1,13 @@
+test_control_ack_not_send_success (test_studio.StudioTests.test_control_ack_not_send_success) ... ok
+test_http_csrf_and_no_board (test_studio.StudioTests.test_http_csrf_and_no_board) ... ok
+test_http_udp_ack_roundtrip (test_studio.StudioTests.test_http_udp_ack_roundtrip) ... ok
+test_landmark_positive_and_closed_negative (test_studio.StudioTests.test_landmark_positive_and_closed_negative) ... ok
+test_no_display_metrics (test_studio.StudioTests.test_no_display_metrics) ... ok
+test_palm_dwell_release_and_gap (test_studio.StudioTests.test_palm_dwell_release_and_gap) ... ok
+test_phrase (test_studio.StudioTests.test_phrase) ... ok
+test_status_crc (test_studio.StudioTests.test_status_crc) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.206s
+
+OK

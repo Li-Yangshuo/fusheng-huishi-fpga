@@ -1,0 +1,82 @@
+{
+  "changes": [
+    {
+      "style": "霓虹",
+      "path": "示例图/02_霓虹风格_原图与渲染.png",
+      "old_canvas": [
+        1280,
+        520
+      ],
+      "new_canvas": [
+        1280,
+        720
+      ],
+      "content_each_side": [
+        640,
+        480
+      ],
+      "content_box_xyxy": [
+        0,
+        120,
+        1280,
+        600
+      ],
+      "content_unchanged_pixel_exact": true,
+      "sha256": "d235f245732fed5e29fb4863a8fa444e647c40cbe647932b462d451c397c2ea3"
+    },
+    {
+      "style": "像素",
+      "path": "示例图/03_像素风格_原图与渲染.png",
+      "old_canvas": [
+        1280,
+        520
+      ],
+      "new_canvas": [
+        1280,
+        720
+      ],
+      "content_each_side": [
+        640,
+        480
+      ],
+      "content_box_xyxy": [
+        0,
+        120,
+        1280,
+        600
+      ],
+      "content_unchanged_pixel_exact": true,
+      "sha256": "2dcea7c5f12bfa2b9a6a08a70f1e97bb070ea7bf69b9f458085d8d39d512bcd8"
+    },
+    {
+      "style": "水墨",
+      "path": "示例图/04_水墨风格_原图与渲染.png",
+      "old_canvas": [
+        1280,
+        520
+      ],
+      "new_canvas": [
+        1280,
+        720
+      ],
+      "content_each_side": [
+        640,
+        480
+      ],
+      "content_box_xyxy": [
+        0,
+        120,
+        1280,
+        600
+      ],
+      "content_unchanged_pixel_exact": true,
+      "sha256": "2d6322d96789b1c1e09275fca7d9eb3940393ecc9ce92c37f8df776264d7a4ea"
+    }
+  ],
+  "unchanged_styles": [
+    "漫画",
+    "玻璃"
+  ],
+  "model_weights_changed": false,
+  "rendering_resolution_changed": false
+}

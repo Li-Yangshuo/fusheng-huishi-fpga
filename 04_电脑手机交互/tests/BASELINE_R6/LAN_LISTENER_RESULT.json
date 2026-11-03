@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "real_lan_socket_bind": true,
+  "pair_cookie": true,
+  "compressed_pair": true,
+  "tested_pc_lan_ip": "192.168.184.149",
+  "physical_phone_verified": false,
+  "board_video_verified": false
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "source": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-26\\ab\\branches\\glass_comic_hd6_m8_exact_20261101\\structure\\board_r6\\project\\cpu_boot.mem",
+  "source_sha256": "fbd49dd0478fc3ba24b505b6252a10d91a1ce2506fcb4d5f5f4b5895cfe1548c",
+  "words": 512,
+  "first_word": "f81002b7",
+  "lane_files": {
+    "cpu_boot.mem.lane0": "2727fd3da720e90129311156159ef3321fd95cf355a98c61f49e36f3638f8988",
+    "cpu_boot.mem.lane1": "6b99dc38dff491a03536327b76e256606e60a0fb2612fdf0e2eee0e360614661",
+    "cpu_boot.mem.lane2": "0e6a6e66bc5ec5c56c16364503c3dd2e7e4ea91603e950981938ff4a2f9ddeeb",
+    "cpu_boot.mem.lane3": "567b7a64eba6c5f07fc7ab1f44dc5e5d161667ee0924cec2bd2c5882108aa92a"
+  }
+}

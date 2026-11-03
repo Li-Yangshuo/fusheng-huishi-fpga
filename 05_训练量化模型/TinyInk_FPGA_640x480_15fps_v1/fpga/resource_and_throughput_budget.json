@@ -1,0 +1,38 @@
+{
+  "full_input_output_WH": [
+    640,
+    480
+  ],
+  "learned_processing_WH": [
+    160,
+    120
+  ],
+  "parameters": 161,
+  "weight_elements": 144,
+  "int8_weight_bytes": 144,
+  "int32_bias_bytes": 68,
+  "conv_MAC_per_frame": 2764800,
+  "conv_MAC_per_second_15fps": 41472000,
+  "grayscale_preprocess": "77R+150G+29B can use shifts/adds; NOT counted in CNN MACs",
+  "pool_adds_per_frame": 288000,
+  "hypothetical_capacity": {
+    "clock_MHz": 100,
+    "effective_MACs_per_cycle": 1,
+    "conv_ms": 27.648,
+    "input_pass_ms_if_1_full_RGB_pixel_per_cycle": 3.072,
+    "output_pass_ms_if_1_full_RGB_pixel_per_cycle": 3.072,
+    "ideal_total_ms": 33.792,
+    "note": "excludes control, luma logic pipeline, BRAM port conflicts, DDR waits, screen arbitration and Fmax. Capacity estimate is not measured FPS. Recommend4 effective MAC lanes or more for headroom."
+  },
+  "activation_bytes": {
+    "input_low_gray": 19200,
+    "hidden0": 153600,
+    "hidden1": 153600,
+    "output_low_gray": 19200
+  },
+  "streaming_storage_note": "first3x3 needs lowres line buffers; fuse downstream1x1 layers to avoid storing full hidden maps if implementing a stream accelerator",
+  "full_RGB_input_plus_output_MB_per_second_15fps": 27.648,
+  "synthesized": false,
+  "pnr_passed": false,
+  "board_verified": false
+}

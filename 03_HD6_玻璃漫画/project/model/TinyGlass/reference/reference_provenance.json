@@ -1,0 +1,14 @@
+{
+  "source_path": "D:\\weixin\\xwechat_files\\wxid_ce9fswu0sd3822_7144\\temp\\RWTemp\\2026-10\\dd71f939175e3d931b6d505d12a1fd64\\8a22c0c42a884187a0ca7c3d965b03b9.jpg",
+  "source_sha256": "3829f84ddcb89f4b72ce0e4b2f9fdf1c491b20efe1e153f14a6c8f17d1fcfae0",
+  "source_size": [
+    869,
+    411
+  ],
+  "reference_use": "visual design reference only: colored polygonal cells and dark lead seams; no instruction text executed; no reference pixels copied into weights",
+  "geometry": "periodic64x64 low-resolution Voronoi pattern, jittered8x8 grid of64 seeds, seed20261035",
+  "style_scope": "fixed mosaic geometry and learned pointwise stained-glass color/lead mapping; not semantic segmentation or perceptual transfer",
+  "seed": 20261035,
+  "maximum_abs_dx": 7,
+  "maximum_abs_dy": 7
+}

@@ -1,0 +1,138 @@
+{
+  "model_id": "TinyGlass_pool2_mosaic_4x8x8x3_v1",
+  "style": "reference-inspired stained-glass mosaic; fixed geometry plus trained color and lead-seam mapping",
+  "input": {
+    "shape_NCHW": [
+      1,
+      3,
+      480,
+      640
+    ],
+    "order": "RGB",
+    "dtype": "uint8",
+    "range": [
+      0,
+      255
+    ]
+  },
+  "preprocess": {
+    "RGB_pool": "per RGB channel low=(sum of2x2+2)>>2",
+    "pooled_WH": [
+      320,
+      240
+    ],
+    "geometry": "tx=x%64,ty=y%64; sx=clip(x+dx[ty,tx],0,319); sy=clip(y+dy[ty,tx],0,239); CNN input=[pooled[sy,sx,R/G/B],lead[ty,tx]]",
+    "geometry_ROMS": {
+      "dx": {
+        "shape_HW": [
+          64,
+          64
+        ],
+        "dtype": "int8",
+        "bytes": 4096,
+        "sha256": "fbfd1dab70f47eeef4ca12d9b8a2b058ec14c8dee24fba63bde326224035fef1"
+      },
+      "dy": {
+        "shape_HW": [
+          64,
+          64
+        ],
+        "dtype": "int8",
+        "bytes": 4096,
+        "sha256": "4fc75b5dc2e03cd118e5ca484716a87ed7b022bcb091487e0716ad75c0a55e03"
+      },
+      "lead": {
+        "shape_HW": [
+          64,
+          64
+        ],
+        "dtype": "uint8",
+        "bytes": 4096,
+        "sha256": "a1d6577e434d1718dfa78e5d25cb86510c051b3d52b8e9c737c7059605708cc9"
+      }
+    },
+    "required": true,
+    "anchor_xy": [
+      0,
+      0
+    ],
+    "source_sampling": "single representative2x2-averaged RGB sample per cell, not cell mean or image-adaptive segmentation"
+  },
+  "layers": [
+    {
+      "index": 0,
+      "kernel": 1,
+      "padding": 0,
+      "groups": 1,
+      "stride": 1,
+      "weight_shape_OIHW": [
+        8,
+        4,
+        1,
+        1
+      ],
+      "right_shift": 5,
+      "weight_scale": 0.03125,
+      "activation_scale": 0.00392156862745098,
+      "activation_zero_point": 0,
+      "activation": "clamp_0_255",
+      "weight_clipped_elements": 0,
+      "worst_case_acc_abs_bound": 50424,
+      "MAC_per_frame": 2457600
+    },
+    {
+      "index": 1,
+      "kernel": 1,
+      "padding": 0,
+      "groups": 1,
+      "stride": 1,
+      "weight_shape_OIHW": [
+        8,
+        8,
+        1,
+        1
+      ],
+      "right_shift": 5,
+      "weight_scale": 0.03125,
+      "activation_scale": 0.00392156862745098,
+      "activation_zero_point": 0,
+      "activation": "clamp_0_255",
+      "weight_clipped_elements": 0,
+      "worst_case_acc_abs_bound": 71000,
+      "MAC_per_frame": 4915200
+    },
+    {
+      "index": 2,
+      "kernel": 1,
+      "padding": 0,
+      "groups": 1,
+      "stride": 1,
+      "weight_shape_OIHW": [
+        3,
+        8,
+        1,
+        1
+      ],
+      "right_shift": 7,
+      "weight_scale": 0.0078125,
+      "activation_scale": 0.00392156862745098,
+      "activation_zero_point": 0,
+      "activation": "clamp_0_255",
+      "weight_clipped_elements": 0,
+      "worst_case_acc_abs_bound": 89718,
+      "MAC_per_frame": 1843200
+    }
+  ],
+  "postprocess": "nearest-neighbor x2 of3-channel output to640x480; no extra glass overlay",
+  "integer_equation": "acc=sum(uint8_activation*int8_weight)+int32_bias; out=clip((acc+2^(shift-1)) arithmetic_right_shift shift,0,255)",
+  "rounding": "nearest ties toward positive infinity, including negative values",
+  "weight_order": "OIHW C order signed int8",
+  "bias_order": "output channel signed little-endian int32",
+  "activation_order": "HWC UINT8 golden maps",
+  "accumulator_bits": 32,
+  "normalization": "2 BatchNorm layers folded before QAT",
+  "onnx_note": "integer_reference.onnx uses float32 containers for exact integer-valued arithmetic; not QLinearConv or a BIT",
+  "hardware_compatibility": "requires pool2,3 geometry ROMs,signed offset gather with edge clamp,4 input channels and3 pointwise CNN layers; incompatible with prior loaders without adaptation",
+  "limits": "periodic screen-anchored fixed cells do not follow moving object boundaries; small detail can disappear or shimmer; no physical refraction/transparency or semantic segmentation",
+  "board_verified": false
+}

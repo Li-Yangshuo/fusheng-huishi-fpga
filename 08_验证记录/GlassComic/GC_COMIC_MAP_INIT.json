@@ -1,0 +1,304 @@
+{
+  "status": "PASS",
+  "scope": "Full-board mapped weight-ROM INIT reconstructed word-for-word; CPU ROM has a separate check. Bias constants are synthesized as logic, covered by packed-parameter and exact RTL layer tests, without independent gate-level bias proof. Does not establish physical FPGA ROM readout.",
+  "raminfo_sha256": "94838e94262405ea0a5a0895d978a62e5973e83ccd85041d2f1f77ad86e4659b",
+  "ROMs": {
+    "comic_core/weights": {
+      "name": "service/pipeline/network/comic_core/weights",
+      "logical_words": 9,
+      "logical_width": 512,
+      "mismatches": 0,
+      "physical_slices": [
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            0,
+            19
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            20,
+            39
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            460,
+            479
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            420,
+            439
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            380,
+            399
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            340,
+            359
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            300,
+            319
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            260,
+            279
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            220,
+            239
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            180,
+            199
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            140,
+            159
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            100,
+            119
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            60,
+            79
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            40,
+            59
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            80,
+            99
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            120,
+            139
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            160,
+            179
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            200,
+            219
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            240,
+            259
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            280,
+            299
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            320,
+            339
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            360,
+            379
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            400,
+            419
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            440,
+            459
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            480,
+            499
+          ],
+          "physical_width": 20
+        },
+        {
+          "address_range": [
+            0,
+            8
+          ],
+          "bit_range": [
+            500,
+            511
+          ],
+          "physical_width": 16
+        }
+      ]
+    }
+  },
+  "bias_implementation": "LUT/FF logic; no RAM INIT",
+  "mapped_netlist_sha256": "91db1542ee40f2cf43638c7cb88f4ff738ba58ca8891dfc18ba225270b3c9b53",
+  "hardware_accessed": false
+}

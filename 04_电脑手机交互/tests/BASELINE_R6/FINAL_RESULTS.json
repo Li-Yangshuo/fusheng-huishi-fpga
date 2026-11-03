@@ -1,0 +1,18 @@
+{
+  "old_R4_port_conflict_identified": true,
+  "old_M7_replaced": true,
+  "current_instance": {
+    "app": "M7_STUDIO",
+    "release": "R6",
+    "pid": 21700,
+    "root": "D:\\M7_STUDIO_PC_R6_MOBILE\\PC_VIEWER"
+  },
+  "current_mobile_listener_ready": false,
+  "mobile_unit_and_http_tests": 4,
+  "studio_regression_tests": 8,
+  "actual_pc_lan_listener_and_cookie_test": "PASS",
+  "javascript_syntax": "PASS",
+  "accepted_recognition_control_unchanged": true,
+  "physical_android_verified": false,
+  "browser_form_followup": "Internal browser automation timed out; not claimed as passed"
+}

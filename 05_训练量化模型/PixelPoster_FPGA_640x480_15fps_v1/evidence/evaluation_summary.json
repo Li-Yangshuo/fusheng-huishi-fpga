@@ -1,0 +1,38 @@
+{
+  "heldout_images": 200,
+  "trained_on_test": false,
+  "teacher_is": "procedural simple pixel posterization, not an artist-reference neural style model",
+  "integer_teacher_psnr_global_db": 23.998255391591123,
+  "float_teacher_psnr_global_db": 24.47514733581992,
+  "pixelated_identity_teacher_psnr_db": 22.5751130921053,
+  "teacher_mse_reduction_vs_pixelated_identity_percent": 27.941408307594084,
+  "int8_vs_fp32_mae_0_255": 4.820639347853947,
+  "style_change_mae_vs_pixelated_raw": 10.281325000000002,
+  "numpy_int64_vs_pytorch_exact_images": 200,
+  "special_cases": [
+    {
+      "name": "black",
+      "bit_exact": true
+    },
+    {
+      "name": "white",
+      "bit_exact": true
+    },
+    {
+      "name": "random",
+      "bit_exact": true
+    },
+    {
+      "name": "ramp",
+      "bit_exact": true
+    }
+  ],
+  "max_observed_acc_abs_per_layer": [
+    10606,
+    16502,
+    70789
+  ],
+  "worst_case_acc_abs_bound": 164184,
+  "float32_integer_exact_bound_pass": true,
+  "limitations": "Metrics measure fidelity to the chosen simple teacher. They do not establish competition scoring, board speed, display success or preference across styles."
+}

@@ -1,0 +1,78 @@
+from pathlib import Path
+import argparse,random,time,json,sys,hashlib
+import numpy as np
+from PIL import Image,ImageOps
+import torch
+from torch.nn import functional as F
+from glass_model import GlassCore,glass_teacher
+from integer_reference import preprocess
+
+def dump(p,x):p.write_text(json.dumps(x,indent=2,ensure_ascii=False),encoding='utf-8')
+def main():
+    ap=argparse.ArgumentParser();ap.add_argument('--data',type=Path);ap.add_argument('--cache',type=Path);ap.add_argument('--geometry',type=Path,required=True);ap.add_argument('--out',type=Path,required=True)
+    ap.add_argument('--fp-steps',type=int,default=12000);ap.add_argument('--qat-steps',type=int,default=6000);ap.add_argument('--seed',type=int,default=20261035)
+    a=ap.parse_args();a.out.mkdir(parents=True,exist_ok=False)
+    random.seed(a.seed);np.random.seed(a.seed);torch.manual_seed(a.seed);torch.cuda.manual_seed_all(a.seed)
+    torch.set_num_threads(4);torch.backends.cudnn.benchmark=False;torch.backends.cudnn.deterministic=True;torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False
+    device='cuda' if torch.cuda.is_available() else 'cpu';geometry=np.load(a.geometry,allow_pickle=False)
+    if a.cache:
+        with np.load(a.cache,allow_pickle=False) as z:tr=z['train'];va=z['validation']
+        split={'source':'provided4-channel mosaic cache','sha256':hashlib.sha256(a.cache.read_bytes()).hexdigest()}
+    else:
+        vf=sorted((a.data/'val').glob('*.jpg'));tf=sorted((a.data/'train').glob('*.jpg'))+vf[20:];vf=vf[:20]
+        assert len(tf)==280 and len(vf)==20
+        def read(files):
+            arrays=[]
+            for p in files:
+                with Image.open(p) as im:rgb=np.array(ImageOps.fit(im.convert('RGB'),(640,480),method=Image.Resampling.LANCZOS))
+                arrays.append(preprocess(rgb,geometry).transpose(2,0,1))
+            return np.stack(arrays)
+        tr=read(tf);va=read(vf)
+        split={label:[{'split':p.parent.name,'name':p.name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files] for label,files in [('train_files',tf),('validation_files',vf)]}
+        split['selection']='first20 sorted BSDSval held out for checkpoint selection; test200 never used'
+    np.savez_compressed(a.out/'training_mosaic_cache.npz',train=tr,validation=va);dump(a.out/'data_split.json',split)
+    (a.out/'geometry.npz').write_bytes(a.geometry.read_bytes())
+    train=torch.from_numpy(tr).float().to(device)/255;valid=torch.from_numpy(va).float().to(device)/255
+    with torch.no_grad():
+        targets=torch.cat([glass_teacher(b) for b in train.split(20)]);vt=glass_teacher(valid)
+    print('Data',list(train.shape),'validation',list(valid.shape),'device',device,flush=True)
+    model=GlassCore(batch_norm=True).to(device)
+    with torch.no_grad():model.convs[-1].bias.fill_(.5)
+    start=time.perf_counter();selected={}
+    def batch():
+        idx=torch.randint(len(train),(24,),device=device);x=train[idx];t=targets[idx]
+        top=random.randrange(209);left=random.randrange(289)
+        x=x[:,:,top:top+32,left:left+32];t=t[:,:,top:top+32,left:left+32]
+        if random.random()<.5:x=x.flip(-1);t=t.flip(-1)
+        return x,t
+    for phase,steps in [('float',a.fp_steps),('qat',a.qat_steps)]:
+        if phase=='qat':
+            model.eval();fold=model.folded().eval()
+            with torch.no_grad():err=(model(valid)-fold(valid)).abs().max().item()
+            assert err<1e-4;dump(a.out/'bn_fold_report.json',{'max_abs_error_normalized':err,'batchnorm_layers_folded':2,'passed':True})
+            torch.save({'state_dict':model.cpu().state_dict(),'phase':'float_bn','selected_step':selected['float']},a.out/'tinyglass_float_bn.pth')
+            torch.save({'state_dict':fold.cpu().state_dict(),'phase':'float','selected_step':selected['float']},a.out/'tinyglass_float.pth')
+            model=fold.to(device);model.set_shifts();model.qat=True
+        opt=torch.optim.Adam(model.parameters(),lr=.0015 if phase=='float' else .00015)
+        sched=torch.optim.lr_scheduler.CosineAnnealingLR(opt,steps,eta_min=.00006 if phase=='float' else .00001)
+        best=1e9;best_state=None;best_step=0;model.train()
+        for step in range(1,steps+1):
+            x,t=batch();y=model(x)
+            # Paired targets are computed on complete frames, so ignore2-pixel crop boundaries.
+            y=y[:,:,2:-2,2:-2];t=t[:,:,2:-2,2:-2]
+            loss=F.mse_loss(y,t)+.08*F.l1_loss(y,t)
+            opt.zero_grad(set_to_none=True);loss.backward();torch.nn.utils.clip_grad_norm_(model.parameters(),3);opt.step();sched.step()
+            if step==1 or step%400==0 or step==steps:
+                model.eval()
+                with torch.no_grad():vmse=float((model(valid)-vt).square().mean().item())
+                row={'phase':phase,'step':step,'global_schedule_step':step+(a.fp_steps if phase=='qat' else 0),'loss':loss.item(),'validation_mse':vmse,'elapsed_s':time.perf_counter()-start}
+                with (a.out/'training.jsonl').open('a',encoding='utf-8') as f:f.write(json.dumps(row)+'\n')
+                print(json.dumps(row),flush=True)
+                if vmse<best:best=vmse;best_step=step;best_state={k:v.detach().cpu().clone() for k,v in model.state_dict().items()}
+                model.train()
+        model.load_state_dict(best_state);selected[phase]=best_step
+    model.cpu().eval()
+    torch.save({'state_dict':model.state_dict(),'phase':'qat','seed':a.seed,'selected_float_step':selected['float'],'selected_qat_step':selected['qat'],'training_optimizer_steps_completed':a.fp_steps+a.qat_steps,'architecture':'TinyGlass_pool2_mosaic_4x8x8x3_v1'},a.out/'tinyglass_int8_qat.pth')
+    dump(a.out/'training_receipt.json',{'pytorch':torch.__version__,'python':sys.version,'device':device,'gpu':torch.cuda.get_device_name(0) if device=='cuda' else None,'seed':a.seed,'training_optimizer_steps_completed':a.fp_steps+a.qat_steps,'fp_steps_completed':a.fp_steps,'qat_steps_completed':a.qat_steps,'selected_float_step':selected['float'],'selected_qat_step':selected['qat'],'selected_checkpoint_lineage_steps':selected['float']+selected['qat'],'best_qat_validation_mse':best,'wall_seconds':time.perf_counter()-start,'train_images':len(tr),'checkpoint_selection_validation_images':len(va),'official_test_images_used_for_training_or_selection':0,'shifts':model.shifts.tolist(),'initialization':'random, none of the previous models reused','training_kind':'pointwise supervised color and lead-seam mapping on fixed geometric mosaic inputs; not perceptual style transfer','teacher_runs_at_deployment':False,'fixed_geometry_preprocess_runs_at_deployment':True,'crop_loss_ignores2px_border':True,'board_verified':False})
+    print('TRAINING_COMPLETE',flush=True)
+if __name__=='__main__':main()

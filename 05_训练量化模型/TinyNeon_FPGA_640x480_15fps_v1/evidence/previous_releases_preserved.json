@@ -1,0 +1,15 @@
+{
+  "previous_archives": [
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\PixelPoster_FPGA_640x480_15fps_v1.zip",
+      "sha256": "8c052e78506848ecce4972c0db16a9ac172891ce3aca3f2a8c8c54f2d6906e26",
+      "matches_previous_release": true
+    },
+    {
+      "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyInk_FPGA_640x480_15fps_v1.zip",
+      "sha256": "868487dd911310d6e65fb4330df7058889c57910c23a7c2ae31def5bfaea792e",
+      "matches_previous_release": true
+    }
+  ],
+  "previous_models_modified": false
+}

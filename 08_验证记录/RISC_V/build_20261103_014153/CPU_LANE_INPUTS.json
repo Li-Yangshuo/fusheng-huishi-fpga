@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "source": "D:\\FUSHENG_TASK1_CODE_AUDIT_20261103\\working\\M7_RISCV_R8\\structure\\board_r6\\project\\cpu_boot.mem",
+  "source_sha256": "0ab2771eb796484ca3fe843bbc3618a25b08a69d3b4f564d4238fcc15b10ccc5",
+  "words": 2048,
+  "first_word": "00002117",
+  "lane_files": {
+    "cpu_boot.mem.lane0": "a9d192ca0df0982fbe4cf68143fdb7a02ae3c9a0ff9cef82574ba7168d1a9bc6",
+    "cpu_boot.mem.lane1": "c9c8de8bf7a870494152137e83e9ad00299482051abf41dd9b7b5872e15afad6",
+    "cpu_boot.mem.lane2": "e97d3891df7939afe4481d49e105221fbe1a6a3d5f3f42d87f0bfc041898059b",
+    "cpu_boot.mem.lane3": "f3072aa6fca9d5c2ef9cda4a4bff24a4be02d3ee2c601146c0957adff3201587"
+  }
+}

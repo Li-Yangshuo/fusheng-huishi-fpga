@@ -1,0 +1,77 @@
+Model Technology ModelSim SE vopt 10.2c Compiler 2013.07 Jul 18 2013
+
+Top level modules:
+	tb_display_chain
+
+Analyzing design...
+-- Loading module tb_display_chain
+-- Loading module ab09_reset_release
+-- Loading module demo_key
+-- Loading module hdmi_source_fixture
+-- Loading module ab05_hdmi_timing
+-- Loading module ab09_fps_cdc
+-- Loading module ab05_dual_preview_hdmi
+-- Loading module ab05_preview_scanout_r9
+-- Loading module ab05_display_async_stream
+-- Loading module ab05_display_snapshot
+-- Loading module m7_control_rx
+-- Loading module m7_udp_video
+-- Loading module m7_net_line
+-- Loading module simple_dual_port_ram
+-- Loading module demo_fps
+-- Loading module demo_fps_period
+-- Loading module demo_osd
+-- Loading module dvi_encoder
+-- Loading module tx_aux
+-- Loading module auxiliary_video_information_info_frame
+-- Loading module audio_clock_regeneration_packet
+-- Loading module audio_packet
+-- Loading module Sc_Fifo_Slr8
+-- Loading module packet_assembler
+-- Loading module encode
+-- Loading module EFX_SRL8
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\display_encoder\tb.sv(88): (vopt-2241) Connection width does not match width of port 'ddata'. The port definition is at: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\structure\board_r6\project\rtl\r9\ab09_fps_cdc.sv(1).
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\display_encoder\tb.sv(95): (vopt-2241) Connection width does not match width of port 'sdata'. The port definition is at: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\structure\board_r6\project\rtl\r9\ab09_fps_cdc.sv(1).
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\structure\board_r6\project\rtl\dvi_tx\tx_aux.v_encrypted.v(62): in protected region.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\structure\board_r6\project\rtl\dvi_tx\tx_aux.v_encrypted.v(62): in protected region.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\structure\board_r6\project\rtl\dvi_tx\tx_aux.v_encrypted.v(62): in protected region.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\structure\board_r6\project\rtl\dvi_tx\dvi_encoder.v_encrypted.v(61): in protected region.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\structure\board_r6\project\rtl\dvi_tx\dvi_encoder.v_encrypted.v(61): in protected region.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\evidence\display_encoder\tb.sv(119): (vopt-2241) Connection width does not match width of port 'audio_sample_frequency'. The port definition is at: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\structure\board_r6\project\rtl\dvi_tx\dvi_encoder.v_encrypted.v(19).
+Incremental compilation check found 31 design-units (out of 34) may be reused.
+Optimizing 3 design-units (inlining 298 instances):
+-- Inlining module ab09_reset_release(fast)
+-- Inlining module demo_key(fast)
+-- Inlining module demo_key(fast__1)
+-- Inlining module hdmi_source_fixture(fast)
+-- Inlining module hdmi_source_fixture(fast__1)
+-- Inlining module ab05_hdmi_timing(fast)
+-- Inlining module ab09_fps_cdc(fast)
+-- Inlining module ab05_display_async_stream(fast)
+-- Inlining module ab05_display_async_stream(fast__1)
+-- Inlining module ab05_preview_scanout_r9(fast)
+-- Inlining module ab05_display_snapshot(fast)
+-- Inlining module ab05_dual_preview_hdmi(fast)
+-- Inlining module m7_control_rx(fast)
+-- Inlining module ab09_fps_cdc(fast__1)
+-- Inlining module ab09_fps_cdc(fast__2)
+-- Inlining module simple_dual_port_ram(fast)
+-- Inlining module m7_net_line(fast)
+-- Inlining module m7_udp_video(fast)
+-- Inlining module demo_fps_period(fast)
+-- Inlining module demo_fps(fast)
+-- Inlining module ab09_fps_cdc(fast__3)
+-- Inlining module ab09_fps_cdc(fast__4)
+-- Inlining module demo_osd(fast)
+-- Inlining module simple_dual_port_ram(fast__1)
+-- Inlining module auxiliary_video_information_info_frame(fast)
+-- Inlining module audio_clock_regeneration_packet(fast)
+-- Inlining module audio_packet(fast)
+-- Inlining module EFX_SRL8(fast)
+-- Inlining module Sc_Fifo_Slr8(fast)
+-- Inlining module packet_assembler(fast)
+-- Inlining module tx_aux(fast)
+-- Inlining module encode(fast)
+-- Inlining module dvi_encoder(fast)
+-- Optimizing module tb_display_chain(fast)
+Optimized design name is display

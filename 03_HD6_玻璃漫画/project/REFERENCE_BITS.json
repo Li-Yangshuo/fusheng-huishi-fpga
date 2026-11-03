@@ -1,0 +1,12 @@
+{
+  "Glass": {
+    "path": "C:\\Users\\Lenovo\\Desktop\\TINYGLASS_HD6_SCENE_720P15_20261031\\ti60f225_oob_hd6.bit",
+    "bytes": 3113829,
+    "sha256": "14a6beb13d61bc91e7c18e2e1ff12442b2a3f0b931698fb066c4261d273b1cdc"
+  },
+  "Comic": {
+    "path": "C:\\Users\\Lenovo\\Desktop\\TINYCOMIC_M8_20261101\\BIT\\TinyComic_M8.bit",
+    "bytes": 2775045,
+    "sha256": "ea73ad8c54c7357536d2787a28815ace5e9b19fe09763c85ec15e8d05a4d1db4"
+  }
+}

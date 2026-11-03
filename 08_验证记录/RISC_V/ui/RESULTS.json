@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "receipts": [
+    "# DEMO_UI PASS debounce_bounce_hold_release_cycle_reset=1 fps_windows=5",
+    "# DEMO_OSD PASS pixels=230400 only_resolution_and_frame_latched_FPS=1",
+    "# DECIMAL_FPS PASS cases=7 changed_values=6 measured_intervals=8 rounding=nearest_tenth stop_zero=1 restart=1 saturate=99.9"
+  ],
+  "hardware_accessed": false,
+  "source_sha256": {
+    "rtl/demo_key.sv": "2188a8ccca5ff8ac4776a14dab0a18dafb2a90814609241d2261c3f0e94ec425",
+    "rtl/demo_fps.sv": "4d635c8a1bad393361d643c83b186040829fb95539db5d79a91467c617d2b5af",
+    "rtl/demo_osd.sv": "14ed26b02795afab25993ec65bfe3d019a4d1d12f3bd71a74fa4994ef2876a11",
+    "verification/tb_demo_ui.sv": "1a474c99f2560c5ced0acfeb230253fbe9125eec308f83c9224b68f2d1dd3776",
+    "verification/tb_fps_decimal.sv": "c67492711ffe66419df5d119f1019d8d7bca709f972e2f27c361705c7c0e4d6c"
+  }
+}

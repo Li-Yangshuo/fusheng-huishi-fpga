@@ -1,0 +1,1 @@
+{"status": "PASS", "manifest_files": 70, "golden_frames": 2, "weight_bin_hex_npz_header_equal": true, "preprocess_layer_and_final_exact": true, "board_verified": false}

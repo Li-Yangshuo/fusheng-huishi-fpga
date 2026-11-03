@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "12-frame independent NumPy white balance RGB/marks/gains reference; accelerated-timebase FPS windows. Not physical color calibration.",
+  "receipts": [
+    "# COLOR_FPS_WB PASS frames=12 pixels=36864 exact_RGB_marks_ID_gain_boundary_reset=1",
+    "# COLOR_FPS_METER PASS windows=5 window_boundary_zero_stop_overflow_reset=1"
+  ],
+  "source_sha256": {
+    "rtl/pp2_white_balance.sv": "0958db978bc6a78cfd7cc15b9c74e6bb448a0d9716dc712f210e6c81ca05af51",
+    "rtl/pp2_fps_meter.sv": "75a916024fa79f949beeb3a340e6eb2b350b3b94b094bc9b5d02d37162617919",
+    "verification/tb_color_fps.sv": "bdd93f46ceb510a7bf0461d15f72b5928f53db80e0c83c8e3c46cc6a52cbdcff"
+  },
+  "hardware_accessed": false
+}

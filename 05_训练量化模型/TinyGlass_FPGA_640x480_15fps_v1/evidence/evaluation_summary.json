@@ -1,0 +1,61 @@
+{
+  "test_images": 200,
+  "test_used_for_training_or_checkpoint_selection": false,
+  "numpy_int64_vs_pytorch_bit_exact_images": 200,
+  "teacher_psnr_int8_global_db": 34.54517936606009,
+  "teacher_psnr_fp32_global_db": 33.79252142649134,
+  "mosaic_input_baseline_teacher_psnr_db": 15.67541383387005,
+  "int8_vs_fp32_mae_0_255": 1.5056359825027903,
+  "mean_mosaic_input_output_brightness_correlation": 0.7445271118196634,
+  "special_cases": [
+    {
+      "name": "black",
+      "bit_exact": true
+    },
+    {
+      "name": "white",
+      "bit_exact": true
+    },
+    {
+      "name": "ramp",
+      "bit_exact": true
+    },
+    {
+      "name": "noise",
+      "bit_exact": true
+    }
+  ],
+  "full_preprocess_checks": [
+    {
+      "name": "random",
+      "full_RGB_preprocess_and_integer_exact": true
+    },
+    {
+      "name": "white",
+      "full_RGB_preprocess_and_integer_exact": true
+    },
+    {
+      "name": "red",
+      "full_RGB_preprocess_and_integer_exact": true
+    }
+  ],
+  "onnx_full_frame_checks": [
+    {
+      "file": "100007.jpg",
+      "numpy_torch_onnx_full_integer_exact": true,
+      "fp32_onnx_max_abs_error": 6.103515625e-05
+    },
+    {
+      "file": "100039.jpg",
+      "numpy_torch_onnx_full_integer_exact": true,
+      "fp32_onnx_max_abs_error": 6.103515625e-05
+    }
+  ],
+  "max_observed_acc_per_layer": [
+    24291,
+    29343,
+    32378
+  ],
+  "worst_case_acc_bound": 89718,
+  "limits": "PSNR only measures this simple procedural teacher, not reference style similarity, recognition accuracy, camera/FPGA acceptance"
+}

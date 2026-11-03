@@ -1,0 +1,60 @@
+{
+  "test_images": 200,
+  "test_used_for_gradient_or_checkpoint_selection": false,
+  "design_review_test_files": [
+    "100039.jpg"
+  ],
+  "design_unseen_test_images": 199,
+  "numpy_pytorch_bit_exact_images": 200,
+  "teacher_psnr_int8_db": 26.84339391840598,
+  "teacher_psnr_fp32_db": 28.014635195113886,
+  "raw_pooled_rgb_teacher_psnr_db": 17.717879010997567,
+  "int8_teacher_mse_reduction_vs_raw_percent": 87.76937898005994,
+  "int8_fp32_mae_0_255": 4.467286545632948,
+  "onnx_full_frame_check_max_errors": [
+    0.0,
+    0.0
+  ],
+  "special_cases": [
+    {
+      "name": "black",
+      "bit_exact": true
+    },
+    {
+      "name": "white",
+      "bit_exact": true
+    },
+    {
+      "name": "ramp",
+      "bit_exact": true
+    },
+    {
+      "name": "noise",
+      "bit_exact": true
+    }
+  ],
+  "full_resolution_preprocess_checks": [
+    {
+      "name": "random",
+      "numpy_torch_onnx_exact": true
+    },
+    {
+      "name": "white",
+      "numpy_torch_onnx_exact": true
+    },
+    {
+      "name": "red",
+      "numpy_torch_onnx_exact": true
+    }
+  ],
+  "max_observed_acc_per_layer": [
+    32791,
+    5392,
+    27808,
+    38762
+  ],
+  "worst_case_acc_bound": 111391,
+  "limits": "Teacher PSNR is only a fit measure for the simple procedural target, not semantic recognition or style quality",
+  "teacher_metric_scope": "Raw trained CNN before required palette/ink postprocessing",
+  "design_unseen_teacher_psnr_int8_db": 26.851464955706618
+}

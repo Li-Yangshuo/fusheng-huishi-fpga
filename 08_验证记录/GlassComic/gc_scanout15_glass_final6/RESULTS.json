@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "frames": 6,
+  "extra_AR_to_R_latency_cycles": [
+    24,
+    32
+  ],
+  "hardware_accessed": false,
+  "seconds": 366.73499999998603,
+  "scope": "Fixed original HD6 Glass with both original cores instantiated, actual service and production key control, DDR BFM random stalls and24..32cycle latency, native720 processing plus720p60 scanout. All6 unique frames and every displayed pixel checked. Rate uses commits3..6 to separate startup; layouts covered during these6frames only. All4 layouts and both model/layout combinations separately covered by12-frame mixed-style regression.",
+  "source_sha256": {
+    "rtl\\demo_key.sv": "2188a8ccca5ff8ac4776a14dab0a18dafb2a90814609241d2261c3f0e94ec425",
+    "rtl\\hd720_fused_core.sv": "835ceef2c51090f260d9133e4a1b4dd840e30be0d5e970150162d4c135582867",
+    "rtl\\tinycomic_fused_core.sv": "6bab956f76e119e902f35a5c82ffbd3dfa56a027aa6eb48d8ae2bfdecbc068aa",
+    "rtl\\dualstyle_frame_engine.sv": "0ab199403e8db2e2a07a51c65150584af17ed09c1d45847f0f94d95d353e1c31",
+    "structure\\integration\\a_b_video_renderer_shared.sv": "d11ccd864bf3ccf8095ba734de83be6187a7fa899c2941a4f5a49c41a4254708",
+    "structure\\integration\\ab05_video_pipeline_shared_r3.sv": "4c3dcf4f30dcbaa745f85585896d6d8466a882ff089b5d2b6673e6c56e1d7047",
+    "structure\\integration\\ab05_video_ownership.sv": "c908a6f4edc2510686c0ab109bfd8eed08d6330df26be43e5ebd6000f1afcc0a",
+    "structure\\integration\\ab05_camera_selector.sv": "077f94e6b3928b278b9b4dffa04596e951462bfa19386c7cb0337c669bcdf66b",
+    "structure\\integration\\ab05_capture_ingress.sv": "826fdfde10507067984b0e99b0aef5b08ccd80cc3572450cef9b526acfc272e0",
+    "structure\\integration\\ab05_async_stream.sv": "683c44e1f15c9f4960f5b8b099ef92887ab78527c1d68f4972b85ca4def71151",
+    "structure\\integration\\ab05_job_watchdog.sv": "a03afa2dbbc3b57c3ceec25518d391b181541794c47d9657f68c64cf4e237ad4",
+    "structure\\integration\\ab05_rgbx_axi_reader_prefetch.sv": "cecf1f11f13b88c121f450f2c2177cf618271e9f36079ecb250891a0d78b6005",
+    "structure\\integration\\ab05_axi_read_rr3.sv": "efed7fe6204633c9d5b3237b5b32fd4b67bdc21a2d9264ecd9e7172311d9b326",
+    "structure\\integration\\ab05_axi_write_rr2.sv": "b885efbf3e5aacabedc607005f1002bd7dd86aa652f79db8bbdbce07b3192724",
+    "structure\\integration\\ab05_native_writer_srl.sv": "5a82cd296c2fab0ae9d0aa388ee8609d8797a44592892e7b3b662c68c2eec97a",
+    "structure\\display\\rtl\\ab05_dual_preview_hdmi.sv": "3e297cdd5259d6ed110215f4eb2208bc979f6468a15b99f41169b151b75981ff",
+    "structure\\display\\rtl\\ab05_hdmi_timing.sv": "43bbd975d0438386a1e5d113e251ac28a6c9edb5161fb3c418334ac49124bc63",
+    "structure\\display\\rtl\\ab05_preview_scanout_r9.sv": "681bc42210ad35e6820233c3a25c942a99cdf8423f6a9431aeb1b8945dd225ff",
+    "structure\\display\\rtl\\ab05_display_snapshot.sv": "210e579e8ff6161baadd830515cb394049d885f7dfef3f8b50e44b788ebf996a",
+    "structure\\timing_closure_r1\\rtl\\ab05_display_async_stream.sv": "ca296543bd233e6fe953c08ff63238dd68d0221540baafef01a1b301b21ea698",
+    "evidence\\gc_scanout15_glass_final6\\tb.sv": "1b4fb6840fcf8d5db7fe77c6e57d9b38d2df3e8f48f44ba956a97e9bd12bb7bc"
+  },
+  "receipts": [
+    "# SCANOUT_SERVICE PASS display_left_unique=6 display_right_unique=6 checked_left_pixels=9676800 checked_right_pixels=9676800 last_row_checks=26880 left_startup_underflows=6 right_startup_underflows=6",
+    "# HD720_STEADY PASS warmup_commits=2 steady_commits=4 nn_steady_fps=15.018778 max_steady_gap=6667535 max_all_run_gap=7027797",
+    "# HD720_RATE PASS style=1 frames=6 left_unique=6 right_unique=6 left_fps=15.000311 right_fps=15.000308 nn_fps=14.828280 max_job_cycles=6094637 max_commit_gap=7027797",
+    "# DUALSTYLE_SERVICE PASS captures=6 unique_nn=6 left_frames=21 right_frames=21 left_pixels=4838400 right_pixels=4838400 max_job_cycles=6094637 max_commit_gap=7027797"
+  ],
+  "style": 1,
+  "production_key_control_sha256": "8c342b5489c855d9b831f7b63789266348c19382d986de14781d0f6f89872b98",
+  "startup_commits_excluded_from_rate_only": 2,
+  "steady_commit_count": 4
+}

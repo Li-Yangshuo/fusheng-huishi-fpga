@@ -1,0 +1,13 @@
+Model Technology ModelSim SE vopt 10.2c Compiler 2013.07 Jul 18 2013
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module pp2_white_balance
+Optimizing 2 design-units (inlining 0 instances):
+-- Optimizing module pp2_white_balance(fast)
+** Note: (vopt-143) Recognized 1 FSM in module "pp2_white_balance(fast)".
+-- Optimizing module tb(fast)
+Optimized design name is tb_opt

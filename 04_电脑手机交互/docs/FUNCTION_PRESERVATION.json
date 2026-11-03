@@ -1,0 +1,17 @@
+{
+  "baseline": "R6 with user accepted R4 recognition/control",
+  "unchanged_files": [
+    "recognition.py",
+    "gesture_engine.py",
+    "studio_control.py",
+    "mobile_access.py",
+    "network_config.json"
+  ],
+  "changed": [
+    "protocol.py frame ID recovery",
+    "server.py atomic pairs",
+    "web/app.js pair fetch",
+    "launcher.py release version"
+  ],
+  "status": "PASS hashes in tests/R6_1_RESULTS.json"
+}

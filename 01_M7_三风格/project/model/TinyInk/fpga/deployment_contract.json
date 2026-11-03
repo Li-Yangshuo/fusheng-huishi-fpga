@@ -1,0 +1,108 @@
+{
+  "model_id": "TinyInk_gray_pool4_1x8x8x1_v1",
+  "style": "simple grayscale ink-wash approximation: bright paper, gray washes and dark contours",
+  "input": {
+    "shape_NCHW": [
+      1,
+      3,
+      480,
+      640
+    ],
+    "order": "RGB",
+    "dtype": "uint8",
+    "range": [
+      0,
+      255
+    ]
+  },
+  "preprocess": {
+    "grayscale": "gray=(77*R+150*G+29*B+128)>>8 at EACH FULL-RES pixel",
+    "pool": "low=(sum of 4x4 gray+8)>>4; round grayscale BEFORE pooling",
+    "lowres_WH": [
+      160,
+      120
+    ],
+    "anchor_xy": [
+      0,
+      0
+    ]
+  },
+  "layers": [
+    {
+      "index": 0,
+      "weight_shape_OIHW": [
+        8,
+        1,
+        3,
+        3
+      ],
+      "kernel": 3,
+      "padding": 1,
+      "stride": 1,
+      "groups": 1,
+      "right_shift": 5,
+      "weight_scale": 0.03125,
+      "activation_scale": 0.00392156862745098,
+      "activation_zero_point": 0,
+      "activation": "clamp_0_255",
+      "weight_clipped_elements": 0,
+      "worst_case_acc_abs_bound": 74555,
+      "mac_per_frame": 1382400
+    },
+    {
+      "index": 1,
+      "weight_shape_OIHW": [
+        8,
+        8,
+        1,
+        1
+      ],
+      "kernel": 1,
+      "padding": 0,
+      "stride": 1,
+      "groups": 1,
+      "right_shift": 2,
+      "weight_scale": 0.25,
+      "activation_scale": 0.00392156862745098,
+      "activation_zero_point": 0,
+      "activation": "clamp_0_255",
+      "weight_clipped_elements": 0,
+      "worst_case_acc_abs_bound": 30832,
+      "mac_per_frame": 1228800
+    },
+    {
+      "index": 2,
+      "weight_shape_OIHW": [
+        1,
+        8,
+        1,
+        1
+      ],
+      "kernel": 1,
+      "padding": 0,
+      "stride": 1,
+      "groups": 1,
+      "right_shift": 8,
+      "weight_scale": 0.00390625,
+      "activation_scale": 0.00392156862745098,
+      "activation_zero_point": 0,
+      "activation": "clamp_0_255",
+      "weight_clipped_elements": 0,
+      "worst_case_acc_abs_bound": 126585,
+      "mac_per_frame": 153600
+    }
+  ],
+  "postprocess": "nearest-neighbor x4 of final single-channel ink; copy the same byte into R/G/B. No teacher, Sobel, paper texture or lookup-table style filter at deployment",
+  "integer_equation": "acc=sum(uint8_activation*int8_weight)+int32_bias; out=clip((acc+2^(shift-1)) arithmetic_right_shift shift,0,255)",
+  "rounding": "nearest, ties toward positive infinity; signed arithmetic right shift required",
+  "weight_order": "OIHW C order, signed two-complement int8; .bin one byte per weight",
+  "bias_order": "output-channel vector, signed little-endian int32; .hex one 32-bit word per line",
+  "activation_order": "all golden intermediate maps HWC UINT8; final RGB files explicitly HWC or CHW",
+  "padding": "zero at first low-res 3x3 conv; last two convs are1x1",
+  "accumulator_bits": 32,
+  "normalization": "two training BatchNorm layers folded into conv before QAT",
+  "temporal": "stateless deterministic inference, fixed scales; no per-frame statistics or random texture",
+  "onnx_note": "fp32 graph is standard floating point; integer_reference.onnx uses FLOAT32-valued INTEGER arithmetic as a golden, not QLinearConv, compiled hardware or a BIT",
+  "hardware_compatibility": "different from prior C4 and PixelPoster graphs; grayscale1/8/8/1, pool4, UINT8, zero padding and per-layer shifts require accelerator/loader configuration changes",
+  "board_verified": false
+}

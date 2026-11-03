@@ -1,0 +1,80 @@
+Reading D:/modeltech_10.2c/tcl/vsim/pref.tcl 
+
+# 10.2c
+
+# vsim -do {onerror {quit -code 1 -f};onbreak {quit -code 1 -f};run -all;quit -code 0 -f} -c -novopt work.tb_display_chain 
+# //  ModelSim SE 10.2c Jul 18 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.tb_display_chain
+# Loading sv_std.std
+# Loading work.tb_display_chain
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.ab09_reset_release
+# Loading work.ab09_reset_release
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.demo_key
+# Loading work.demo_key
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.hdmi_source_fixture
+# Loading work.hdmi_source_fixture
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.ab05_hdmi_timing
+# Loading work.ab05_hdmi_timing
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.ab09_fps_cdc
+# Loading work.ab09_fps_cdc
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.ab05_dual_preview_hdmi
+# Loading work.ab05_dual_preview_hdmi
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.ab05_preview_scanout_r9
+# Loading work.ab05_preview_scanout_r9
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.ab05_display_async_stream
+# Loading work.ab05_display_async_stream
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.ab05_display_snapshot
+# Loading work.ab05_display_snapshot
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.demo_fps
+# Loading work.demo_fps
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.demo_fps_period
+# Loading work.demo_fps_period
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.demo_osd
+# Loading work.demo_osd
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.dvi_encoder
+# Loading work.dvi_encoder
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.simple_dual_port_ram
+# Loading work.simple_dual_port_ram
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.tx_aux
+# Loading work.tx_aux
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.auxiliary_video_information_info_frame
+# Loading work.auxiliary_video_information_info_frame
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.audio_clock_regeneration_packet
+# Loading work.audio_clock_regeneration_packet
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.audio_packet
+# Loading work.audio_packet
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.Sc_Fifo_Slr8
+# Loading work.Sc_Fifo_Slr8
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.packet_assembler
+# Loading work.packet_assembler
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.encode
+# Loading work.encode
+# Refreshing C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/work.EFX_SRL8
+# Loading work.EFX_SRL8
+# ** Warning: (vsim-3015) C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/tb.sv(72): [PCDPC] - Port size (4 or 4) does not match connection size (3) for port 'audio_sample_frequency'. The port definition is at: C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/structure/board_r6/project/rtl/dvi_tx/dvi_encoder.v_encrypted.v(19).
+# 
+#         Region: /tb_display_chain/hdmi
+# onerror {quit -code 1 -f} 
+#  Warning: onerror command for use within macro
+# onbreak {quit -code 1 -f} 
+#  Warning: onbreak command for use within macro
+# run -all 
+# TMDS_MISMATCH latency=57 pixel=1 encoded=2cc1332cc decoded=ab55ab expected=000000
+# TMDS_MISMATCH latency=57 pixel=2 encoded=2cc1332cc decoded=ab55ab expected=000000
+# TMDS_MISMATCH latency=58 pixel=1 encoded=2cc1332cc decoded=ab55ab expected=000000
+# TMDS_MISMATCH latency=60 pixel=1280 encoded=354354354 decoded=fdfdfd expected=000000
+# TMDS_MISMATCH latency=58 pixel=1281 encoded=2cc1332cc decoded=ab55ab expected=000000
+# TMDS_MISMATCH latency=60 pixel=2560 encoded=354354354 decoded=fdfdfd expected=000000
+# DECIMAL_FPS_CDC PASS values=25.0,30.0,33.3 changed=1
+# DEMO_DISPLAY PASS raw_pixels=8294400 original=2764800 same_scene_split=1843200 style=1843200 small_pair=1843200 bottom_row_pixels=11520 frame_boundary_switch=1
+# DEMO_TMDS PASS decoded_pixels=10137600 mismatches=0
+# ** Note: $finish    : C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_display_encoder/tb.sv(150)
+#    Time: 183336182325954 fs  Iteration: 1  Instance: /tb_display_chain

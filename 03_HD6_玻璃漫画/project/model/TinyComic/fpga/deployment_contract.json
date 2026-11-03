@@ -1,0 +1,131 @@
+{
+  "model_id": "TinyComic_rgbedge_pool4_4x8dw8x8x3_v1",
+  "style": "compact comic/cel-shading with quantized color regions and learned dark ink contours",
+  "input": {
+    "shape_NCHW": [
+      1,
+      3,
+      480,
+      640
+    ],
+    "order": "RGB",
+    "dtype": "uint8",
+    "range": [
+      0,
+      255
+    ]
+  },
+  "preprocess": {
+    "pool_RGB": "per channel low=(sum of4x4+8)>>4",
+    "lowres_WH": [
+      160,
+      120
+    ],
+    "edge_feature": {
+      "formula": "lum=(77*R+150*G+29*B+128)>>8; dx=abs(lum[y,x+1]-lum[y,x]); dy=abs(lum[y+1,x]-lum[y,x]); edge=min(2*max(dx,dy),255)",
+      "padding": "after computing forward differences on width159/height119, replicate last computed difference into final column/row; NOT a zero difference",
+      "bytes_per_frame": 19200,
+      "dtype": "uint8",
+      "order": "HWC fourth channel after pooled RGB"
+    },
+    "cnn_input": "pooled RGB plus edge feature as channel4"
+  },
+  "layers": [
+    {
+      "index": 0,
+      "weight_shape_OIHW": [
+        8,
+        4,
+        3,
+        3
+      ],
+      "kernel": 3,
+      "padding": "replicate1",
+      "stride": 1,
+      "groups": 1,
+      "right_shift": 5,
+      "weight_scale": 0.03125,
+      "activation_scale": 0.00392156862745098,
+      "activation_zero_point": 0,
+      "activation": "clamp_0_255",
+      "weight_clipped_elements": 0,
+      "worst_case_acc_abs_bound": 111391,
+      "MAC_per_frame": 5529600
+    },
+    {
+      "index": 1,
+      "weight_shape_OIHW": [
+        8,
+        1,
+        3,
+        3
+      ],
+      "kernel": 3,
+      "padding": "replicate1",
+      "stride": 1,
+      "groups": 8,
+      "right_shift": 3,
+      "weight_scale": 0.125,
+      "activation_scale": 0.00392156862745098,
+      "activation_zero_point": 0,
+      "activation": "clamp_0_255",
+      "weight_clipped_elements": 0,
+      "worst_case_acc_abs_bound": 27986,
+      "MAC_per_frame": 1382400
+    },
+    {
+      "index": 2,
+      "weight_shape_OIHW": [
+        8,
+        8,
+        1,
+        1
+      ],
+      "kernel": 1,
+      "padding": 0,
+      "stride": 1,
+      "groups": 1,
+      "right_shift": 5,
+      "weight_scale": 0.03125,
+      "activation_scale": 0.00392156862745098,
+      "activation_zero_point": 0,
+      "activation": "clamp_0_255",
+      "weight_clipped_elements": 0,
+      "worst_case_acc_abs_bound": 58405,
+      "MAC_per_frame": 1228800
+    },
+    {
+      "index": 3,
+      "weight_shape_OIHW": [
+        3,
+        8,
+        1,
+        1
+      ],
+      "kernel": 1,
+      "padding": 0,
+      "stride": 1,
+      "groups": 1,
+      "right_shift": 7,
+      "weight_scale": 0.0078125,
+      "activation_scale": 0.00392156862745098,
+      "activation_zero_point": 0,
+      "activation": "clamp_0_255",
+      "weight_clipped_elements": 0,
+      "worst_case_acc_abs_bound": 73378,
+      "MAC_per_frame": 460800
+    }
+  ],
+  "postprocess": "First y=UINT8 CNN output; q=((y*5+127)//255)*51 per RGB channel; where input edge>110 replace RGB with[12,12,16]; nearest-neighbor x4. This LUT/ink stage is REQUIRED",
+  "integer_equation": "acc=sum(uint8_activation*int8_weight)+int32_bias; out=clip((acc+2^(shift-1)) arithmetic_right_shift shift,0,255)",
+  "rounding": "nearest ties toward positive infinity",
+  "weight_order": "OIHW C-order signed int8; layer1 DW groups8",
+  "bias_order": "output-channel signed little endian int32",
+  "activation_order": "HWC UINT8 golden maps",
+  "padding": "replicate-edge1 at first two3x3 layers",
+  "normalization": "3 BatchNorm layers folded before QAT",
+  "accumulator_bits": 32,
+  "hardware_compatibility": "requires RGB pool4, integer luma differences, edge feature channel, first two replicate-padded3x3 convolutions, DW8 and four layers; old loaders/BIT require adaptation",
+  "limits": "This is supervised approximation of local comic/cel-shading target, not semantic segmentation or perceptual comic style transfer; thin detail may be lost",
+  "board_verified": false
+}

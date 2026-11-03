@@ -1,0 +1,35 @@
+Reading D:/modeltech_10.2c/tcl/vsim/pref.tcl 
+
+# 10.2c
+
+# vsim +STYLE=0 -do {onerror {quit -code 1 -f};onbreak {quit -code 1 -f};run -all;quit -code 0 -f} -c -wlf C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_scanout15_comic_final6/sim.wlf work.joint 
+# //  ModelSim SE 10.2c Jul 18 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.tb_scanout_service(fast)
+# onerror {quit -code 1 -f} 
+#  Warning: onerror command for use within macro
+# onbreak {quit -code 1 -f} 
+#  Warning: onbreak command for use within macro
+# run -all 
+# DUALSTYLE_SERVICE_COMMIT id=1 cycle=5506618 job_cycles=2741513
+# DUALSTYLE_SERVICE_COMMIT id=2 cycle=12604130 job_cycles=3172363
+# DUALSTYLE_SERVICE_COMMIT id=3 cycle=19270831 job_cycles=3172404
+# DUALSTYLE_SERVICE_COMMIT id=4 cycle=25937399 job_cycles=3172308
+# DUALSTYLE_SERVICE_COMMIT id=5 cycle=32604117 job_cycles=3172365
+# DUALSTYLE_SERVICE_COMMIT id=6 cycle=39270896 job_cycles=3172460
+# SWITCH_CADENCE_MEASURED style=0 models_pp=6 models_ink=0 model_layout_bitmap=07 max_commit_gap_ms=70.975120
+# SCANOUT_SERVICE PASS display_left_unique=6 display_right_unique=6 checked_left_pixels=9676800 checked_right_pixels=9676800 last_row_checks=26880 left_startup_underflows=4 right_startup_underflows=4
+# HD720_PREVIEW_STEADY left_fps=15.000000 right_fps=14.999999
+# HD720_STEADY PASS warmup_commits=2 steady_commits=4 nn_steady_fps=14.999951 max_steady_gap=6666779 max_all_run_gap=7097512
+# HD720_RATE PASS style=0 frames=6 left_unique=6 right_unique=6 left_fps=14.999995 right_fps=14.999999 nn_fps=14.808550 max_job_cycles=3172460 max_commit_gap=7097512
+# DUALSTYLE_SERVICE PASS captures=6 unique_nn=6 left_frames=21 right_frames=21 left_pixels=4838400 right_pixels=4838400 max_job_cycles=3172460 max_commit_gap=7097512
+# ** Note: $finish    : C:/Users/Lenovo/Documents/Codex/2026-10-26/ab/branches/glass_comic_hd6_m8_exact_20261101/evidence/gc_scanout15_glass_final6/tb.sv(219)
+#    Time: 416564400 ns  Iteration: 1  Instance: /tb_scanout_service

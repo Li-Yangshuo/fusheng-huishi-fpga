@@ -1,0 +1,4 @@
+{
+  "numpy_torch_onnx_full_integer_exact": true,
+  "fp32_onnx_max_abs_error": 0.0
+}

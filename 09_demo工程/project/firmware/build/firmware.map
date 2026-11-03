@@ -1,0 +1,126 @@
+
+Discarded input sections
+
+ .text          0x00000000        0x0 C:\Users\Lenovo\AppData\Local\Temp\ccAhBTpT.o
+ .data          0x00000000        0x0 C:\Users\Lenovo\AppData\Local\Temp\ccAhBTpT.o
+ .bss           0x00000000        0x0 C:\Users\Lenovo\AppData\Local\Temp\ccAhBTpT.o
+ .text          0x00000000        0x0 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+ .data          0x00000000        0x0 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+ .bss           0x00000000        0x0 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+ .comment       0x00000000       0x34 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0xf9000000         0x00002000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:\Users\Lenovo\AppData\Local\Temp\ccAhBTpT.o
+LOAD C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+
+.text           0xf9000000     0x11c0
+ *(.text.start)
+ .text.start    0xf9000000       0x34 C:\Users\Lenovo\AppData\Local\Temp\ccAhBTpT.o
+                0xf9000000                _start
+ *(.text*)
+ .text.fail     0xf9000034       0x24 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+ .text.accelerator_isr
+                0xf9000058       0xd4 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+                0xf9000058                accelerator_isr
+ .text.startup.main
+                0xf900012c      0x3f8 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+                0xf900012c                main
+ *(.rodata*)
+ .rodata.text.0
+                0xf9000524       0x11 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+ *fill*         0xf9000535        0x3 
+ .rodata.model_words
+                0xf9000538      0x9f0 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+ .rodata.camera_table
+                0xf9000f28      0x298 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+
+.rela.dyn       0xf90011c0        0x0
+ .rela.text.start
+                0xf90011c0        0x0 C:\Users\Lenovo\AppData\Local\Temp\ccAhBTpT.o
+
+.data
+ *(.sdata*)
+ *(.data*)
+
+.bss            0xf90011c0        0x4
+                0xf90011c0                        . = ALIGN (0x4)
+                0xf90011c0                        __bss_start = .
+ *(.sbss*)
+ *(.bss*)
+ .bss.completions
+                0xf90011c0        0x4 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+ *(COMMON)
+                0xf90011c4                        . = ALIGN (0x4)
+                0xf90011c4                        __bss_end = .
+                0xf9002000                        __stack_top = (ORIGIN (RAM) + LENGTH (RAM))
+                0x00000001                        ASSERT ((__bss_end <= (__stack_top - 0x300)), RAM exceeds firmware plus stack budget)
+
+/DISCARD/
+ *(.comment*)
+ *(.eh_frame*)
+OUTPUT(D:\FUSHENG_TASK1_SUBMISSION_20261103_R1\02_RISCV_ÈíÓ²Ð­Í¬\project\firmware\build\firmware.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x29
+ .riscv.attributes
+                0x00000000       0x23 C:\Users\Lenovo\AppData\Local\Temp\ccAhBTpT.o
+ .riscv.attributes
+                0x00000023       0x29 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+
+.debug_line     0x00000000      0xc37
+ .debug_line    0x00000000       0x78 C:\Users\Lenovo\AppData\Local\Temp\ccAhBTpT.o
+ .debug_line    0x00000078      0xbbf C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+
+.debug_line_str
+                0x00000000      0x1a1
+ .debug_line_str
+                0x00000000      0x1a1 C:\Users\Lenovo\AppData\Local\Temp\ccAhBTpT.o
+                                 0xa4 (size before relaxing)
+ .debug_line_str
+                0x000001a1        0x0 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+                                0x153 (size before relaxing)
+
+.debug_info     0x00000000      0x62e
+ .debug_info    0x00000000       0x24 C:\Users\Lenovo\AppData\Local\Temp\ccAhBTpT.o
+ .debug_info    0x00000024      0x60a C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+
+.debug_abbrev   0x00000000      0x2ad
+ .debug_abbrev  0x00000000       0x14 C:\Users\Lenovo\AppData\Local\Temp\ccAhBTpT.o
+ .debug_abbrev  0x00000014      0x299 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+
+.debug_aranges  0x00000000       0x50
+ .debug_aranges
+                0x00000000       0x20 C:\Users\Lenovo\AppData\Local\Temp\ccAhBTpT.o
+ .debug_aranges
+                0x00000020       0x30 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+
+.debug_str      0x00000000      0x29f
+ .debug_str     0x00000000      0x29f C:\Users\Lenovo\AppData\Local\Temp\ccAhBTpT.o
+                                 0xb0 (size before relaxing)
+ .debug_str     0x0000029f        0x0 C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+                                0x228 (size before relaxing)
+
+.debug_loclists
+                0x00000000      0x3ae
+ .debug_loclists
+                0x00000000      0x3ae C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+
+.debug_rnglists
+                0x00000000      0x14b
+ .debug_rnglists
+                0x00000000      0x14b C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o
+
+.debug_frame    0x00000000       0xac
+ .debug_frame   0x00000000       0xac C:\Users\Lenovo\AppData\Local\Temp\cci8WesY.o

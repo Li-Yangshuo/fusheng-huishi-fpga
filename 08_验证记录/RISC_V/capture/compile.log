@@ -1,0 +1,6 @@
+Model Technology ModelSim SE vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module ab720_capture_guard
+-- Compiling module tb_hd_capture
+
+Top level modules:
+	tb_hd_capture

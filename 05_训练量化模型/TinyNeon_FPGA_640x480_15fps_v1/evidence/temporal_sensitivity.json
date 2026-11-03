@@ -1,0 +1,10 @@
+{
+  "identical_input_repeats": 15,
+  "identical_outputs": true,
+  "plus1_input_mae_output": 0.09381944444444444,
+  "minus1_input_mae_output": 0.10123263888888889,
+  "no_frame_statistics": true,
+  "no_random_texture": true,
+  "camera_video_tested": false,
+  "note": "Static and perturbation checks only; moving-camera temporal quality remains to be evaluated on real video."
+}

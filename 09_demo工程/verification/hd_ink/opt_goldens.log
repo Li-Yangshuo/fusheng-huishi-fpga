@@ -1,0 +1,22 @@
+Model Technology ModelSim SE vopt 10.2c Compiler 2013.07 Jul 18 2013
+
+Top level modules:
+	tb
+
+Analyzing design...
+-- Loading module tb
+-- Loading module dualstyle_frame_engine
+-- Loading module ab05_rgbx_axi_reader_prefetch
+-- Loading module hd720_fused_core
+-- Loading module ab05_native_writer
+Optimizing 5 design-units (inlining 0 instances):
+-- Optimizing module hd720_fused_core(fast)
+** Note: (vopt-143) Recognized 2 FSMs in module "hd720_fused_core(fast)".
+-- Optimizing module ab05_rgbx_axi_reader_prefetch(fast)
+** Note: (vopt-143) Recognized 3 FSMs in module "ab05_rgbx_axi_reader_prefetch(fast)".
+-- Optimizing module tb(fast)
+-- Optimizing module dualstyle_frame_engine(fast)
+** Note: (vopt-143) Recognized 1 FSM in module "dualstyle_frame_engine(fast)".
+-- Optimizing module ab05_native_writer(fast)
+** Note: (vopt-143) Recognized 1 FSM in module "ab05_native_writer(fast)".
+Optimized design name is goldens

@@ -1,0 +1,253 @@
+{
+  "fpga/deployment_contract.json": {
+    "model_id": "TinyNeon_gray_pool4_1x8x8x3_v1",
+    "style": "simple cyan and magenta neon contours on a dim base",
+    "input": {
+      "shape_NCHW": [
+        1,
+        3,
+        480,
+        640
+      ],
+      "order": "RGB",
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ]
+    },
+    "preprocess": {
+      "grayscale": "gray=(77*R+150*G+29*B+128)>>8 at EACH FULL-RES pixel",
+      "pool": "low=(sum of 4x4 gray+8)>>4; round grayscale BEFORE pooling",
+      "lowres_WH": [
+        160,
+        120
+      ],
+      "anchor_xy": [
+        0,
+        0
+      ]
+    },
+    "layers": [
+      {
+        "index": 0,
+        "weight_shape_OIHW": [
+          8,
+          1,
+          3,
+          3
+        ],
+        "kernel": 3,
+        "padding": 1,
+        "stride": 1,
+        "groups": 1,
+        "right_shift": 5,
+        "weight_scale": 0.03125,
+        "activation_scale": 0.00392156862745098,
+        "activation_zero_point": 0,
+        "activation": "clamp_0_255",
+        "weight_clipped_elements": 0,
+        "worst_case_acc_abs_bound": 159754,
+        "mac_per_frame": 1382400
+      },
+      {
+        "index": 1,
+        "weight_shape_OIHW": [
+          8,
+          8,
+          1,
+          1
+        ],
+        "kernel": 1,
+        "padding": 0,
+        "stride": 1,
+        "groups": 1,
+        "right_shift": 4,
+        "weight_scale": 0.0625,
+        "activation_scale": 0.00392156862745098,
+        "activation_zero_point": 0,
+        "activation": "clamp_0_255",
+        "weight_clipped_elements": 0,
+        "worst_case_acc_abs_bound": 58942,
+        "mac_per_frame": 1228800
+      },
+      {
+        "index": 2,
+        "weight_shape_OIHW": [
+          3,
+          8,
+          1,
+          1
+        ],
+        "kernel": 1,
+        "padding": 0,
+        "stride": 1,
+        "groups": 1,
+        "right_shift": 7,
+        "weight_scale": 0.0078125,
+        "activation_scale": 0.00392156862745098,
+        "activation_zero_point": 0,
+        "activation": "clamp_0_255",
+        "weight_clipped_elements": 0,
+        "worst_case_acc_abs_bound": 74414,
+        "mac_per_frame": 460800
+      }
+    ],
+    "postprocess": "nearest-neighbor x4 of final3-channel RGB; no teacher, separate Sobel, blur bloom or palette filter at deployment",
+    "integer_equation": "acc=sum(uint8_activation*int8_weight)+int32_bias; out=clip((acc+2^(shift-1)) arithmetic_right_shift shift,0,255)",
+    "rounding": "nearest, ties toward positive infinity; signed arithmetic right shift required",
+    "weight_order": "OIHW C order, signed two-complement int8; .bin one byte per weight",
+    "bias_order": "output-channel vector, signed little-endian int32; .hex one 32-bit word per line",
+    "activation_order": "all golden intermediate maps HWC UINT8; final RGB files explicitly HWC or CHW",
+    "padding": "zero at first low-res 3x3 conv; last two convs are1x1",
+    "accumulator_bits": 32,
+    "normalization": "two training BatchNorm layers folded into conv before QAT",
+    "temporal": "stateless deterministic inference, fixed scales; no per-frame statistics or random texture",
+    "onnx_note": "fp32 graph is standard floating point; integer_reference.onnx uses FLOAT32-valued INTEGER arithmetic as a golden, not QLinearConv, compiled hardware or a BIT",
+    "hardware_compatibility": "different from prior C4, PixelPoster and TinyInk graphs; grayscale1/8/8/3, pool4, UINT8, zero padding and per-layer shifts require accelerator/loader configuration changes",
+    "board_verified": false
+  },
+  "fpga/resource_and_throughput_budget.json": {
+    "full_input_output_WH": [
+      640,
+      480
+    ],
+    "learned_processing_WH": [
+      160,
+      120
+    ],
+    "parameters": 179,
+    "weight_elements": 160,
+    "int8_weight_bytes": 160,
+    "int32_bias_bytes": 76,
+    "conv_MAC_per_frame": 3072000,
+    "conv_MAC_per_second_15fps": 46080000,
+    "grayscale_preprocess": "77R+150G+29B can use shifts/adds; NOT counted in CNN MACs",
+    "pool_adds_per_frame": 288000,
+    "hypothetical_capacity": {
+      "clock_MHz": 100,
+      "effective_MACs_per_cycle": 1,
+      "conv_ms": 30.72,
+      "input_pass_ms_if_1_full_RGB_pixel_per_cycle": 3.072,
+      "output_pass_ms_if_1_full_RGB_pixel_per_cycle": 3.072,
+      "ideal_total_ms": 36.864,
+      "note": "excludes control, luma logic pipeline, BRAM port conflicts, DDR waits, screen arbitration and Fmax. Capacity estimate is not measured FPS. Recommend4 effective MAC lanes or more for headroom."
+    },
+    "activation_bytes": {
+      "input_low_gray": 19200,
+      "hidden0": 153600,
+      "hidden1": 153600,
+      "output_low_rgb": 57600
+    },
+    "streaming_storage_note": "first3x3 needs lowres line buffers; fuse downstream1x1 layers to avoid storing full hidden maps if implementing a stream accelerator",
+    "full_RGB_input_plus_output_MB_per_second_15fps": 27.648,
+    "synthesized": false,
+    "pnr_passed": false,
+    "board_verified": false,
+    "conv_MAC_per_second_30fps": 92160000,
+    "target_frame_budget_ms": {
+      "15fps": 66.66666666666667,
+      "30fps": 33.333333333333336
+    },
+    "hypothetical_4MAC_100MHz": {
+      "conv_ms": 7.68,
+      "input_plus_output_RGB_scan_ms": 6.144,
+      "ideal_total_ms": 13.824,
+      "measured": false
+    },
+    "competition_scope": "User staged style goal15fps at640x480. Supplied brief camera capture640x480@30fps and HDMI720p60 or1080p30 are separate full-system requirements; model files establish none of those board gates."
+  },
+  "evidence/training_receipt.json": {
+    "pytorch": "2.8.0+cu128",
+    "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:26:47) [MSC v.1942 64 bit (AMD64)]",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "seed": 20261033,
+    "training_optimizer_steps_completed": 13000,
+    "fp_steps_completed": 8000,
+    "qat_steps_completed": 5000,
+    "selected_float_step": 7800,
+    "selected_qat_step": 2200,
+    "selected_checkpoint_lineage_steps": 10000,
+    "best_qat_validation_mse": 0.00028133249725215137,
+    "wall_seconds": 72.08645020000404,
+    "train_images": 280,
+    "checkpoint_selection_validation_images": 20,
+    "official_test_images_used_for_training_or_selection": 0,
+    "shifts": [
+      5,
+      4,
+      7
+    ],
+    "initialization": "random; no previous style weights used",
+    "training_kind": "supervised learning of deterministic local neon-contour teacher; teacher is only used for labels",
+    "teacher_runs_at_deployment": false,
+    "board_verified": false
+  },
+  "evidence/evaluation_summary.json": {
+    "test_images": 200,
+    "test_used_for_training_or_checkpoint_selection": false,
+    "teacher": "deterministic procedural cyan/magenta neon contour teacher; only used as training labels",
+    "teacher_psnr_int8_global_db": 35.51055829144841,
+    "teacher_psnr_fp32_global_db": 37.83041044325052,
+    "raw_gray_teacher_psnr_db": 8.93022308684424,
+    "teacher_mse_reduction_vs_raw_gray_percent": 99.78023097596531,
+    "int8_vs_fp32_mae_0_255": 2.3600041269761407,
+    "mean_input_luma_vs_neon_brightness_correlation": 0.1511339846192669,
+    "minimum_output_std_0_255": 37.242258363805576,
+    "numpy_int64_vs_pytorch_bit_exact_images": 200,
+    "special_cases": [
+      {
+        "name": "black",
+        "bit_exact": true
+      },
+      {
+        "name": "white",
+        "bit_exact": true
+      },
+      {
+        "name": "ramp",
+        "bit_exact": true
+      },
+      {
+        "name": "noise",
+        "bit_exact": true
+      }
+    ],
+    "full_preprocess_checks": [
+      {
+        "name": "random",
+        "full_resolution_torch_numpy_onnx_bit_exact": true
+      },
+      {
+        "name": "white",
+        "full_resolution_torch_numpy_onnx_bit_exact": true
+      },
+      {
+        "name": "red",
+        "full_resolution_torch_numpy_onnx_bit_exact": true
+      }
+    ],
+    "onnx_full_frame_checks": [
+      {
+        "test_file": "100007.jpg",
+        "onnx_integer_vs_numpy_bit_exact": true,
+        "torch_full_integer_vs_onnx_bit_exact": true,
+        "onnx_fp32_max_abs_error": 0.0001373291015625
+      },
+      {
+        "test_file": "100039.jpg",
+        "onnx_integer_vs_numpy_bit_exact": true,
+        "torch_full_integer_vs_onnx_bit_exact": true,
+        "onnx_fp32_max_abs_error": 0.00019073486328125
+      }
+    ],
+    "max_observed_acc_per_layer": [
+      69113,
+      21376,
+      66146
+    ],
+    "worst_case_acc_bound": 159754,
+    "limits": "Teacher PSNR measures only fidelity to this simple target; correlation is a luma structure diagnostic, not semantic recognition, contest acceptance or camera/board proof."
+  }
+}

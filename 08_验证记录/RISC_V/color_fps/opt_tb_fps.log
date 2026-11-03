@@ -1,0 +1,12 @@
+Model Technology ModelSim SE vopt 10.2c Compiler 2013.07 Jul 18 2013
+
+Top level modules:
+	tb_fps
+
+Analyzing design...
+-- Loading module tb_fps
+-- Loading module pp2_fps_meter
+Optimizing 2 design-units (inlining 0 instances):
+-- Optimizing module tb_fps(fast)
+-- Optimizing module pp2_fps_meter(fast)
+Optimized design name is tb_fps_opt

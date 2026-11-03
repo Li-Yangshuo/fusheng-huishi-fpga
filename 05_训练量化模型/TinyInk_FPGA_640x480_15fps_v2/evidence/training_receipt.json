@@ -1,0 +1,27 @@
+{
+  "pytorch": "2.8.0+cu128",
+  "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:26:47) [MSC v.1942 64 bit (AMD64)]",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "seed": 20261101,
+  "training_optimizer_steps_completed": 12000,
+  "fp_steps_completed": 8000,
+  "qat_steps_completed": 4000,
+  "selected_float_step": 5200,
+  "selected_qat_step": 4000,
+  "selected_checkpoint_lineage_steps": 9200,
+  "best_qat_validation_mse": 0.0010521217482164502,
+  "wall_seconds": 55.27479169999424,
+  "train_images": 280,
+  "checkpoint_selection_validation_images": 20,
+  "official_test_images_used_for_training_or_selection": 0,
+  "shifts": [
+    4,
+    5,
+    8
+  ],
+  "initialization": "random; no other style weights reused",
+  "training_kind": "supervised distillation of bright paper and layered ink wash target; quantized edge feature computed at deployment",
+  "teacher_runs_at_deployment": false,
+  "board_verified": false
+}

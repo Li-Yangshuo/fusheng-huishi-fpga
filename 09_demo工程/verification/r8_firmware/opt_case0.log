@@ -1,0 +1,31 @@
+Model Technology ModelSim SE vopt 10.2c Compiler 2013.07 Jul 18 2013
+
+Top level modules:
+	tb_r8_firmware
+
+Analyzing design...
+-- Loading module tb_r8_firmware
+-- Loading module ab13_rv32i_manager
+-- Loading module r8_control
+-- Loading module r8_camera_mmio
+-- Loading module i2c_16addr_8data
+-- Loading module i2c_master_top
+-- Loading module i2c_master_byte_ctrl
+-- Loading module i2c_master_bit_ctrl
+-- Loading module hd720_fused_core
+Optimizing 9 design-units (inlining 0 instances):
+-- Optimizing module hd720_fused_core(fast)
+** Note: (vopt-143) Recognized 2 FSMs in module "hd720_fused_core(fast)".
+-- Optimizing module ab13_rv32i_manager(fast)
+** Note: (vopt-143) Recognized 1 FSM in module "ab13_rv32i_manager(fast)".
+-- Optimizing module i2c_16addr_8data(fast)
+** Note: (vopt-143) Recognized 3 FSMs in module "i2c_16addr_8data(fast)".
+-- Optimizing module i2c_master_bit_ctrl(fast)
+** Note: (vopt-143) Recognized 1 FSM in module "i2c_master_bit_ctrl(fast)".
+-- Optimizing module tb_r8_firmware(fast)
+-- Optimizing module r8_control(fast)
+-- Optimizing module i2c_master_byte_ctrl(fast)
+** Note: (vopt-143) Recognized 1 FSM in module "i2c_master_byte_ctrl(fast)".
+-- Optimizing module i2c_master_top(fast)
+-- Optimizing module r8_camera_mmio(fast)
+Optimized design name is case0

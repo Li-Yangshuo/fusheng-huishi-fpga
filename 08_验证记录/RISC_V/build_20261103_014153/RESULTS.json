@@ -1,0 +1,27 @@
+{
+  "status": "BUILD_EXIT_ZERO_REVIEW_REQUIRED",
+  "hardware_accessed": false,
+  "stages": [
+    {
+      "stage": "interface",
+      "returncode": 0,
+      "seconds": 24.547
+    },
+    {
+      "stage": "map",
+      "returncode": 0,
+      "seconds": 222.703
+    },
+    {
+      "stage": "pnr",
+      "returncode": 0,
+      "seconds": 194.859
+    },
+    {
+      "stage": "pgm",
+      "returncode": 0,
+      "seconds": 2.234
+    }
+  ],
+  "HDL_sources": 85
+}

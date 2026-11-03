@@ -1,0 +1,42 @@
+{
+  "full_WH": [
+    640,
+    480
+  ],
+  "learned_WH": [
+    160,
+    120
+  ],
+  "required_postprocess_RGB_paper_LUT_bytes": 768,
+  "parameters": 105,
+  "weight_elements": 88,
+  "int8_weight_bytes": 88,
+  "int32_bias_bytes": 68,
+  "edge_feature_bytes_per_frame": 19200,
+  "conv_MAC_per_frame": 1689600,
+  "conv_MAC_per_second_15fps": 25344000,
+  "conv_MAC_per_second_30fps": 50688000,
+  "activation_bytes": {
+    "input_gray_edge": 38400,
+    "hidden0": 153600,
+    "hidden1": 153600,
+    "output_low_ink": 19200
+  },
+  "hypothetical_100MHz": {
+    "one_MAC_conv_ms": 16.896,
+    "four_MAC_conv_ms": 4.224,
+    "eight_MAC_conv_ms": 2.112,
+    "input_output_rgb_scan_ms_if_one_pixel_per_cycle": 6.144,
+    "four_MAC_ideal_total_ms": 10.368,
+    "eight_MAC_ideal_total_ms": 8.256,
+    "not_included": "gray/pool/mean/Sobel feature generation, RGB paper LUT, controls, buffering, DDR, stalls, actual Fmax"
+  },
+  "target_frame_budget_ms": {
+    "15fps": 66.66666666666667,
+    "30fps": 33.333333333333336
+  },
+  "rgb_input_output_MB_s_at15fps": 27.648,
+  "synthesized": false,
+  "pnr_passed": false,
+  "board_verified": false
+}

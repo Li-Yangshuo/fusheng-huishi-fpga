@@ -1,0 +1,1802 @@
+[
+  {
+    "file": "100007.jpg",
+    "int8_teacher_mse": 21.75332704033858,
+    "fp32_teacher_mse": 27.21002960205078,
+    "mosaic_RGB_baseline_teacher_mse": 4033.102613804632,
+    "int8_vs_fp32_mae": 1.6945672788843513,
+    "mosaic_input_output_brightness_correlation": 0.5923255474042377,
+    "bit_exact": true
+  },
+  {
+    "file": "100039.jpg",
+    "int8_teacher_mse": 13.883689913843721,
+    "fp32_teacher_mse": 16.152183532714844,
+    "mosaic_RGB_baseline_teacher_mse": 2242.4159638565766,
+    "int8_vs_fp32_mae": 1.5258700922980077,
+    "mosaic_input_output_brightness_correlation": 0.7220010093053884,
+    "bit_exact": true
+  },
+  {
+    "file": "100099.jpg",
+    "int8_teacher_mse": 21.4780318939673,
+    "fp32_teacher_mse": 25.112777709960938,
+    "mosaic_RGB_baseline_teacher_mse": 1928.3910398474945,
+    "int8_vs_fp32_mae": 1.4652997447964218,
+    "mosaic_input_output_brightness_correlation": 0.549721023174249,
+    "bit_exact": true
+  },
+  {
+    "file": "10081.jpg",
+    "int8_teacher_mse": 16.882605260196033,
+    "fp32_teacher_mse": 19.472957611083984,
+    "mosaic_RGB_baseline_teacher_mse": 2661.143581332067,
+    "int8_vs_fp32_mae": 1.331258873127582,
+    "mosaic_input_output_brightness_correlation": 0.6237470642142128,
+    "bit_exact": true
+  },
+  {
+    "file": "101027.jpg",
+    "int8_teacher_mse": 29.893534816571734,
+    "fp32_teacher_mse": 38.278377532958984,
+    "mosaic_RGB_baseline_teacher_mse": 1279.180323231901,
+    "int8_vs_fp32_mae": 2.274102181303424,
+    "mosaic_input_output_brightness_correlation": 0.8323039560054695,
+    "bit_exact": true
+  },
+  {
+    "file": "101084.jpg",
+    "int8_teacher_mse": 52.369770550480915,
+    "fp32_teacher_mse": 53.14097213745117,
+    "mosaic_RGB_baseline_teacher_mse": 1070.1439394771985,
+    "int8_vs_fp32_mae": 1.9217557493341317,
+    "mosaic_input_output_brightness_correlation": 0.7974750964113327,
+    "bit_exact": true
+  },
+  {
+    "file": "102062.jpg",
+    "int8_teacher_mse": 15.033895022545781,
+    "fp32_teacher_mse": 17.373043060302734,
+    "mosaic_RGB_baseline_teacher_mse": 1575.1274504063854,
+    "int8_vs_fp32_mae": 1.4175754246834873,
+    "mosaic_input_output_brightness_correlation": 0.7688301437980821,
+    "bit_exact": true
+  },
+  {
+    "file": "103006.jpg",
+    "int8_teacher_mse": 14.130222850726364,
+    "fp32_teacher_mse": 15.348602294921875,
+    "mosaic_RGB_baseline_teacher_mse": 2518.3183528755094,
+    "int8_vs_fp32_mae": 1.4400728155651854,
+    "mosaic_input_output_brightness_correlation": 0.7737482933115716,
+    "bit_exact": true
+  },
+  {
+    "file": "103029.jpg",
+    "int8_teacher_mse": 14.473444868019646,
+    "fp32_teacher_mse": 17.734310150146484,
+    "mosaic_RGB_baseline_teacher_mse": 773.9913251700619,
+    "int8_vs_fp32_mae": 1.5794711767323315,
+    "mosaic_input_output_brightness_correlation": 0.7610850709437132,
+    "bit_exact": true
+  },
+  {
+    "file": "103078.jpg",
+    "int8_teacher_mse": 16.82436331182717,
+    "fp32_teacher_mse": 19.543107986450195,
+    "mosaic_RGB_baseline_teacher_mse": 2278.5195352080996,
+    "int8_vs_fp32_mae": 1.561992623455719,
+    "mosaic_input_output_brightness_correlation": 0.778603450986591,
+    "bit_exact": true
+  },
+  {
+    "file": "104010.jpg",
+    "int8_teacher_mse": 17.198511473170907,
+    "fp32_teacher_mse": 19.581750869750977,
+    "mosaic_RGB_baseline_teacher_mse": 1796.596842512313,
+    "int8_vs_fp32_mae": 1.3657655170394314,
+    "mosaic_input_output_brightness_correlation": 0.5459037622911787,
+    "bit_exact": true
+  },
+  {
+    "file": "104055.jpg",
+    "int8_teacher_mse": 18.909500860218056,
+    "fp32_teacher_mse": 21.080886840820312,
+    "mosaic_RGB_baseline_teacher_mse": 1633.4956112865211,
+    "int8_vs_fp32_mae": 1.3203644622820947,
+    "mosaic_input_output_brightness_correlation": 0.6140197992217813,
+    "bit_exact": true
+  },
+  {
+    "file": "105027.jpg",
+    "int8_teacher_mse": 13.069123734800758,
+    "fp32_teacher_mse": 14.194592475891113,
+    "mosaic_RGB_baseline_teacher_mse": 2314.431983169601,
+    "int8_vs_fp32_mae": 1.0304727577252522,
+    "mosaic_input_output_brightness_correlation": 0.4901218677546413,
+    "bit_exact": true
+  },
+  {
+    "file": "106005.jpg",
+    "int8_teacher_mse": 16.091187183672776,
+    "fp32_teacher_mse": 18.019447326660156,
+    "mosaic_RGB_baseline_teacher_mse": 2241.2546465996297,
+    "int8_vs_fp32_mae": 1.3170395795959566,
+    "mosaic_input_output_brightness_correlation": 0.7594755682881118,
+    "bit_exact": true
+  },
+  {
+    "file": "106047.jpg",
+    "int8_teacher_mse": 11.575682488396609,
+    "fp32_teacher_mse": 13.090340614318848,
+    "mosaic_RGB_baseline_teacher_mse": 1518.5801697906588,
+    "int8_vs_fp32_mae": 1.216941260078715,
+    "mosaic_input_output_brightness_correlation": 0.6563581812992854,
+    "bit_exact": true
+  },
+  {
+    "file": "107014.jpg",
+    "int8_teacher_mse": 17.854025373206685,
+    "fp32_teacher_mse": 22.4476375579834,
+    "mosaic_RGB_baseline_teacher_mse": 2197.0484793704295,
+    "int8_vs_fp32_mae": 1.31935136852524,
+    "mosaic_input_output_brightness_correlation": 0.5169060918258012,
+    "bit_exact": true
+  },
+  {
+    "file": "107045.jpg",
+    "int8_teacher_mse": 15.556308662842296,
+    "fp32_teacher_mse": 17.53516960144043,
+    "mosaic_RGB_baseline_teacher_mse": 1983.891316443765,
+    "int8_vs_fp32_mae": 1.3557716971118416,
+    "mosaic_input_output_brightness_correlation": 0.5891382289830605,
+    "bit_exact": true
+  },
+  {
+    "file": "107072.jpg",
+    "int8_teacher_mse": 19.924512987930726,
+    "fp32_teacher_mse": 21.974510192871094,
+    "mosaic_RGB_baseline_teacher_mse": 2556.984117848069,
+    "int8_vs_fp32_mae": 1.327254138386084,
+    "mosaic_input_output_brightness_correlation": 0.6215279696411824,
+    "bit_exact": true
+  },
+  {
+    "file": "108004.jpg",
+    "int8_teacher_mse": 16.508394905686092,
+    "fp32_teacher_mse": 18.195159912109375,
+    "mosaic_RGB_baseline_teacher_mse": 1454.9991093379313,
+    "int8_vs_fp32_mae": 1.3813237072092792,
+    "mosaic_input_output_brightness_correlation": 0.61926961660465,
+    "bit_exact": true
+  },
+  {
+    "file": "108036.jpg",
+    "int8_teacher_mse": 12.307459406992924,
+    "fp32_teacher_mse": 14.526811599731445,
+    "mosaic_RGB_baseline_teacher_mse": 1333.83970817017,
+    "int8_vs_fp32_mae": 1.3828517794402109,
+    "mosaic_input_output_brightness_correlation": 0.7920471034533341,
+    "bit_exact": true
+  },
+  {
+    "file": "108069.jpg",
+    "int8_teacher_mse": 13.651498927996817,
+    "fp32_teacher_mse": 14.375444412231445,
+    "mosaic_RGB_baseline_teacher_mse": 1336.0426657945427,
+    "int8_vs_fp32_mae": 1.2761991258793408,
+    "mosaic_input_output_brightness_correlation": 0.7928414743193651,
+    "bit_exact": true
+  },
+  {
+    "file": "109055.jpg",
+    "int8_teacher_mse": 11.619108459495123,
+    "fp32_teacher_mse": 12.952934265136719,
+    "mosaic_RGB_baseline_teacher_mse": 939.858774098105,
+    "int8_vs_fp32_mae": 1.3090074626666803,
+    "mosaic_input_output_brightness_correlation": 0.7778831614100844,
+    "bit_exact": true
+  },
+  {
+    "file": "112056.jpg",
+    "int8_teacher_mse": 12.509212263724416,
+    "fp32_teacher_mse": 15.62545108795166,
+    "mosaic_RGB_baseline_teacher_mse": 1749.3499460104201,
+    "int8_vs_fp32_mae": 1.3473781604443986,
+    "mosaic_input_output_brightness_correlation": 0.542125771776816,
+    "bit_exact": true
+  },
+  {
+    "file": "112090.jpg",
+    "int8_teacher_mse": 13.604782807034425,
+    "fp32_teacher_mse": 15.212549209594727,
+    "mosaic_RGB_baseline_teacher_mse": 2757.530693764945,
+    "int8_vs_fp32_mae": 1.3537933606240484,
+    "mosaic_input_output_brightness_correlation": 0.639334376214992,
+    "bit_exact": true
+  },
+  {
+    "file": "117025.jpg",
+    "int8_teacher_mse": 13.685749893245621,
+    "fp32_teacher_mse": 16.094099044799805,
+    "mosaic_RGB_baseline_teacher_mse": 2350.654341681777,
+    "int8_vs_fp32_mae": 1.3662712878125927,
+    "mosaic_input_output_brightness_correlation": 0.8158721433473048,
+    "bit_exact": true
+  },
+  {
+    "file": "118015.jpg",
+    "int8_teacher_mse": 21.586005279944576,
+    "fp32_teacher_mse": 24.963037490844727,
+    "mosaic_RGB_baseline_teacher_mse": 1576.3229679270062,
+    "int8_vs_fp32_mae": 1.5280410647278262,
+    "mosaic_input_output_brightness_correlation": 0.7637291614294517,
+    "bit_exact": true
+  },
+  {
+    "file": "118031.jpg",
+    "int8_teacher_mse": 15.940956430837227,
+    "fp32_teacher_mse": 18.141090393066406,
+    "mosaic_RGB_baseline_teacher_mse": 2200.0894422403608,
+    "int8_vs_fp32_mae": 1.294871500484199,
+    "mosaic_input_output_brightness_correlation": 0.697470548424006,
+    "bit_exact": true
+  },
+  {
+    "file": "118072.jpg",
+    "int8_teacher_mse": 14.484786654603969,
+    "fp32_teacher_mse": 17.12516975402832,
+    "mosaic_RGB_baseline_teacher_mse": 1096.124418038623,
+    "int8_vs_fp32_mae": 1.2784967831109921,
+    "mosaic_input_output_brightness_correlation": 0.8146127159918981,
+    "bit_exact": true
+  },
+  {
+    "file": "120003.jpg",
+    "int8_teacher_mse": 15.629560489109076,
+    "fp32_teacher_mse": 20.810937881469727,
+    "mosaic_RGB_baseline_teacher_mse": 3415.7843318547943,
+    "int8_vs_fp32_mae": 1.8886135176495493,
+    "mosaic_input_output_brightness_correlation": 0.7830115307551888,
+    "bit_exact": true
+  },
+  {
+    "file": "120093.jpg",
+    "int8_teacher_mse": 16.90981947753177,
+    "fp32_teacher_mse": 19.413068771362305,
+    "mosaic_RGB_baseline_teacher_mse": 1804.9202893022243,
+    "int8_vs_fp32_mae": 1.330928225740184,
+    "mosaic_input_output_brightness_correlation": 0.7939508615954692,
+    "bit_exact": true
+  },
+  {
+    "file": "123057.jpg",
+    "int8_teacher_mse": 12.413876976705255,
+    "fp32_teacher_mse": 14.487160682678223,
+    "mosaic_RGB_baseline_teacher_mse": 1778.9737900102134,
+    "int8_vs_fp32_mae": 1.2364491091316774,
+    "mosaic_input_output_brightness_correlation": 0.6718374448104782,
+    "bit_exact": true
+  },
+  {
+    "file": "128035.jpg",
+    "int8_teacher_mse": 39.376337968055815,
+    "fp32_teacher_mse": 48.223087310791016,
+    "mosaic_RGB_baseline_teacher_mse": 2049.121225058261,
+    "int8_vs_fp32_mae": 1.5323481993609847,
+    "mosaic_input_output_brightness_correlation": 0.7730455320090197,
+    "bit_exact": true
+  },
+  {
+    "file": "130014.jpg",
+    "int8_teacher_mse": 11.113908826269032,
+    "fp32_teacher_mse": 12.889703750610352,
+    "mosaic_RGB_baseline_teacher_mse": 1793.4671146339913,
+    "int8_vs_fp32_mae": 1.1947772673227721,
+    "mosaic_input_output_brightness_correlation": 0.536563075508846,
+    "bit_exact": true
+  },
+  {
+    "file": "130066.jpg",
+    "int8_teacher_mse": 12.089530195649816,
+    "fp32_teacher_mse": 13.896673202514648,
+    "mosaic_RGB_baseline_teacher_mse": 1912.6778900783409,
+    "int8_vs_fp32_mae": 1.1750879893534714,
+    "mosaic_input_output_brightness_correlation": 0.6796298167257528,
+    "bit_exact": true
+  },
+  {
+    "file": "134049.jpg",
+    "int8_teacher_mse": 17.27334131743672,
+    "fp32_teacher_mse": 18.989953994750977,
+    "mosaic_RGB_baseline_teacher_mse": 1530.0356466223493,
+    "int8_vs_fp32_mae": 1.2737969263809887,
+    "mosaic_input_output_brightness_correlation": 0.7931422415634847,
+    "bit_exact": true
+  },
+  {
+    "file": "134067.jpg",
+    "int8_teacher_mse": 14.09940863827036,
+    "fp32_teacher_mse": 15.455233573913574,
+    "mosaic_RGB_baseline_teacher_mse": 2102.384089639179,
+    "int8_vs_fp32_mae": 1.4374619814691767,
+    "mosaic_input_output_brightness_correlation": 0.8248116266202902,
+    "bit_exact": true
+  },
+  {
+    "file": "140006.jpg",
+    "int8_teacher_mse": 13.665973143911136,
+    "fp32_teacher_mse": 15.00532341003418,
+    "mosaic_RGB_baseline_teacher_mse": 1922.7954794805444,
+    "int8_vs_fp32_mae": 1.3219669286216473,
+    "mosaic_input_output_brightness_correlation": 0.8022773393165044,
+    "bit_exact": true
+  },
+  {
+    "file": "140088.jpg",
+    "int8_teacher_mse": 16.385288367800698,
+    "fp32_teacher_mse": 19.92800521850586,
+    "mosaic_RGB_baseline_teacher_mse": 1634.058627835557,
+    "int8_vs_fp32_mae": 1.392499875168303,
+    "mosaic_input_output_brightness_correlation": 0.8397615559021827,
+    "bit_exact": true
+  },
+  {
+    "file": "14085.jpg",
+    "int8_teacher_mse": 17.96656093262907,
+    "fp32_teacher_mse": 22.61762809753418,
+    "mosaic_RGB_baseline_teacher_mse": 1499.6964445591382,
+    "int8_vs_fp32_mae": 1.3323219992862627,
+    "mosaic_input_output_brightness_correlation": 0.7656212326864261,
+    "bit_exact": true
+  },
+  {
+    "file": "14092.jpg",
+    "int8_teacher_mse": 12.822983508511351,
+    "fp32_teacher_mse": 14.003748893737793,
+    "mosaic_RGB_baseline_teacher_mse": 1875.801684145153,
+    "int8_vs_fp32_mae": 1.2078355991126348,
+    "mosaic_input_output_brightness_correlation": 0.7283768139158575,
+    "bit_exact": true
+  },
+  {
+    "file": "141012.jpg",
+    "int8_teacher_mse": 16.42529321249479,
+    "fp32_teacher_mse": 19.58851432800293,
+    "mosaic_RGB_baseline_teacher_mse": 1431.798750264693,
+    "int8_vs_fp32_mae": 1.2697000431789962,
+    "mosaic_input_output_brightness_correlation": 0.7610475003615387,
+    "bit_exact": true
+  },
+  {
+    "file": "141048.jpg",
+    "int8_teacher_mse": 12.912041611401122,
+    "fp32_teacher_mse": 16.34671401977539,
+    "mosaic_RGB_baseline_teacher_mse": 792.4425506866628,
+    "int8_vs_fp32_mae": 1.4415334191507039,
+    "mosaic_input_output_brightness_correlation": 0.7744180847306672,
+    "bit_exact": true
+  },
+  {
+    "file": "145059.jpg",
+    "int8_teacher_mse": 54.985882700043774,
+    "fp32_teacher_mse": 57.45783996582031,
+    "mosaic_RGB_baseline_teacher_mse": 2349.9656028555123,
+    "int8_vs_fp32_mae": 1.7387202661856687,
+    "mosaic_input_output_brightness_correlation": 0.7853174497533255,
+    "bit_exact": true
+  },
+  {
+    "file": "145079.jpg",
+    "int8_teacher_mse": 17.009555780679353,
+    "fp32_teacher_mse": 21.13946533203125,
+    "mosaic_RGB_baseline_teacher_mse": 1232.9990853859845,
+    "int8_vs_fp32_mae": 1.5100503321095615,
+    "mosaic_input_output_brightness_correlation": 0.853647524273845,
+    "bit_exact": true
+  },
+  {
+    "file": "146074.jpg",
+    "int8_teacher_mse": 14.985052166743287,
+    "fp32_teacher_mse": 17.84299087524414,
+    "mosaic_RGB_baseline_teacher_mse": 2515.7508546141135,
+    "int8_vs_fp32_mae": 1.3503502821017497,
+    "mosaic_input_output_brightness_correlation": 0.7308804136562361,
+    "bit_exact": true
+  },
+  {
+    "file": "147077.jpg",
+    "int8_teacher_mse": 26.803245641447088,
+    "fp32_teacher_mse": 29.373085021972656,
+    "mosaic_RGB_baseline_teacher_mse": 1964.730368404656,
+    "int8_vs_fp32_mae": 1.3346386531301888,
+    "mosaic_input_output_brightness_correlation": 0.8132833283691875,
+    "bit_exact": true
+  },
+  {
+    "file": "147080.jpg",
+    "int8_teacher_mse": 30.820941696954335,
+    "fp32_teacher_mse": 43.04513168334961,
+    "mosaic_RGB_baseline_teacher_mse": 3308.378207029299,
+    "int8_vs_fp32_mae": 2.107568419856123,
+    "mosaic_input_output_brightness_correlation": 0.7664995841079499,
+    "bit_exact": true
+  },
+  {
+    "file": "15011.jpg",
+    "int8_teacher_mse": 22.5637286988164,
+    "fp32_teacher_mse": 28.448158264160156,
+    "mosaic_RGB_baseline_teacher_mse": 1871.572607476833,
+    "int8_vs_fp32_mae": 1.384234835744046,
+    "mosaic_input_output_brightness_correlation": 0.8097331458157796,
+    "bit_exact": true
+  },
+  {
+    "file": "15062.jpg",
+    "int8_teacher_mse": 18.168256815435257,
+    "fp32_teacher_mse": 21.209985733032227,
+    "mosaic_RGB_baseline_teacher_mse": 2118.380675563306,
+    "int8_vs_fp32_mae": 1.3774161248436132,
+    "mosaic_input_output_brightness_correlation": 0.7903134777249031,
+    "bit_exact": true
+  },
+  {
+    "file": "156054.jpg",
+    "int8_teacher_mse": 32.00331659915357,
+    "fp32_teacher_mse": 37.34935760498047,
+    "mosaic_RGB_baseline_teacher_mse": 1439.4463226761402,
+    "int8_vs_fp32_mae": 1.7005843369077795,
+    "mosaic_input_output_brightness_correlation": 0.7100713749850672,
+    "bit_exact": true
+  },
+  {
+    "file": "157032.jpg",
+    "int8_teacher_mse": 57.39428280835032,
+    "fp32_teacher_mse": 73.38810729980469,
+    "mosaic_RGB_baseline_teacher_mse": 2145.0151149773615,
+    "int8_vs_fp32_mae": 1.6254461726566984,
+    "mosaic_input_output_brightness_correlation": 0.6224819599126244,
+    "bit_exact": true
+  },
+  {
+    "file": "157087.jpg",
+    "int8_teacher_mse": 29.876194182099354,
+    "fp32_teacher_mse": 34.41023254394531,
+    "mosaic_RGB_baseline_teacher_mse": 3416.6551805784584,
+    "int8_vs_fp32_mae": 1.7910078896644215,
+    "mosaic_input_output_brightness_correlation": 0.7215325689484247,
+    "bit_exact": true
+  },
+  {
+    "file": "159002.jpg",
+    "int8_teacher_mse": 17.284451918594478,
+    "fp32_teacher_mse": 24.553647994995117,
+    "mosaic_RGB_baseline_teacher_mse": 817.517168660409,
+    "int8_vs_fp32_mae": 1.7640328281399948,
+    "mosaic_input_output_brightness_correlation": 0.8711272122226646,
+    "bit_exact": true
+  },
+  {
+    "file": "159022.jpg",
+    "int8_teacher_mse": 15.204695355751669,
+    "fp32_teacher_mse": 15.238546371459961,
+    "mosaic_RGB_baseline_teacher_mse": 480.2704695703837,
+    "int8_vs_fp32_mae": 1.1723300630988847,
+    "mosaic_input_output_brightness_correlation": 0.7804629210187446,
+    "bit_exact": true
+  },
+  {
+    "file": "160006.jpg",
+    "int8_teacher_mse": 11.832488319321808,
+    "fp32_teacher_mse": 15.754514694213867,
+    "mosaic_RGB_baseline_teacher_mse": 2136.3352056374342,
+    "int8_vs_fp32_mae": 1.5556843794882298,
+    "mosaic_input_output_brightness_correlation": 0.7654168263290381,
+    "bit_exact": true
+  },
+  {
+    "file": "16004.jpg",
+    "int8_teacher_mse": 63.92235523081993,
+    "fp32_teacher_mse": 63.32551193237305,
+    "mosaic_RGB_baseline_teacher_mse": 1487.063895134993,
+    "int8_vs_fp32_mae": 1.62103890663257,
+    "mosaic_input_output_brightness_correlation": 0.8148955329081294,
+    "bit_exact": true
+  },
+  {
+    "file": "160067.jpg",
+    "int8_teacher_mse": 15.16146649968292,
+    "fp32_teacher_mse": 17.399600982666016,
+    "mosaic_RGB_baseline_teacher_mse": 1599.3703762995453,
+    "int8_vs_fp32_mae": 1.1899213153074055,
+    "mosaic_input_output_brightness_correlation": 0.7324928196651099,
+    "bit_exact": true
+  },
+  {
+    "file": "16068.jpg",
+    "int8_teacher_mse": 12.016331823383599,
+    "fp32_teacher_mse": 12.64862060546875,
+    "mosaic_RGB_baseline_teacher_mse": 988.0437685290124,
+    "int8_vs_fp32_mae": 1.1377773489028913,
+    "mosaic_input_output_brightness_correlation": 0.7654590237028167,
+    "bit_exact": true
+  },
+  {
+    "file": "161045.jpg",
+    "int8_teacher_mse": 11.816390924662677,
+    "fp32_teacher_mse": 13.900908470153809,
+    "mosaic_RGB_baseline_teacher_mse": 803.5641693605876,
+    "int8_vs_fp32_mae": 1.377112185107156,
+    "mosaic_input_output_brightness_correlation": 0.5645429368167505,
+    "bit_exact": true
+  },
+  {
+    "file": "163004.jpg",
+    "int8_teacher_mse": 48.980432181502614,
+    "fp32_teacher_mse": 67.39530944824219,
+    "mosaic_RGB_baseline_teacher_mse": 720.8994707922423,
+    "int8_vs_fp32_mae": 2.6449561980012963,
+    "mosaic_input_output_brightness_correlation": 0.8791040351035345,
+    "bit_exact": true
+  },
+  {
+    "file": "163096.jpg",
+    "int8_teacher_mse": 12.829207834548074,
+    "fp32_teacher_mse": 17.353416442871094,
+    "mosaic_RGB_baseline_teacher_mse": 790.4541119383613,
+    "int8_vs_fp32_mae": 1.4770154867800578,
+    "mosaic_input_output_brightness_correlation": 0.8185949333650772,
+    "bit_exact": true
+  },
+  {
+    "file": "164046.jpg",
+    "int8_teacher_mse": 11.491623148688454,
+    "fp32_teacher_mse": 13.206879615783691,
+    "mosaic_RGB_baseline_teacher_mse": 1350.388852301884,
+    "int8_vs_fp32_mae": 1.1245967947528739,
+    "mosaic_input_output_brightness_correlation": 0.5633944941495045,
+    "bit_exact": true
+  },
+  {
+    "file": "168084.jpg",
+    "int8_teacher_mse": 12.177205798350784,
+    "fp32_teacher_mse": 14.083130836486816,
+    "mosaic_RGB_baseline_teacher_mse": 1626.7994001080697,
+    "int8_vs_fp32_mae": 1.2231253422814188,
+    "mosaic_input_output_brightness_correlation": 0.7373958417301845,
+    "bit_exact": true
+  },
+  {
+    "file": "17067.jpg",
+    "int8_teacher_mse": 10.73517578155833,
+    "fp32_teacher_mse": 11.89673900604248,
+    "mosaic_RGB_baseline_teacher_mse": 1228.763525166567,
+    "int8_vs_fp32_mae": 1.2610366152154489,
+    "mosaic_input_output_brightness_correlation": 0.7985625710053786,
+    "bit_exact": true
+  },
+  {
+    "file": "175083.jpg",
+    "int8_teacher_mse": 19.656624923130895,
+    "fp32_teacher_mse": 22.300251007080078,
+    "mosaic_RGB_baseline_teacher_mse": 1252.3386295643843,
+    "int8_vs_fp32_mae": 1.405076118507948,
+    "mosaic_input_output_brightness_correlation": 0.7204684438163287,
+    "bit_exact": true
+  },
+  {
+    "file": "176051.jpg",
+    "int8_teacher_mse": 15.864916464114888,
+    "fp32_teacher_mse": 17.404638290405273,
+    "mosaic_RGB_baseline_teacher_mse": 1609.3373671415193,
+    "int8_vs_fp32_mae": 1.321103182176335,
+    "mosaic_input_output_brightness_correlation": 0.7467397576549643,
+    "bit_exact": true
+  },
+  {
+    "file": "179084.jpg",
+    "int8_teacher_mse": 18.18260617561519,
+    "fp32_teacher_mse": 23.414615631103516,
+    "mosaic_RGB_baseline_teacher_mse": 2227.5463242857604,
+    "int8_vs_fp32_mae": 1.791627930984315,
+    "mosaic_input_output_brightness_correlation": 0.8213035099528752,
+    "bit_exact": true
+  },
+  {
+    "file": "181021.jpg",
+    "int8_teacher_mse": 19.20077738070733,
+    "fp32_teacher_mse": 25.382781982421875,
+    "mosaic_RGB_baseline_teacher_mse": 5280.12966745906,
+    "int8_vs_fp32_mae": 2.543432597021262,
+    "mosaic_input_output_brightness_correlation": 0.6731121323008852,
+    "bit_exact": true
+  },
+  {
+    "file": "183066.jpg",
+    "int8_teacher_mse": 15.070207022685132,
+    "fp32_teacher_mse": 18.50181007385254,
+    "mosaic_RGB_baseline_teacher_mse": 2635.149067607758,
+    "int8_vs_fp32_mae": 1.5899749572324962,
+    "mosaic_input_output_brightness_correlation": 0.7755224533869812,
+    "bit_exact": true
+  },
+  {
+    "file": "185092.jpg",
+    "int8_teacher_mse": 16.380384631703976,
+    "fp32_teacher_mse": 18.725923538208008,
+    "mosaic_RGB_baseline_teacher_mse": 592.7589968801793,
+    "int8_vs_fp32_mae": 1.3050201814773654,
+    "mosaic_input_output_brightness_correlation": 0.7795654603116327,
+    "bit_exact": true
+  },
+  {
+    "file": "187058.jpg",
+    "int8_teacher_mse": 33.73336834995708,
+    "fp32_teacher_mse": 35.855648040771484,
+    "mosaic_RGB_baseline_teacher_mse": 1307.8377277405896,
+    "int8_vs_fp32_mae": 1.4305967350423048,
+    "mosaic_input_output_brightness_correlation": 0.8424611527802781,
+    "bit_exact": true
+  },
+  {
+    "file": "187099.jpg",
+    "int8_teacher_mse": 16.934711775578005,
+    "fp32_teacher_mse": 18.40009117126465,
+    "mosaic_RGB_baseline_teacher_mse": 986.7996611303225,
+    "int8_vs_fp32_mae": 1.3237390153125712,
+    "mosaic_input_output_brightness_correlation": 0.8020006982291937,
+    "bit_exact": true
+  },
+  {
+    "file": "188025.jpg",
+    "int8_teacher_mse": 17.22527543357687,
+    "fp32_teacher_mse": 18.367755889892578,
+    "mosaic_RGB_baseline_teacher_mse": 2180.030992593484,
+    "int8_vs_fp32_mae": 1.273435154594481,
+    "mosaic_input_output_brightness_correlation": 0.7578019958941572,
+    "bit_exact": true
+  },
+  {
+    "file": "189006.jpg",
+    "int8_teacher_mse": 16.07878091539587,
+    "fp32_teacher_mse": 21.112598419189453,
+    "mosaic_RGB_baseline_teacher_mse": 1005.3435881852174,
+    "int8_vs_fp32_mae": 1.5882085637831025,
+    "mosaic_input_output_brightness_correlation": 0.8324297511696237,
+    "bit_exact": true
+  },
+  {
+    "file": "189013.jpg",
+    "int8_teacher_mse": 19.30936249534225,
+    "fp32_teacher_mse": 20.20509910583496,
+    "mosaic_RGB_baseline_teacher_mse": 2707.771801866528,
+    "int8_vs_fp32_mae": 1.2122672192599082,
+    "mosaic_input_output_brightness_correlation": 0.7233805446577569,
+    "bit_exact": true
+  },
+  {
+    "file": "189029.jpg",
+    "int8_teacher_mse": 23.342494946291545,
+    "fp32_teacher_mse": 29.997066497802734,
+    "mosaic_RGB_baseline_teacher_mse": 2616.4633539684733,
+    "int8_vs_fp32_mae": 1.8817958785516709,
+    "mosaic_input_output_brightness_correlation": 0.8787849473420588,
+    "bit_exact": true
+  },
+  {
+    "file": "189096.jpg",
+    "int8_teacher_mse": 77.75419775068364,
+    "fp32_teacher_mse": 96.2061767578125,
+    "mosaic_RGB_baseline_teacher_mse": 901.266280251344,
+    "int8_vs_fp32_mae": 1.864060668696887,
+    "mosaic_input_output_brightness_correlation": 0.8305585835502867,
+    "bit_exact": true
+  },
+  {
+    "file": "196027.jpg",
+    "int8_teacher_mse": 41.48837382588779,
+    "fp32_teacher_mse": 54.92312240600586,
+    "mosaic_RGB_baseline_teacher_mse": 2531.425865245948,
+    "int8_vs_fp32_mae": 1.505942246877433,
+    "mosaic_input_output_brightness_correlation": 0.603193534558998,
+    "bit_exact": true
+  },
+  {
+    "file": "196040.jpg",
+    "int8_teacher_mse": 12.485498506791163,
+    "fp32_teacher_mse": 13.502448081970215,
+    "mosaic_RGB_baseline_teacher_mse": 1478.0071426877794,
+    "int8_vs_fp32_mae": 1.2306921901160643,
+    "mosaic_input_output_brightness_correlation": 0.6746155180406131,
+    "bit_exact": true
+  },
+  {
+    "file": "196062.jpg",
+    "int8_teacher_mse": 11.517027870270471,
+    "fp32_teacher_mse": 12.813434600830078,
+    "mosaic_RGB_baseline_teacher_mse": 1187.6404166383327,
+    "int8_vs_fp32_mae": 1.1609227252423746,
+    "mosaic_input_output_brightness_correlation": 0.7515063885042264,
+    "bit_exact": true
+  },
+  {
+    "file": "196088.jpg",
+    "int8_teacher_mse": 14.552822740071008,
+    "fp32_teacher_mse": 16.980993270874023,
+    "mosaic_RGB_baseline_teacher_mse": 919.0587042612016,
+    "int8_vs_fp32_mae": 1.3391338097097307,
+    "mosaic_input_output_brightness_correlation": 0.8199201782627055,
+    "bit_exact": true
+  },
+  {
+    "file": "198087.jpg",
+    "int8_teacher_mse": 13.289772291770747,
+    "fp32_teacher_mse": 14.514837265014648,
+    "mosaic_RGB_baseline_teacher_mse": 2548.143419068794,
+    "int8_vs_fp32_mae": 1.2813806680656206,
+    "mosaic_input_output_brightness_correlation": 0.7906682153500892,
+    "bit_exact": true
+  },
+  {
+    "file": "20069.jpg",
+    "int8_teacher_mse": 18.7421923116167,
+    "fp32_teacher_mse": 20.5069580078125,
+    "mosaic_RGB_baseline_teacher_mse": 2327.2282967837173,
+    "int8_vs_fp32_mae": 1.3283074958374104,
+    "mosaic_input_output_brightness_correlation": 0.7820968564719543,
+    "bit_exact": true
+  },
+  {
+    "file": "201080.jpg",
+    "int8_teacher_mse": 33.80528537309709,
+    "fp32_teacher_mse": 39.64401626586914,
+    "mosaic_RGB_baseline_teacher_mse": 2650.103531717859,
+    "int8_vs_fp32_mae": 1.7264120833613439,
+    "mosaic_input_output_brightness_correlation": 0.6730188736963039,
+    "bit_exact": true
+  },
+  {
+    "file": "2018.jpg",
+    "int8_teacher_mse": 16.87058244090313,
+    "fp32_teacher_mse": 23.846118927001953,
+    "mosaic_RGB_baseline_teacher_mse": 945.4642505201136,
+    "int8_vs_fp32_mae": 1.9167751104042494,
+    "mosaic_input_output_brightness_correlation": 0.8819567088712471,
+    "bit_exact": true
+  },
+  {
+    "file": "202000.jpg",
+    "int8_teacher_mse": 15.954444942119606,
+    "fp32_teacher_mse": 17.142108917236328,
+    "mosaic_RGB_baseline_teacher_mse": 1205.040711974751,
+    "int8_vs_fp32_mae": 1.2146024433153797,
+    "mosaic_input_output_brightness_correlation": 0.6742048613722951,
+    "bit_exact": true
+  },
+  {
+    "file": "206062.jpg",
+    "int8_teacher_mse": 26.21883666337188,
+    "fp32_teacher_mse": 30.472280502319336,
+    "mosaic_RGB_baseline_teacher_mse": 1886.8771748363417,
+    "int8_vs_fp32_mae": 1.2792564280804881,
+    "mosaic_input_output_brightness_correlation": 0.755913005678751,
+    "bit_exact": true
+  },
+  {
+    "file": "206097.jpg",
+    "int8_teacher_mse": 19.46491095635723,
+    "fp32_teacher_mse": 22.982418060302734,
+    "mosaic_RGB_baseline_teacher_mse": 2604.22103450498,
+    "int8_vs_fp32_mae": 1.3927325038117124,
+    "mosaic_input_output_brightness_correlation": 0.7932895196055386,
+    "bit_exact": true
+  },
+  {
+    "file": "207038.jpg",
+    "int8_teacher_mse": 15.429779752276312,
+    "fp32_teacher_mse": 17.12688446044922,
+    "mosaic_RGB_baseline_teacher_mse": 1618.9932628354165,
+    "int8_vs_fp32_mae": 1.3542731556716738,
+    "mosaic_input_output_brightness_correlation": 0.7698013747150789,
+    "bit_exact": true
+  },
+  {
+    "file": "207049.jpg",
+    "int8_teacher_mse": 13.44291278913044,
+    "fp32_teacher_mse": 14.722748756408691,
+    "mosaic_RGB_baseline_teacher_mse": 825.9560378457548,
+    "int8_vs_fp32_mae": 1.2467267554375576,
+    "mosaic_input_output_brightness_correlation": 0.7568381833671184,
+    "bit_exact": true
+  },
+  {
+    "file": "208078.jpg",
+    "int8_teacher_mse": 17.693733543976435,
+    "fp32_teacher_mse": 19.201704025268555,
+    "mosaic_RGB_baseline_teacher_mse": 1710.0180572862623,
+    "int8_vs_fp32_mae": 1.2565640803959912,
+    "mosaic_input_output_brightness_correlation": 0.7832908292228099,
+    "bit_exact": true
+  },
+  {
+    "file": "209021.jpg",
+    "int8_teacher_mse": 10.853624771615879,
+    "fp32_teacher_mse": 12.224937438964844,
+    "mosaic_RGB_baseline_teacher_mse": 1372.5450227148267,
+    "int8_vs_fp32_mae": 1.2671759582642053,
+    "mosaic_input_output_brightness_correlation": 0.5859477260656331,
+    "bit_exact": true
+  },
+  {
+    "file": "217013.jpg",
+    "int8_teacher_mse": 68.6793674997858,
+    "fp32_teacher_mse": 82.216796875,
+    "mosaic_RGB_baseline_teacher_mse": 500.9485269635002,
+    "int8_vs_fp32_mae": 1.8803622902590884,
+    "mosaic_input_output_brightness_correlation": 0.8871925228763793,
+    "bit_exact": true
+  },
+  {
+    "file": "217090.jpg",
+    "int8_teacher_mse": 22.295894263967977,
+    "fp32_teacher_mse": 25.599567413330078,
+    "mosaic_RGB_baseline_teacher_mse": 1926.1491356672695,
+    "int8_vs_fp32_mae": 1.52964192808824,
+    "mosaic_input_output_brightness_correlation": 0.7302262611623762,
+    "bit_exact": true
+  },
+  {
+    "file": "220003.jpg",
+    "int8_teacher_mse": 23.995642686518,
+    "fp32_teacher_mse": 27.04473876953125,
+    "mosaic_RGB_baseline_teacher_mse": 1527.1721080890902,
+    "int8_vs_fp32_mae": 1.563520215324194,
+    "mosaic_input_output_brightness_correlation": 0.7558970833058688,
+    "bit_exact": true
+  },
+  {
+    "file": "223004.jpg",
+    "int8_teacher_mse": 24.83470821325325,
+    "fp32_teacher_mse": 29.307050704956055,
+    "mosaic_RGB_baseline_teacher_mse": 2524.401653514125,
+    "int8_vs_fp32_mae": 1.495931220271935,
+    "mosaic_input_output_brightness_correlation": 0.7196691650725049,
+    "bit_exact": true
+  },
+  {
+    "file": "223060.jpg",
+    "int8_teacher_mse": 19.686816449809463,
+    "fp32_teacher_mse": 23.08614730834961,
+    "mosaic_RGB_baseline_teacher_mse": 2750.5480771723883,
+    "int8_vs_fp32_mae": 1.6077842661546633,
+    "mosaic_input_output_brightness_correlation": 0.7417144302538543,
+    "bit_exact": true
+  },
+  {
+    "file": "225022.jpg",
+    "int8_teacher_mse": 32.78101941753963,
+    "fp32_teacher_mse": 38.283058166503906,
+    "mosaic_RGB_baseline_teacher_mse": 1954.2918476144594,
+    "int8_vs_fp32_mae": 1.5695804441734476,
+    "mosaic_input_output_brightness_correlation": 0.5752866839170092,
+    "bit_exact": true
+  },
+  {
+    "file": "226022.jpg",
+    "int8_teacher_mse": 15.795900576590997,
+    "fp32_teacher_mse": 16.82802391052246,
+    "mosaic_RGB_baseline_teacher_mse": 2124.2574108668878,
+    "int8_vs_fp32_mae": 1.177091244530036,
+    "mosaic_input_output_brightness_correlation": 0.5529704164494789,
+    "bit_exact": true
+  },
+  {
+    "file": "226033.jpg",
+    "int8_teacher_mse": 17.50947626138375,
+    "fp32_teacher_mse": 20.23331642150879,
+    "mosaic_RGB_baseline_teacher_mse": 2443.2252300027935,
+    "int8_vs_fp32_mae": 1.428870129154788,
+    "mosaic_input_output_brightness_correlation": 0.6479966698362817,
+    "bit_exact": true
+  },
+  {
+    "file": "226043.jpg",
+    "int8_teacher_mse": 75.2365616571749,
+    "fp32_teacher_mse": 85.82769775390625,
+    "mosaic_RGB_baseline_teacher_mse": 2369.7061320766693,
+    "int8_vs_fp32_mae": 1.6657353639375005,
+    "mosaic_input_output_brightness_correlation": 0.7633418098437886,
+    "bit_exact": true
+  },
+  {
+    "file": "226060.jpg",
+    "int8_teacher_mse": 20.632370207717187,
+    "fp32_teacher_mse": 24.61589813232422,
+    "mosaic_RGB_baseline_teacher_mse": 1640.2193041093956,
+    "int8_vs_fp32_mae": 1.5576054612366068,
+    "mosaic_input_output_brightness_correlation": 0.7474399052509949,
+    "bit_exact": true
+  },
+  {
+    "file": "228076.jpg",
+    "int8_teacher_mse": 45.48976439414656,
+    "fp32_teacher_mse": 59.885162353515625,
+    "mosaic_RGB_baseline_teacher_mse": 1751.2322960418994,
+    "int8_vs_fp32_mae": 2.228132833951627,
+    "mosaic_input_output_brightness_correlation": 0.815643310333332,
+    "bit_exact": true
+  },
+  {
+    "file": "230063.jpg",
+    "int8_teacher_mse": 32.92570820893703,
+    "fp32_teacher_mse": 41.78474426269531,
+    "mosaic_RGB_baseline_teacher_mse": 2038.9026903868591,
+    "int8_vs_fp32_mae": 1.5895601138865783,
+    "mosaic_input_output_brightness_correlation": 0.6486406672250907,
+    "bit_exact": true
+  },
+  {
+    "file": "230098.jpg",
+    "int8_teacher_mse": 13.912380502226432,
+    "fp32_teacher_mse": 17.126054763793945,
+    "mosaic_RGB_baseline_teacher_mse": 2590.6286185528984,
+    "int8_vs_fp32_mae": 1.5060784170114332,
+    "mosaic_input_output_brightness_correlation": 0.6715099216186634,
+    "bit_exact": true
+  },
+  {
+    "file": "23050.jpg",
+    "int8_teacher_mse": 24.073154305757765,
+    "fp32_teacher_mse": 27.309242248535156,
+    "mosaic_RGB_baseline_teacher_mse": 1466.3417785248157,
+    "int8_vs_fp32_mae": 1.683819182802957,
+    "mosaic_input_output_brightness_correlation": 0.8248630111197484,
+    "bit_exact": true
+  },
+  {
+    "file": "232076.jpg",
+    "int8_teacher_mse": 17.014085276732736,
+    "fp32_teacher_mse": 21.37320899963379,
+    "mosaic_RGB_baseline_teacher_mse": 660.4943660920336,
+    "int8_vs_fp32_mae": 1.5087605363573837,
+    "mosaic_input_output_brightness_correlation": 0.8349593652854148,
+    "bit_exact": true
+  },
+  {
+    "file": "235098.jpg",
+    "int8_teacher_mse": 69.94968379273162,
+    "fp32_teacher_mse": 96.8487777709961,
+    "mosaic_RGB_baseline_teacher_mse": 2141.9959627844146,
+    "int8_vs_fp32_mae": 2.4681706766646543,
+    "mosaic_input_output_brightness_correlation": 0.7356344196145141,
+    "bit_exact": true
+  },
+  {
+    "file": "238025.jpg",
+    "int8_teacher_mse": 14.6968604959229,
+    "fp32_teacher_mse": 16.166067123413086,
+    "mosaic_RGB_baseline_teacher_mse": 2013.786154775153,
+    "int8_vs_fp32_mae": 1.2327463359965218,
+    "mosaic_input_output_brightness_correlation": 0.5889268458551927,
+    "bit_exact": true
+  },
+  {
+    "file": "243095.jpg",
+    "int8_teacher_mse": 15.062891626493151,
+    "fp32_teacher_mse": 17.698225021362305,
+    "mosaic_RGB_baseline_teacher_mse": 2442.3181361137813,
+    "int8_vs_fp32_mae": 1.5341421721378963,
+    "mosaic_input_output_brightness_correlation": 0.790493250560264,
+    "bit_exact": true
+  },
+  {
+    "file": "246009.jpg",
+    "int8_teacher_mse": 12.322071786591204,
+    "fp32_teacher_mse": 14.016214370727539,
+    "mosaic_RGB_baseline_teacher_mse": 1549.5013323894448,
+    "int8_vs_fp32_mae": 1.294327266788039,
+    "mosaic_input_output_brightness_correlation": 0.7517212601353026,
+    "bit_exact": true
+  },
+  {
+    "file": "247003.jpg",
+    "int8_teacher_mse": 14.898099854226796,
+    "fp32_teacher_mse": 17.831817626953125,
+    "mosaic_RGB_baseline_teacher_mse": 1349.3891992863164,
+    "int8_vs_fp32_mae": 1.457275770949976,
+    "mosaic_input_output_brightness_correlation": 0.7928138828601566,
+    "bit_exact": true
+  },
+  {
+    "file": "247012.jpg",
+    "int8_teacher_mse": 15.787497754130891,
+    "fp32_teacher_mse": 19.2396297454834,
+    "mosaic_RGB_baseline_teacher_mse": 1827.7982717715995,
+    "int8_vs_fp32_mae": 1.5867024249480002,
+    "mosaic_input_output_brightness_correlation": 0.7187786654954593,
+    "bit_exact": true
+  },
+  {
+    "file": "249021.jpg",
+    "int8_teacher_mse": 15.135843512051068,
+    "fp32_teacher_mse": 17.276704788208008,
+    "mosaic_RGB_baseline_teacher_mse": 1720.8674377761113,
+    "int8_vs_fp32_mae": 1.3230464331565115,
+    "mosaic_input_output_brightness_correlation": 0.7644002777294704,
+    "bit_exact": true
+  },
+  {
+    "file": "250047.jpg",
+    "int8_teacher_mse": 30.337075221969915,
+    "fp32_teacher_mse": 34.52717971801758,
+    "mosaic_RGB_baseline_teacher_mse": 1073.8382960911351,
+    "int8_vs_fp32_mae": 1.835560084760384,
+    "mosaic_input_output_brightness_correlation": 0.8625831108865576,
+    "bit_exact": true
+  },
+  {
+    "file": "250087.jpg",
+    "int8_teacher_mse": 27.3565306715972,
+    "fp32_teacher_mse": 32.21525955200195,
+    "mosaic_RGB_baseline_teacher_mse": 2058.5097325910397,
+    "int8_vs_fp32_mae": 1.9064271317355208,
+    "mosaic_input_output_brightness_correlation": 0.8116768509479727,
+    "bit_exact": true
+  },
+  {
+    "file": "253016.jpg",
+    "int8_teacher_mse": 14.673662825960008,
+    "fp32_teacher_mse": 18.176441192626953,
+    "mosaic_RGB_baseline_teacher_mse": 3061.537372974658,
+    "int8_vs_fp32_mae": 1.549779919659098,
+    "mosaic_input_output_brightness_correlation": 0.700774116523834,
+    "bit_exact": true
+  },
+  {
+    "file": "253092.jpg",
+    "int8_teacher_mse": 13.487032447980434,
+    "fp32_teacher_mse": 15.568115234375,
+    "mosaic_RGB_baseline_teacher_mse": 1971.696707804097,
+    "int8_vs_fp32_mae": 1.3023655142614412,
+    "mosaic_input_output_brightness_correlation": 0.7526009920916801,
+    "bit_exact": true
+  },
+  {
+    "file": "257098.jpg",
+    "int8_teacher_mse": 18.37835974347237,
+    "fp32_teacher_mse": 21.14773941040039,
+    "mosaic_RGB_baseline_teacher_mse": 2235.9135938547092,
+    "int8_vs_fp32_mae": 1.3728056757234866,
+    "mosaic_input_output_brightness_correlation": 0.6887339976194107,
+    "bit_exact": true
+  },
+  {
+    "file": "258089.jpg",
+    "int8_teacher_mse": 54.64135928520022,
+    "fp32_teacher_mse": 69.3125991821289,
+    "mosaic_RGB_baseline_teacher_mse": 1850.7919628560683,
+    "int8_vs_fp32_mae": 2.0235840866930084,
+    "mosaic_input_output_brightness_correlation": 0.8347025759790545,
+    "bit_exact": true
+  },
+  {
+    "file": "259060.jpg",
+    "int8_teacher_mse": 24.218981750943012,
+    "fp32_teacher_mse": 27.946874618530273,
+    "mosaic_RGB_baseline_teacher_mse": 1563.2584274399778,
+    "int8_vs_fp32_mae": 1.4159407438125855,
+    "mosaic_input_output_brightness_correlation": 0.8292935105107474,
+    "bit_exact": true
+  },
+  {
+    "file": "267036.jpg",
+    "int8_teacher_mse": 13.9460202930453,
+    "fp32_teacher_mse": 16.351940155029297,
+    "mosaic_RGB_baseline_teacher_mse": 1439.0188211043842,
+    "int8_vs_fp32_mae": 1.3423512680216745,
+    "mosaic_input_output_brightness_correlation": 0.8152362723474529,
+    "bit_exact": true
+  },
+  {
+    "file": "268048.jpg",
+    "int8_teacher_mse": 14.205200125650943,
+    "fp32_teacher_mse": 17.020387649536133,
+    "mosaic_RGB_baseline_teacher_mse": 1861.7942650556822,
+    "int8_vs_fp32_mae": 1.4436001895476915,
+    "mosaic_input_output_brightness_correlation": 0.8332582543026059,
+    "bit_exact": true
+  },
+  {
+    "file": "268074.jpg",
+    "int8_teacher_mse": 28.55705146422846,
+    "fp32_teacher_mse": 48.31050491333008,
+    "mosaic_RGB_baseline_teacher_mse": 515.143603273324,
+    "int8_vs_fp32_mae": 2.430734728850168,
+    "mosaic_input_output_brightness_correlation": 0.7823544620349958,
+    "bit_exact": true
+  },
+  {
+    "file": "277053.jpg",
+    "int8_teacher_mse": 12.913069057033212,
+    "fp32_teacher_mse": 14.896324157714844,
+    "mosaic_RGB_baseline_teacher_mse": 1969.9993468065052,
+    "int8_vs_fp32_mae": 1.430474723596126,
+    "mosaic_input_output_brightness_correlation": 0.7714913827308374,
+    "bit_exact": true
+  },
+  {
+    "file": "279005.jpg",
+    "int8_teacher_mse": 13.055241248970114,
+    "fp32_teacher_mse": 13.82836627960205,
+    "mosaic_RGB_baseline_teacher_mse": 1154.2216577946836,
+    "int8_vs_fp32_mae": 1.335833046547264,
+    "mosaic_input_output_brightness_correlation": 0.7202239451348798,
+    "bit_exact": true
+  },
+  {
+    "file": "28083.jpg",
+    "int8_teacher_mse": 39.74175442792219,
+    "fp32_teacher_mse": 45.22529983520508,
+    "mosaic_RGB_baseline_teacher_mse": 1463.6520364456057,
+    "int8_vs_fp32_mae": 1.4966059472415105,
+    "mosaic_input_output_brightness_correlation": 0.7728371286318406,
+    "bit_exact": true
+  },
+  {
+    "file": "281017.jpg",
+    "int8_teacher_mse": 19.92249591004821,
+    "fp32_teacher_mse": 21.69867706298828,
+    "mosaic_RGB_baseline_teacher_mse": 2106.1143433922352,
+    "int8_vs_fp32_mae": 1.3065762757240897,
+    "mosaic_input_output_brightness_correlation": 0.6918058652765481,
+    "bit_exact": true
+  },
+  {
+    "file": "285022.jpg",
+    "int8_teacher_mse": 20.147947003713533,
+    "fp32_teacher_mse": 31.97467613220215,
+    "mosaic_RGB_baseline_teacher_mse": 357.44832913128073,
+    "int8_vs_fp32_mae": 2.182390957221222,
+    "mosaic_input_output_brightness_correlation": 0.817404794018428,
+    "bit_exact": true
+  },
+  {
+    "file": "288024.jpg",
+    "int8_teacher_mse": 15.709898834227662,
+    "fp32_teacher_mse": 16.540721893310547,
+    "mosaic_RGB_baseline_teacher_mse": 1532.2680481823722,
+    "int8_vs_fp32_mae": 1.4375667248459325,
+    "mosaic_input_output_brightness_correlation": 0.7808936633511303,
+    "bit_exact": true
+  },
+  {
+    "file": "289011.jpg",
+    "int8_teacher_mse": 12.050759885245013,
+    "fp32_teacher_mse": 13.1930570602417,
+    "mosaic_RGB_baseline_teacher_mse": 1288.1821939690578,
+    "int8_vs_fp32_mae": 1.2448054674081503,
+    "mosaic_input_output_brightness_correlation": 0.6031042231986502,
+    "bit_exact": true
+  },
+  {
+    "file": "290035.jpg",
+    "int8_teacher_mse": 17.843837741476865,
+    "fp32_teacher_mse": 19.506175994873047,
+    "mosaic_RGB_baseline_teacher_mse": 1463.0444486852489,
+    "int8_vs_fp32_mae": 1.4051337470735112,
+    "mosaic_input_output_brightness_correlation": 0.6699024948852315,
+    "bit_exact": true
+  },
+  {
+    "file": "29030.jpg",
+    "int8_teacher_mse": 66.99261965102623,
+    "fp32_teacher_mse": 92.24803161621094,
+    "mosaic_RGB_baseline_teacher_mse": 855.8866787523449,
+    "int8_vs_fp32_mae": 2.0350219909305127,
+    "mosaic_input_output_brightness_correlation": 0.823361150661672,
+    "bit_exact": true
+  },
+  {
+    "file": "296028.jpg",
+    "int8_teacher_mse": 20.64429609319883,
+    "fp32_teacher_mse": 23.809833526611328,
+    "mosaic_RGB_baseline_teacher_mse": 3307.215201627521,
+    "int8_vs_fp32_mae": 1.6512401480496757,
+    "mosaic_input_output_brightness_correlation": 0.7069295488879612,
+    "bit_exact": true
+  },
+  {
+    "file": "296058.jpg",
+    "int8_teacher_mse": 11.704925342271713,
+    "fp32_teacher_mse": 13.756356239318848,
+    "mosaic_RGB_baseline_teacher_mse": 1101.2278312806486,
+    "int8_vs_fp32_mae": 1.3109103399027824,
+    "mosaic_input_output_brightness_correlation": 0.7826076424239009,
+    "bit_exact": true
+  },
+  {
+    "file": "302022.jpg",
+    "int8_teacher_mse": 23.492615480141062,
+    "fp32_teacher_mse": 27.966106414794922,
+    "mosaic_RGB_baseline_teacher_mse": 1636.3674278076528,
+    "int8_vs_fp32_mae": 1.421072852225342,
+    "mosaic_input_output_brightness_correlation": 0.7326983415581321,
+    "bit_exact": true
+  },
+  {
+    "file": "306051.jpg",
+    "int8_teacher_mse": 16.79925300523023,
+    "fp32_teacher_mse": 20.425657272338867,
+    "mosaic_RGB_baseline_teacher_mse": 1747.8372193273465,
+    "int8_vs_fp32_mae": 1.612172096271202,
+    "mosaic_input_output_brightness_correlation": 0.8178510691468106,
+    "bit_exact": true
+  },
+  {
+    "file": "306052.jpg",
+    "int8_teacher_mse": 19.650855875968645,
+    "fp32_teacher_mse": 23.189420700073242,
+    "mosaic_RGB_baseline_teacher_mse": 1856.180047596922,
+    "int8_vs_fp32_mae": 1.7998388124386433,
+    "mosaic_input_output_brightness_correlation": 0.8444787242178449,
+    "bit_exact": true
+  },
+  {
+    "file": "3063.jpg",
+    "int8_teacher_mse": 24.615308882593602,
+    "fp32_teacher_mse": 27.86477279663086,
+    "mosaic_RGB_baseline_teacher_mse": 2937.5867926295127,
+    "int8_vs_fp32_mae": 1.7144018239371426,
+    "mosaic_input_output_brightness_correlation": 0.6468663042861347,
+    "bit_exact": true
+  },
+  {
+    "file": "309040.jpg",
+    "int8_teacher_mse": 19.606108325709002,
+    "fp32_teacher_mse": 23.02370262145996,
+    "mosaic_RGB_baseline_teacher_mse": 2419.4507517954885,
+    "int8_vs_fp32_mae": 1.5741473026149388,
+    "mosaic_input_output_brightness_correlation": 0.8063997995362429,
+    "bit_exact": true
+  },
+  {
+    "file": "317043.jpg",
+    "int8_teacher_mse": 12.172113957504063,
+    "fp32_teacher_mse": 13.801851272583008,
+    "mosaic_RGB_baseline_teacher_mse": 1251.7626898930464,
+    "int8_vs_fp32_mae": 1.2367143380415275,
+    "mosaic_input_output_brightness_correlation": 0.6400552165329348,
+    "bit_exact": true
+  },
+  {
+    "file": "326025.jpg",
+    "int8_teacher_mse": 24.187660065389025,
+    "fp32_teacher_mse": 39.04999542236328,
+    "mosaic_RGB_baseline_teacher_mse": 696.0274302693792,
+    "int8_vs_fp32_mae": 2.203698990214525,
+    "mosaic_input_output_brightness_correlation": 0.8795878372466583,
+    "bit_exact": true
+  },
+  {
+    "file": "326085.jpg",
+    "int8_teacher_mse": 14.465608011090646,
+    "fp32_teacher_mse": 16.255210876464844,
+    "mosaic_RGB_baseline_teacher_mse": 1448.1061601125402,
+    "int8_vs_fp32_mae": 1.4010888404451705,
+    "mosaic_input_output_brightness_correlation": 0.8079518961770542,
+    "bit_exact": true
+  },
+  {
+    "file": "33044.jpg",
+    "int8_teacher_mse": 10.836077534912777,
+    "fp32_teacher_mse": 11.975784301757812,
+    "mosaic_RGB_baseline_teacher_mse": 1372.8904376794696,
+    "int8_vs_fp32_mae": 1.22426490993834,
+    "mosaic_input_output_brightness_correlation": 0.7608780474325827,
+    "bit_exact": true
+  },
+  {
+    "file": "334025.jpg",
+    "int8_teacher_mse": 14.280337822260837,
+    "fp32_teacher_mse": 15.927373886108398,
+    "mosaic_RGB_baseline_teacher_mse": 2245.4720439758294,
+    "int8_vs_fp32_mae": 1.4071068678058993,
+    "mosaic_input_output_brightness_correlation": 0.8056545381064263,
+    "bit_exact": true
+  },
+  {
+    "file": "335088.jpg",
+    "int8_teacher_mse": 12.405902259119431,
+    "fp32_teacher_mse": 13.735429763793945,
+    "mosaic_RGB_baseline_teacher_mse": 2265.3441121558853,
+    "int8_vs_fp32_mae": 1.2885751597045196,
+    "mosaic_input_output_brightness_correlation": 0.7044969206127413,
+    "bit_exact": true
+  },
+  {
+    "file": "335094.jpg",
+    "int8_teacher_mse": 18.913592834840024,
+    "fp32_teacher_mse": 23.96014976501465,
+    "mosaic_RGB_baseline_teacher_mse": 4174.928563895779,
+    "int8_vs_fp32_mae": 2.034631233556332,
+    "mosaic_input_output_brightness_correlation": 0.7884788431823773,
+    "bit_exact": true
+  },
+  {
+    "file": "344010.jpg",
+    "int8_teacher_mse": 19.03974867400615,
+    "fp32_teacher_mse": 22.262386322021484,
+    "mosaic_RGB_baseline_teacher_mse": 3018.488894118841,
+    "int8_vs_fp32_mae": 1.8411644496901944,
+    "mosaic_input_output_brightness_correlation": 0.7899526879624164,
+    "bit_exact": true
+  },
+  {
+    "file": "346016.jpg",
+    "int8_teacher_mse": 12.203087103091299,
+    "fp32_teacher_mse": 16.077043533325195,
+    "mosaic_RGB_baseline_teacher_mse": 1126.9380419148438,
+    "int8_vs_fp32_mae": 1.4406047368833486,
+    "mosaic_input_output_brightness_correlation": 0.723709340118833,
+    "bit_exact": true
+  },
+  {
+    "file": "347031.jpg",
+    "int8_teacher_mse": 21.58096405722389,
+    "fp32_teacher_mse": 24.976804733276367,
+    "mosaic_RGB_baseline_teacher_mse": 2158.2097085812,
+    "int8_vs_fp32_mae": 1.6184278834786447,
+    "mosaic_input_output_brightness_correlation": 0.6284316140904666,
+    "bit_exact": true
+  },
+  {
+    "file": "35028.jpg",
+    "int8_teacher_mse": 27.757770262380888,
+    "fp32_teacher_mse": 33.31604766845703,
+    "mosaic_RGB_baseline_teacher_mse": 441.55758075623004,
+    "int8_vs_fp32_mae": 1.797289453547627,
+    "mosaic_input_output_brightness_correlation": 0.6863889412666594,
+    "bit_exact": true
+  },
+  {
+    "file": "35049.jpg",
+    "int8_teacher_mse": 23.455099916408894,
+    "fp32_teacher_mse": 32.67401123046875,
+    "mosaic_RGB_baseline_teacher_mse": 390.8474950991824,
+    "int8_vs_fp32_mae": 2.1267190933690614,
+    "mosaic_input_output_brightness_correlation": 0.8066012832865354,
+    "bit_exact": true
+  },
+  {
+    "file": "36046.jpg",
+    "int8_teacher_mse": 23.872216120269336,
+    "fp32_teacher_mse": 26.204273223876953,
+    "mosaic_RGB_baseline_teacher_mse": 1981.0233818276945,
+    "int8_vs_fp32_mae": 1.4890199540616806,
+    "mosaic_input_output_brightness_correlation": 0.7351458506078624,
+    "bit_exact": true
+  },
+  {
+    "file": "365072.jpg",
+    "int8_teacher_mse": 21.450369820373723,
+    "fp32_teacher_mse": 21.247949600219727,
+    "mosaic_RGB_baseline_teacher_mse": 2486.0886477466775,
+    "int8_vs_fp32_mae": 1.551690632052503,
+    "mosaic_input_output_brightness_correlation": 0.7982889406687217,
+    "bit_exact": true
+  },
+  {
+    "file": "368037.jpg",
+    "int8_teacher_mse": 58.52852062905597,
+    "fp32_teacher_mse": 60.82435607910156,
+    "mosaic_RGB_baseline_teacher_mse": 2446.1419983410146,
+    "int8_vs_fp32_mae": 1.7717741388846966,
+    "mosaic_input_output_brightness_correlation": 0.7961711098854014,
+    "bit_exact": true
+  },
+  {
+    "file": "372019.jpg",
+    "int8_teacher_mse": 23.217793301865647,
+    "fp32_teacher_mse": 27.75189971923828,
+    "mosaic_RGB_baseline_teacher_mse": 2446.489541388961,
+    "int8_vs_fp32_mae": 1.4664449683776022,
+    "mosaic_input_output_brightness_correlation": 0.7269498488371845,
+    "bit_exact": true
+  },
+  {
+    "file": "376086.jpg",
+    "int8_teacher_mse": 96.87971164412788,
+    "fp32_teacher_mse": 117.18424224853516,
+    "mosaic_RGB_baseline_teacher_mse": 1041.1493049009766,
+    "int8_vs_fp32_mae": 1.9558969944636597,
+    "mosaic_input_output_brightness_correlation": 0.8797582661322632,
+    "bit_exact": true
+  },
+  {
+    "file": "384022.jpg",
+    "int8_teacher_mse": 26.29541080399556,
+    "fp32_teacher_mse": 30.527681350708008,
+    "mosaic_RGB_baseline_teacher_mse": 2105.4492674768394,
+    "int8_vs_fp32_mae": 1.6405816091791106,
+    "mosaic_input_output_brightness_correlation": 0.7338490665258539,
+    "bit_exact": true
+  },
+  {
+    "file": "384089.jpg",
+    "int8_teacher_mse": 17.638043288451293,
+    "fp32_teacher_mse": 21.501359939575195,
+    "mosaic_RGB_baseline_teacher_mse": 500.2273895310687,
+    "int8_vs_fp32_mae": 1.550634128678236,
+    "mosaic_input_output_brightness_correlation": 0.8546186805163715,
+    "bit_exact": true
+  },
+  {
+    "file": "385022.jpg",
+    "int8_teacher_mse": 14.433168139156251,
+    "fp32_teacher_mse": 18.734390258789062,
+    "mosaic_RGB_baseline_teacher_mse": 2089.4346364203066,
+    "int8_vs_fp32_mae": 1.6967577404451955,
+    "mosaic_input_output_brightness_correlation": 0.8478254881618702,
+    "bit_exact": true
+  },
+  {
+    "file": "388006.jpg",
+    "int8_teacher_mse": 59.530825690650914,
+    "fp32_teacher_mse": 77.40377807617188,
+    "mosaic_RGB_baseline_teacher_mse": 2395.484349817959,
+    "int8_vs_fp32_mae": 2.2411435110493687,
+    "mosaic_input_output_brightness_correlation": 0.5654615645382685,
+    "bit_exact": true
+  },
+  {
+    "file": "388018.jpg",
+    "int8_teacher_mse": 26.606026025177528,
+    "fp32_teacher_mse": 29.563413619995117,
+    "mosaic_RGB_baseline_teacher_mse": 3025.436130760679,
+    "int8_vs_fp32_mae": 1.4425578196218218,
+    "mosaic_input_output_brightness_correlation": 0.8092504201192047,
+    "bit_exact": true
+  },
+  {
+    "file": "388067.jpg",
+    "int8_teacher_mse": 113.14022628144762,
+    "fp32_teacher_mse": 138.13796997070312,
+    "mosaic_RGB_baseline_teacher_mse": 1241.7298947720692,
+    "int8_vs_fp32_mae": 1.861095621052338,
+    "mosaic_input_output_brightness_correlation": 0.7851220108473684,
+    "bit_exact": true
+  },
+  {
+    "file": "393035.jpg",
+    "int8_teacher_mse": 22.46883144387597,
+    "fp32_teacher_mse": 28.007564544677734,
+    "mosaic_RGB_baseline_teacher_mse": 4027.9834938299837,
+    "int8_vs_fp32_mae": 1.9218851595998017,
+    "mosaic_input_output_brightness_correlation": 0.7603977603162143,
+    "bit_exact": true
+  },
+  {
+    "file": "41006.jpg",
+    "int8_teacher_mse": 19.5724410289892,
+    "fp32_teacher_mse": 23.511472702026367,
+    "mosaic_RGB_baseline_teacher_mse": 2151.6101828752576,
+    "int8_vs_fp32_mae": 1.168926392369637,
+    "mosaic_input_output_brightness_correlation": 0.6999083297462197,
+    "bit_exact": true
+  },
+  {
+    "file": "41029.jpg",
+    "int8_teacher_mse": 12.296330922558322,
+    "fp32_teacher_mse": 13.595918655395508,
+    "mosaic_RGB_baseline_teacher_mse": 2081.4386143292336,
+    "int8_vs_fp32_mae": 1.2857569667034678,
+    "mosaic_input_output_brightness_correlation": 0.7684944879555238,
+    "bit_exact": true
+  },
+  {
+    "file": "41085.jpg",
+    "int8_teacher_mse": 11.73445611127816,
+    "fp32_teacher_mse": 12.34717082977295,
+    "mosaic_RGB_baseline_teacher_mse": 862.4296430551826,
+    "int8_vs_fp32_mae": 1.1912044302461435,
+    "mosaic_input_output_brightness_correlation": 0.7788690556727769,
+    "bit_exact": true
+  },
+  {
+    "file": "41096.jpg",
+    "int8_teacher_mse": 18.123682698490477,
+    "fp32_teacher_mse": 21.45563507080078,
+    "mosaic_RGB_baseline_teacher_mse": 1494.8506483779754,
+    "int8_vs_fp32_mae": 1.1499490808592059,
+    "mosaic_input_output_brightness_correlation": 0.7392603666567571,
+    "bit_exact": true
+  },
+  {
+    "file": "43033.jpg",
+    "int8_teacher_mse": 15.138198358115075,
+    "fp32_teacher_mse": 13.99531078338623,
+    "mosaic_RGB_baseline_teacher_mse": 568.0000131229897,
+    "int8_vs_fp32_mae": 1.1295940933286168,
+    "mosaic_input_output_brightness_correlation": 0.6272339364259499,
+    "bit_exact": true
+  },
+  {
+    "file": "43051.jpg",
+    "int8_teacher_mse": 17.718291752154343,
+    "fp32_teacher_mse": 16.754901885986328,
+    "mosaic_RGB_baseline_teacher_mse": 516.3622861620433,
+    "int8_vs_fp32_mae": 1.205811911088919,
+    "mosaic_input_output_brightness_correlation": 0.8283738382855209,
+    "bit_exact": true
+  },
+  {
+    "file": "45000.jpg",
+    "int8_teacher_mse": 15.527157371915708,
+    "fp32_teacher_mse": 17.529550552368164,
+    "mosaic_RGB_baseline_teacher_mse": 398.45693377446196,
+    "int8_vs_fp32_mae": 1.4128602212425054,
+    "mosaic_input_output_brightness_correlation": 0.8171962127455068,
+    "bit_exact": true
+  },
+  {
+    "file": "48017.jpg",
+    "int8_teacher_mse": 15.735056243627886,
+    "fp32_teacher_mse": 19.692684173583984,
+    "mosaic_RGB_baseline_teacher_mse": 1104.040269704885,
+    "int8_vs_fp32_mae": 1.4352514430030714,
+    "mosaic_input_output_brightness_correlation": 0.8672640242535735,
+    "bit_exact": true
+  },
+  {
+    "file": "48025.jpg",
+    "int8_teacher_mse": 14.959405851998596,
+    "fp32_teacher_mse": 19.560134887695312,
+    "mosaic_RGB_baseline_teacher_mse": 2558.327115893368,
+    "int8_vs_fp32_mae": 1.5437100050514547,
+    "mosaic_input_output_brightness_correlation": 0.7250571952991065,
+    "bit_exact": true
+  },
+  {
+    "file": "49024.jpg",
+    "int8_teacher_mse": 16.801094054489248,
+    "fp32_teacher_mse": 18.06117057800293,
+    "mosaic_RGB_baseline_teacher_mse": 656.8201821213552,
+    "int8_vs_fp32_mae": 1.2999284117089136,
+    "mosaic_input_output_brightness_correlation": 0.7765574978718185,
+    "bit_exact": true
+  },
+  {
+    "file": "5096.jpg",
+    "int8_teacher_mse": 14.491455870125561,
+    "fp32_teacher_mse": 18.7277774810791,
+    "mosaic_RGB_baseline_teacher_mse": 631.542721260496,
+    "int8_vs_fp32_mae": 1.5503501968531903,
+    "mosaic_input_output_brightness_correlation": 0.8141306457992761,
+    "bit_exact": true
+  },
+  {
+    "file": "51084.jpg",
+    "int8_teacher_mse": 28.595532955901128,
+    "fp32_teacher_mse": 37.10117721557617,
+    "mosaic_RGB_baseline_teacher_mse": 1276.2945115575374,
+    "int8_vs_fp32_mae": 1.8658771530403302,
+    "mosaic_input_output_brightness_correlation": 0.8498972678863658,
+    "bit_exact": true
+  },
+  {
+    "file": "6046.jpg",
+    "int8_teacher_mse": 12.344623141844597,
+    "fp32_teacher_mse": 13.174078941345215,
+    "mosaic_RGB_baseline_teacher_mse": 1579.328390248349,
+    "int8_vs_fp32_mae": 1.2421107374556595,
+    "mosaic_input_output_brightness_correlation": 0.8022728425850729,
+    "bit_exact": true
+  },
+  {
+    "file": "61034.jpg",
+    "int8_teacher_mse": 32.0233371522819,
+    "fp32_teacher_mse": 40.49250411987305,
+    "mosaic_RGB_baseline_teacher_mse": 2038.6943887245156,
+    "int8_vs_fp32_mae": 1.67729307820168,
+    "mosaic_input_output_brightness_correlation": 0.8009155851896701,
+    "bit_exact": true
+  },
+  {
+    "file": "64061.jpg",
+    "int8_teacher_mse": 11.44667177999739,
+    "fp32_teacher_mse": 12.732275009155273,
+    "mosaic_RGB_baseline_teacher_mse": 2031.3869188360684,
+    "int8_vs_fp32_mae": 1.2584219105376138,
+    "mosaic_input_output_brightness_correlation": 0.6817793887939184,
+    "bit_exact": true
+  },
+  {
+    "file": "65084.jpg",
+    "int8_teacher_mse": 51.26188759045655,
+    "fp32_teacher_mse": 66.48988342285156,
+    "mosaic_RGB_baseline_teacher_mse": 2527.7340373354173,
+    "int8_vs_fp32_mae": 2.0310960029272893,
+    "mosaic_input_output_brightness_correlation": 0.8130372170290996,
+    "bit_exact": true
+  },
+  {
+    "file": "69000.jpg",
+    "int8_teacher_mse": 18.527323909971088,
+    "fp32_teacher_mse": 22.063629150390625,
+    "mosaic_RGB_baseline_teacher_mse": 1208.6465351937898,
+    "int8_vs_fp32_mae": 1.722000151663152,
+    "mosaic_input_output_brightness_correlation": 0.8365255741266205,
+    "bit_exact": true
+  },
+  {
+    "file": "69007.jpg",
+    "int8_teacher_mse": 14.838150991203115,
+    "fp32_teacher_mse": 17.12074851989746,
+    "mosaic_RGB_baseline_teacher_mse": 1341.5926764547883,
+    "int8_vs_fp32_mae": 1.3625937437029723,
+    "mosaic_input_output_brightness_correlation": 0.761841563478737,
+    "bit_exact": true
+  },
+  {
+    "file": "69022.jpg",
+    "int8_teacher_mse": 12.867144511557516,
+    "fp32_teacher_mse": 12.865635871887207,
+    "mosaic_RGB_baseline_teacher_mse": 763.0545001752675,
+    "int8_vs_fp32_mae": 1.26920433783451,
+    "mosaic_input_output_brightness_correlation": 0.7245253831793582,
+    "bit_exact": true
+  },
+  {
+    "file": "70011.jpg",
+    "int8_teacher_mse": 15.513138316587682,
+    "fp32_teacher_mse": 17.394067764282227,
+    "mosaic_RGB_baseline_teacher_mse": 1167.9648855275448,
+    "int8_vs_fp32_mae": 1.1555522654547046,
+    "mosaic_input_output_brightness_correlation": 0.5118463781444029,
+    "bit_exact": true
+  },
+  {
+    "file": "70090.jpg",
+    "int8_teacher_mse": 16.669146937071023,
+    "fp32_teacher_mse": 18.584556579589844,
+    "mosaic_RGB_baseline_teacher_mse": 794.261374282097,
+    "int8_vs_fp32_mae": 1.2664931484442947,
+    "mosaic_input_output_brightness_correlation": 0.8200452786082896,
+    "bit_exact": true
+  },
+  {
+    "file": "71076.jpg",
+    "int8_teacher_mse": 25.3617615781075,
+    "fp32_teacher_mse": 29.52240753173828,
+    "mosaic_RGB_baseline_teacher_mse": 1810.8707387617696,
+    "int8_vs_fp32_mae": 1.41846030131748,
+    "mosaic_input_output_brightness_correlation": 0.595068018161721,
+    "bit_exact": true
+  },
+  {
+    "file": "71099.jpg",
+    "int8_teacher_mse": 14.272264130936257,
+    "fp32_teacher_mse": 17.700571060180664,
+    "mosaic_RGB_baseline_teacher_mse": 1351.0704127724891,
+    "int8_vs_fp32_mae": 1.2944533386901993,
+    "mosaic_input_output_brightness_correlation": 0.760075515182452,
+    "bit_exact": true
+  },
+  {
+    "file": "77062.jpg",
+    "int8_teacher_mse": 12.646774885270675,
+    "fp32_teacher_mse": 15.331692695617676,
+    "mosaic_RGB_baseline_teacher_mse": 1553.6073430186395,
+    "int8_vs_fp32_mae": 1.39036882993804,
+    "mosaic_input_output_brightness_correlation": 0.81606352003536,
+    "bit_exact": true
+  },
+  {
+    "file": "78098.jpg",
+    "int8_teacher_mse": 18.792292298988606,
+    "fp32_teacher_mse": 20.78949737548828,
+    "mosaic_RGB_baseline_teacher_mse": 1848.6207926886775,
+    "int8_vs_fp32_mae": 1.3559832807889163,
+    "mosaic_input_output_brightness_correlation": 0.8306636747451044,
+    "bit_exact": true
+  },
+  {
+    "file": "79073.jpg",
+    "int8_teacher_mse": 19.936457714695234,
+    "fp32_teacher_mse": 25.108795166015625,
+    "mosaic_RGB_baseline_teacher_mse": 1147.8522320330267,
+    "int8_vs_fp32_mae": 1.5938846127669482,
+    "mosaic_input_output_brightness_correlation": 0.8386038799915548,
+    "bit_exact": true
+  },
+  {
+    "file": "80085.jpg",
+    "int8_teacher_mse": 25.788288253211316,
+    "fp32_teacher_mse": 29.147560119628906,
+    "mosaic_RGB_baseline_teacher_mse": 1111.5527712917335,
+    "int8_vs_fp32_mae": 1.4230675269522988,
+    "mosaic_input_output_brightness_correlation": 0.7156339519625151,
+    "bit_exact": true
+  },
+  {
+    "file": "80090.jpg",
+    "int8_teacher_mse": 30.287504150972893,
+    "fp32_teacher_mse": 43.62462615966797,
+    "mosaic_RGB_baseline_teacher_mse": 721.7998897350557,
+    "int8_vs_fp32_mae": 1.7140504283752913,
+    "mosaic_input_output_brightness_correlation": 0.6182318744267953,
+    "bit_exact": true
+  },
+  {
+    "file": "8068.jpg",
+    "int8_teacher_mse": 13.558377476212886,
+    "fp32_teacher_mse": 16.038545608520508,
+    "mosaic_RGB_baseline_teacher_mse": 1790.8621022243155,
+    "int8_vs_fp32_mae": 1.6057486313112328,
+    "mosaic_input_output_brightness_correlation": 0.8707155659284137,
+    "bit_exact": true
+  },
+  {
+    "file": "81066.jpg",
+    "int8_teacher_mse": 49.20279324085447,
+    "fp32_teacher_mse": 56.776390075683594,
+    "mosaic_RGB_baseline_teacher_mse": 2073.3886766936726,
+    "int8_vs_fp32_mae": 1.606947477032534,
+    "mosaic_input_output_brightness_correlation": 0.6581640970247232,
+    "bit_exact": true
+  },
+  {
+    "file": "81090.jpg",
+    "int8_teacher_mse": 25.835410225976233,
+    "fp32_teacher_mse": 28.88032341003418,
+    "mosaic_RGB_baseline_teacher_mse": 1417.2536669130013,
+    "int8_vs_fp32_mae": 1.4485432126516025,
+    "mosaic_input_output_brightness_correlation": 0.8197407871730233,
+    "bit_exact": true
+  },
+  {
+    "file": "81095.jpg",
+    "int8_teacher_mse": 106.00269459445668,
+    "fp32_teacher_mse": 116.70669555664062,
+    "mosaic_RGB_baseline_teacher_mse": 2277.3880421858676,
+    "int8_vs_fp32_mae": 1.5470438571697418,
+    "mosaic_input_output_brightness_correlation": 0.6537323324384083,
+    "bit_exact": true
+  },
+  {
+    "file": "87015.jpg",
+    "int8_teacher_mse": 12.893042767607398,
+    "fp32_teacher_mse": 14.534314155578613,
+    "mosaic_RGB_baseline_teacher_mse": 2477.6724853168025,
+    "int8_vs_fp32_mae": 1.131293519975928,
+    "mosaic_input_output_brightness_correlation": 0.6205324037780346,
+    "bit_exact": true
+  },
+  {
+    "file": "92014.jpg",
+    "int8_teacher_mse": 13.297561025922283,
+    "fp32_teacher_mse": 17.31110954284668,
+    "mosaic_RGB_baseline_teacher_mse": 2503.225339048705,
+    "int8_vs_fp32_mae": 1.6729387669617104,
+    "mosaic_input_output_brightness_correlation": 0.7876335816401163,
+    "bit_exact": true
+  },
+  {
+    "file": "94095.jpg",
+    "int8_teacher_mse": 10.383085770393249,
+    "fp32_teacher_mse": 11.662148475646973,
+    "mosaic_RGB_baseline_teacher_mse": 1296.889476151923,
+    "int8_vs_fp32_mae": 1.1309257321515016,
+    "mosaic_input_output_brightness_correlation": 0.5650441783082897,
+    "bit_exact": true
+  },
+  {
+    "file": "97010.jpg",
+    "int8_teacher_mse": 18.894783906697448,
+    "fp32_teacher_mse": 20.862890243530273,
+    "mosaic_RGB_baseline_teacher_mse": 1919.613996605812,
+    "int8_vs_fp32_mae": 1.3711440533488268,
+    "mosaic_input_output_brightness_correlation": 0.6836966585104604,
+    "bit_exact": true
+  }
+]

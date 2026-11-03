@@ -1,0 +1,236 @@
+{
+  "date": "2026-11-02",
+  "styles": [
+    {
+      "style": "漫画",
+      "source_package": "TinyComic_FPGA_640x480_15fps_v1",
+      "source_archive_sha256": "f7bf7dccf1eac9ecadc58e5c29a735137133c60214e6687c0da40a2ee0d5c86e",
+      "source_files": [
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyComic_FPGA_640x480_15fps_v1\\src\\integer_reference.py",
+          "sha256": "a89ee2e37ad6799608d4770f0bb9e42b32454cfc6d5bd58ae19232db77fbbe15"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyComic_FPGA_640x480_15fps_v1\\fpga\\tinycomic_weights_int8.npz",
+          "sha256": "c5172209a090d34d53498183e867b0161a6676f324fcb1505ee2138cd523bbce"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyComic_FPGA_640x480_15fps_v1\\examples\\111_input.png",
+          "sha256": "b1386eebc8bbcba2f66c76ac66dc22a6d4b5d42f9cc741bf6eed2a18eadfe79c"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyComic_FPGA_640x480_15fps_v1\\examples\\111_comic.png",
+          "sha256": "34227dec4db3b97e7688b37007852c4ca90d5f3726bbbb4619305022680bdec7"
+        }
+      ],
+      "output_image": "示例图/01_漫画风格_原图与渲染.png",
+      "output_image_sha256": "c959706d697d26ae79b746f3ba03746481acc8ff8ff9846eb1d1087118768cfa",
+      "RGB_input_sha256": "7f73660a57e2d307287ad1e852fc4d520a00549e453783f24221d9e6155a7a15",
+      "RGB_render_sha256": "384c77b5c08b3f4a33cf1a5f366a9b0fd1dc565d60bbbdf45c7868e719f5b0cd",
+      "fresh_numpy_INT64_matches_saved_trained_INT8_example": true,
+      "source_files_match_original_package_manifest": true,
+      "dimensions": [
+        1280,
+        520
+      ],
+      "frame_shape_each": [
+        640,
+        480
+      ]
+    },
+    {
+      "style": "霓虹",
+      "source_package": "TinyNeon_FPGA_640x480_15fps_v1",
+      "source_archive_sha256": "006913b7576cff23079f0264bb4d38472563efcae6439846bc967d3ec98df6b6",
+      "source_files": [
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyNeon_FPGA_640x480_15fps_v1\\src\\integer_reference.py",
+          "sha256": "f02be1cbc8209a9b9f861dc6ad7376d1eca409dd6cd132d13bfba22a51c1dd42"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyNeon_FPGA_640x480_15fps_v1\\fpga\\tinyneon_weights_int8.npz",
+          "sha256": "953c3025aa7862611498ad0f5b29fe8d33c40ba981c3dbfad2b33da6bbd3846d"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyNeon_FPGA_640x480_15fps_v1\\examples\\111_input.png",
+          "sha256": "b1386eebc8bbcba2f66c76ac66dc22a6d4b5d42f9cc741bf6eed2a18eadfe79c"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyNeon_FPGA_640x480_15fps_v1\\examples\\111_neon.png",
+          "sha256": "e0af49d9a0b00a555b6d304bca9ceeda2e484007d97bbd6b0217c59396ee7960"
+        }
+      ],
+      "output_image": "示例图/02_霓虹风格_原图与渲染.png",
+      "output_image_sha256": "d235f245732fed5e29fb4863a8fa444e647c40cbe647932b462d451c397c2ea3",
+      "RGB_input_sha256": "7f73660a57e2d307287ad1e852fc4d520a00549e453783f24221d9e6155a7a15",
+      "RGB_render_sha256": "7050a7d308f8ba26e08421b82bb358c2ee13043fe6da0a7be53e3c99ecaa923d",
+      "fresh_numpy_INT64_matches_saved_trained_INT8_example": true,
+      "source_files_match_original_package_manifest": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "frame_shape_each": [
+        640,
+        480
+      ],
+      "content_y_range_inclusive": [
+        120,
+        599
+      ]
+    },
+    {
+      "style": "像素",
+      "source_package": "PixelPoster_FPGA_640x480_15fps_v1",
+      "source_archive_sha256": "8c052e78506848ecce4972c0db16a9ac172891ce3aca3f2a8c8c54f2d6906e26",
+      "source_files": [
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\PixelPoster_FPGA_640x480_15fps_v1\\src\\integer_reference.py",
+          "sha256": "3013130a9d6ecade316821576a351d1d5fdcb9b23d715a257c94a33a10989503"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\PixelPoster_FPGA_640x480_15fps_v1\\fpga\\pixelposter_weights_int8.npz",
+          "sha256": "e8872312a148d90696fe04e7a6d0034f5ebd9f937b387e7739ae526cdae3f930"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\PixelPoster_FPGA_640x480_15fps_v1\\examples\\111_input.png",
+          "sha256": "b1386eebc8bbcba2f66c76ac66dc22a6d4b5d42f9cc741bf6eed2a18eadfe79c"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\PixelPoster_FPGA_640x480_15fps_v1\\examples\\111_styled.png",
+          "sha256": "3bf5bdf7b58e4b77e0174e12d9be5d950bb787ac4d53aa81837e0dbdb4ecb57d"
+        }
+      ],
+      "output_image": "示例图/03_像素风格_原图与渲染.png",
+      "output_image_sha256": "2dcea7c5f12bfa2b9a6a08a70f1e97bb070ea7bf69b9f458085d8d39d512bcd8",
+      "RGB_input_sha256": "7f73660a57e2d307287ad1e852fc4d520a00549e453783f24221d9e6155a7a15",
+      "RGB_render_sha256": "3a1f4f1eb114c0a8afed927c8cad436e183ea9ac57c05d827dbe9db69b03cddb",
+      "fresh_numpy_INT64_matches_saved_trained_INT8_example": true,
+      "source_files_match_original_package_manifest": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "frame_shape_each": [
+        640,
+        480
+      ],
+      "content_y_range_inclusive": [
+        120,
+        599
+      ]
+    },
+    {
+      "style": "水墨",
+      "source_package": "TinyInk_FPGA_640x480_15fps_v2",
+      "source_archive_sha256": "eecf7c130b949ad41d75a7ecb4a462ae0c2de028fcc4056ca1a523b8ba5bd4eb",
+      "source_files": [
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyInk_FPGA_640x480_15fps_v2\\src\\integer_reference.py",
+          "sha256": "c66f3dcf81ec9ff7700a8ca79ac5bbed74cfabedd9c8c133e1fa8034a72725b6"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyInk_FPGA_640x480_15fps_v2\\fpga\\tinyink_weights_int8.npz",
+          "sha256": "9ae7d680839d45872e5c5d239b097f4d8c5589f5705d50af19d2aef392cd927b"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyInk_FPGA_640x480_15fps_v2\\examples\\111_input.png",
+          "sha256": "b1386eebc8bbcba2f66c76ac66dc22a6d4b5d42f9cc741bf6eed2a18eadfe79c"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyInk_FPGA_640x480_15fps_v2\\examples\\111_ink.png",
+          "sha256": "e086af305ee74d2c582719c5574c85f7c04a1c40a92bb186be62fdcad80effc3"
+        }
+      ],
+      "output_image": "示例图/04_水墨风格_原图与渲染.png",
+      "output_image_sha256": "2d6322d96789b1c1e09275fca7d9eb3940393ecc9ce92c37f8df776264d7a4ea",
+      "RGB_input_sha256": "7f73660a57e2d307287ad1e852fc4d520a00549e453783f24221d9e6155a7a15",
+      "RGB_render_sha256": "ba06d4479ca2fc48d17ca46bbf24580dfda67c03da4b10dbbcd210dc51be1ccd",
+      "fresh_numpy_INT64_matches_saved_trained_INT8_example": true,
+      "source_files_match_original_package_manifest": true,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "frame_shape_each": [
+        640,
+        480
+      ],
+      "content_y_range_inclusive": [
+        120,
+        599
+      ]
+    },
+    {
+      "style": "玻璃",
+      "source_package": "TinyGlass_FPGA_640x480_15fps_v1",
+      "source_archive_sha256": "285969d310c2100ff60e25247476316d731ab3a0565714e3333e2dfc5816dbb2",
+      "source_files": [
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyGlass_FPGA_640x480_15fps_v1\\src\\integer_reference.py",
+          "sha256": "a31d74b26cd863b35541d02f7443aeb98f70923e35b2deeb467c68b50667bdee"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyGlass_FPGA_640x480_15fps_v1\\fpga\\tinyglass_weights_int8.npz",
+          "sha256": "6f4206f3137e00669043e00ab4f327465f71ea657c147f9b031dbbfc0e95bb5d"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyGlass_FPGA_640x480_15fps_v1\\examples\\111_input.png",
+          "sha256": "b1386eebc8bbcba2f66c76ac66dc22a6d4b5d42f9cc741bf6eed2a18eadfe79c"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyGlass_FPGA_640x480_15fps_v1\\examples\\111_glass.png",
+          "sha256": "7f6415d4554716f6ed9a6be5db996fe72107e36fa4f403a8f4f9c9b43344c61a"
+        },
+        {
+          "path": "C:\\Users\\Lenovo\\Documents\\Codex\\2026-10-31\\fpga-pytorch-15\\outputs\\TinyGlass_FPGA_640x480_15fps_v1\\fpga\\geometry.npz",
+          "sha256": "38b70fc2484eef26b1f0303abdc1e6c68b027544e9fb74bc955275e9eb184df8"
+        }
+      ],
+      "output_image": "示例图/05_玻璃风格_原图与渲染.png",
+      "output_image_sha256": "ae3ae4e98146808b22cb00fb43eb8a3cc6f713dce77259e97147c0f41b2b28f0",
+      "RGB_input_sha256": "7f73660a57e2d307287ad1e852fc4d520a00549e453783f24221d9e6155a7a15",
+      "RGB_render_sha256": "6f955dae0e0a3ddbedc075737b95e7336e1595e18962369c13ca03ea4092e847",
+      "fresh_numpy_INT64_matches_saved_trained_INT8_example": true,
+      "source_files_match_original_package_manifest": true,
+      "dimensions": [
+        1280,
+        520
+      ],
+      "frame_shape_each": [
+        640,
+        480
+      ]
+    }
+  ],
+  "all_same_RGB_input": true,
+  "images_are_final_trained_INT8_outputs": true,
+  "retrained_this_task": false,
+  "full_test200_repeated_this_task": false,
+  "board_FPS_measured_this_task": false,
+  "source_models_unchanged": true,
+  "canvas_revision": "Comparison PNGs remain offline examples; their1280x720 canvas is separate from the1280x720 board-picture resolution confirmed by the user.",
+  "board_resolution_feedback": {
+    "date": "2026-11-02",
+    "source": "direct user feedback in this conversation",
+    "statement": "就是指在上板时的分辨率达到了1280*720",
+    "scope_styles": [
+      "霓虹",
+      "像素",
+      "水墨"
+    ],
+    "board_picture_resolution": [
+      1280,
+      720
+    ],
+    "status": "achieved according to user board feedback",
+    "independently_measured_by_assistant": false,
+    "board_native_CNN_input_resolution_confirmed": false,
+    "board_FPS_confirmed": false,
+    "local_model_input_output": [
+      640,
+      480
+    ],
+    "note": "Corrects earlier interpretation as comparison-image canvas only. Existing figures remain offline model examples, not board screenshots."
+  }
+}

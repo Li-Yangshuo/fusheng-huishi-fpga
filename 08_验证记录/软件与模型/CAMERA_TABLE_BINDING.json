@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "register_writes": 166,
+  "scope": "R8 C camera table exactly equals active R7 initialization ROM, including tail writes. No physical sensor access.",
+  "R7_ROM_sha256": "ca2d58e22d99e3c05b2f4d52060cf593b9113ce2bbe7157b319def2613ea582d",
+  "R8_catalog_sha256": "f86258279959bb11b0e40d20cd9e6a4e26291cfda176632ed4cbbfd738f836e3"
+}

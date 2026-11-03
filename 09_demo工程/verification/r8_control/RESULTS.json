@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "hardware_accessed": false,
+  "receipts": [
+    "# R8_CONTROL PASS ordered_parameter_rows=72 runtime_write_lock=1 incomplete_reject=1 W1C_set_wins=1 stale_ack_reject=1 OSD_bounds=1"
+  ],
+  "source_sha256": {
+    "rtl\\r8_control.sv": "248545f82d41f011578e392e9bef099f5b651665d757c82f6c1b1f4004ce57cf",
+    "verification\\tb_r8_control.sv": "5144b650ed96c570825171e56d43fe2678156634820ebfd75abb86ec13bf0189"
+  }
+}

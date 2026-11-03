@@ -1,0 +1,10 @@
+{
+  "identical_input_repeats": 15,
+  "identical_outputs": true,
+  "plus1_mosaic_RGB_mae": 0.7626171875,
+  "minus1_mosaic_RGB_mae": 0.7311284722222222,
+  "fixed_screen_anchored_geometry": true,
+  "no_random_temporal_texture": true,
+  "camera_video_tested": false,
+  "note": "Motion can cross fixed cell boundaries and shimmer; static-repeat is not a motion stability test"
+}

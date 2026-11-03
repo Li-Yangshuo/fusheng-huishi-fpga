@@ -1,0 +1,20 @@
+Model Technology ModelSim SE vopt 10.2c Compiler 2013.07 Jul 18 2013
+
+Top level modules:
+	tb_r8_firmware
+
+Analyzing design...
+-- Loading module tb_r8_firmware
+-- Loading module ab13_rv32i_manager
+-- Loading module r8_control
+-- Loading module r8_camera_mmio
+-- Loading module i2c_16addr_8data
+-- Loading module i2c_master_top
+-- Loading module i2c_master_byte_ctrl
+-- Loading module i2c_master_bit_ctrl
+-- Loading module hd720_fused_core
+Incremental compilation check found 7 design-units (out of 9) may be reused.
+Optimizing 2 design-units (inlining 0 instances):
+-- Optimizing module tb_r8_firmware(fast)
+-- Optimizing module r8_control(fast)
+Optimized design name is case2_div3

@@ -1,0 +1,279 @@
+{
+  "fpga/deployment_contract.json": {
+    "model_id": "TinyGlass_pool2_mosaic_4x8x8x3_v1",
+    "style": "reference-inspired stained-glass mosaic; fixed geometry plus trained color and lead-seam mapping",
+    "input": {
+      "shape_NCHW": [
+        1,
+        3,
+        480,
+        640
+      ],
+      "order": "RGB",
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ]
+    },
+    "preprocess": {
+      "RGB_pool": "per RGB channel low=(sum of2x2+2)>>2",
+      "pooled_WH": [
+        320,
+        240
+      ],
+      "geometry": "tx=x%64,ty=y%64; sx=clip(x+dx[ty,tx],0,319); sy=clip(y+dy[ty,tx],0,239); CNN input=[pooled[sy,sx,R/G/B],lead[ty,tx]]",
+      "geometry_ROMS": {
+        "dx": {
+          "shape_HW": [
+            64,
+            64
+          ],
+          "dtype": "int8",
+          "bytes": 4096,
+          "sha256": "fbfd1dab70f47eeef4ca12d9b8a2b058ec14c8dee24fba63bde326224035fef1"
+        },
+        "dy": {
+          "shape_HW": [
+            64,
+            64
+          ],
+          "dtype": "int8",
+          "bytes": 4096,
+          "sha256": "4fc75b5dc2e03cd118e5ca484716a87ed7b022bcb091487e0716ad75c0a55e03"
+        },
+        "lead": {
+          "shape_HW": [
+            64,
+            64
+          ],
+          "dtype": "uint8",
+          "bytes": 4096,
+          "sha256": "a1d6577e434d1718dfa78e5d25cb86510c051b3d52b8e9c737c7059605708cc9"
+        }
+      },
+      "required": true,
+      "anchor_xy": [
+        0,
+        0
+      ],
+      "source_sampling": "single representative2x2-averaged RGB sample per cell, not cell mean or image-adaptive segmentation"
+    },
+    "layers": [
+      {
+        "index": 0,
+        "kernel": 1,
+        "padding": 0,
+        "groups": 1,
+        "stride": 1,
+        "weight_shape_OIHW": [
+          8,
+          4,
+          1,
+          1
+        ],
+        "right_shift": 5,
+        "weight_scale": 0.03125,
+        "activation_scale": 0.00392156862745098,
+        "activation_zero_point": 0,
+        "activation": "clamp_0_255",
+        "weight_clipped_elements": 0,
+        "worst_case_acc_abs_bound": 50424,
+        "MAC_per_frame": 2457600
+      },
+      {
+        "index": 1,
+        "kernel": 1,
+        "padding": 0,
+        "groups": 1,
+        "stride": 1,
+        "weight_shape_OIHW": [
+          8,
+          8,
+          1,
+          1
+        ],
+        "right_shift": 5,
+        "weight_scale": 0.03125,
+        "activation_scale": 0.00392156862745098,
+        "activation_zero_point": 0,
+        "activation": "clamp_0_255",
+        "weight_clipped_elements": 0,
+        "worst_case_acc_abs_bound": 71000,
+        "MAC_per_frame": 4915200
+      },
+      {
+        "index": 2,
+        "kernel": 1,
+        "padding": 0,
+        "groups": 1,
+        "stride": 1,
+        "weight_shape_OIHW": [
+          3,
+          8,
+          1,
+          1
+        ],
+        "right_shift": 7,
+        "weight_scale": 0.0078125,
+        "activation_scale": 0.00392156862745098,
+        "activation_zero_point": 0,
+        "activation": "clamp_0_255",
+        "weight_clipped_elements": 0,
+        "worst_case_acc_abs_bound": 89718,
+        "MAC_per_frame": 1843200
+      }
+    ],
+    "postprocess": "nearest-neighbor x2 of3-channel output to640x480; no extra glass overlay",
+    "integer_equation": "acc=sum(uint8_activation*int8_weight)+int32_bias; out=clip((acc+2^(shift-1)) arithmetic_right_shift shift,0,255)",
+    "rounding": "nearest ties toward positive infinity, including negative values",
+    "weight_order": "OIHW C order signed int8",
+    "bias_order": "output channel signed little-endian int32",
+    "activation_order": "HWC UINT8 golden maps",
+    "accumulator_bits": 32,
+    "normalization": "2 BatchNorm layers folded before QAT",
+    "onnx_note": "integer_reference.onnx uses float32 containers for exact integer-valued arithmetic; not QLinearConv or a BIT",
+    "hardware_compatibility": "requires pool2,3 geometry ROMs,signed offset gather with edge clamp,4 input channels and3 pointwise CNN layers; incompatible with prior loaders without adaptation",
+    "limits": "periodic screen-anchored fixed cells do not follow moving object boundaries; small detail can disappear or shimmer; no physical refraction/transparency or semantic segmentation",
+    "board_verified": false
+  },
+  "fpga/resource_and_throughput_budget.json": {
+    "full_WH": [
+      640,
+      480
+    ],
+    "learned_WH": [
+      320,
+      240
+    ],
+    "parameters": 139,
+    "weight_elements": 120,
+    "int8_weight_bytes": 120,
+    "int32_bias_bytes": 76,
+    "geometry_ROM_bytes": 12288,
+    "conv_MAC_per_frame": 9216000,
+    "conv_MAC_per_second_15fps": 138240000,
+    "conv_MAC_per_second_30fps": 276480000,
+    "pool_additions_per_frame": 691200,
+    "gather_RGB_reads_per_frame": 76800,
+    "activation_bytes": {
+      "pooled_RGB": 230400,
+      "mosaic_RGB_lead": 307200,
+      "hidden0": 614400,
+      "hidden1": 614400,
+      "output_low_RGB": 230400
+    },
+    "geometry_max_abs_offset_low_pixels": {
+      "x": 7,
+      "y": 7
+    },
+    "hypothetical_100MHz": {
+      "one_MAC_conv_ms": 92.16,
+      "four_MAC_conv_ms": 23.04,
+      "eight_MAC_conv_ms": 11.52,
+      "three_separate_RGB_scans_ms_input_plus_gather_plus_output": 6.912,
+      "four_MAC_ideal_total_ms": 29.951999999999998,
+      "eight_MAC_ideal_total_ms": 18.432,
+      "excludes": "ROM/read-port supply, pool/channel scheduling, controls, stalls, BRAM conflicts, DDR waits, buffering and achieved Fmax"
+    },
+    "target_frame_budget_ms": {
+      "15fps": 66.66666666666667,
+      "30fps": 33.333333333333336
+    },
+    "minimum_full_RGB_input_plus_output_MB_s_15fps": 27.648,
+    "streaming": "Pointwise layers may be fused; geometry gather requires lowres buffer or proven signed7-row offset line-buffer schedule. Do not allocate every hidden full map in BRAM by default.",
+    "synthesized": false,
+    "pnr_passed": false,
+    "board_verified": false
+  },
+  "evidence/training_receipt.json": {
+    "pytorch": "2.8.0+cu128",
+    "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:26:47) [MSC v.1942 64 bit (AMD64)]",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "seed": 20261035,
+    "training_optimizer_steps_completed": 18000,
+    "fp_steps_completed": 12000,
+    "qat_steps_completed": 6000,
+    "selected_float_step": 11600,
+    "selected_qat_step": 4800,
+    "selected_checkpoint_lineage_steps": 16400,
+    "best_qat_validation_mse": 0.0003699369844980538,
+    "wall_seconds": 80.39879990000918,
+    "train_images": 280,
+    "checkpoint_selection_validation_images": 20,
+    "official_test_images_used_for_training_or_selection": 0,
+    "shifts": [
+      5,
+      5,
+      7
+    ],
+    "initialization": "random, none of the previous models reused",
+    "training_kind": "pointwise supervised color and lead-seam mapping on fixed geometric mosaic inputs; not perceptual style transfer",
+    "teacher_runs_at_deployment": false,
+    "fixed_geometry_preprocess_runs_at_deployment": true,
+    "crop_loss_ignores2px_border": true,
+    "board_verified": false
+  },
+  "evidence/evaluation_summary.json": {
+    "test_images": 200,
+    "test_used_for_training_or_checkpoint_selection": false,
+    "numpy_int64_vs_pytorch_bit_exact_images": 200,
+    "teacher_psnr_int8_global_db": 34.54517936606009,
+    "teacher_psnr_fp32_global_db": 33.79252142649134,
+    "mosaic_input_baseline_teacher_psnr_db": 15.67541383387005,
+    "int8_vs_fp32_mae_0_255": 1.5056359825027903,
+    "mean_mosaic_input_output_brightness_correlation": 0.7445271118196634,
+    "special_cases": [
+      {
+        "name": "black",
+        "bit_exact": true
+      },
+      {
+        "name": "white",
+        "bit_exact": true
+      },
+      {
+        "name": "ramp",
+        "bit_exact": true
+      },
+      {
+        "name": "noise",
+        "bit_exact": true
+      }
+    ],
+    "full_preprocess_checks": [
+      {
+        "name": "random",
+        "full_RGB_preprocess_and_integer_exact": true
+      },
+      {
+        "name": "white",
+        "full_RGB_preprocess_and_integer_exact": true
+      },
+      {
+        "name": "red",
+        "full_RGB_preprocess_and_integer_exact": true
+      }
+    ],
+    "onnx_full_frame_checks": [
+      {
+        "file": "100007.jpg",
+        "numpy_torch_onnx_full_integer_exact": true,
+        "fp32_onnx_max_abs_error": 6.103515625e-05
+      },
+      {
+        "file": "100039.jpg",
+        "numpy_torch_onnx_full_integer_exact": true,
+        "fp32_onnx_max_abs_error": 6.103515625e-05
+      }
+    ],
+    "max_observed_acc_per_layer": [
+      24291,
+      29343,
+      32378
+    ],
+    "worst_case_acc_bound": 89718,
+    "limits": "PSNR only measures this simple procedural teacher, not reference style similarity, recognition accuracy, camera/FPGA acceptance"
+  }
+}

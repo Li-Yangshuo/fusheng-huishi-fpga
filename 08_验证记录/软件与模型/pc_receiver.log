@@ -1,0 +1,16 @@
+test_udp_http_roundtrip_and_idle (test_receiver.Integration.test_udp_http_roundtrip_and_idle) ... ok
+test_conflict (test_receiver.ProtocolTests.test_conflict) ... ok
+test_crc_and_malformed (test_receiver.ProtocolTests.test_crc_and_malformed) ... ok
+test_fps_and_stop (test_receiver.ProtocolTests.test_fps_and_stop) ... ok
+test_frame_id_wrap_and_gap (test_receiver.ProtocolTests.test_frame_id_wrap_and_gap) ... ok
+test_invalid_header_lengths (test_receiver.ProtocolTests.test_invalid_header_lengths) ... ok
+test_reordered_and_duplicate (test_receiver.ProtocolTests.test_reordered_and_duplicate) ... ok
+test_source_filter (test_receiver.ProtocolTests.test_source_filter) ... ok
+test_source_session_isolation (test_receiver.ProtocolTests.test_source_session_isolation) ... ok
+test_streams_rgb888_demo (test_receiver.ProtocolTests.test_streams_rgb888_demo) ... ok
+test_timeout_and_memory_bound (test_receiver.ProtocolTests.test_timeout_and_memory_bound) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.631s
+
+OK

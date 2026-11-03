@@ -1,0 +1,6 @@
+{
+  "test_file": "100007.jpg",
+  "onnx_integer_vs_numpy_bit_exact": true,
+  "torch_full_integer_vs_onnx_bit_exact": true,
+  "onnx_fp32_max_abs_error": 7.62939453125e-05
+}

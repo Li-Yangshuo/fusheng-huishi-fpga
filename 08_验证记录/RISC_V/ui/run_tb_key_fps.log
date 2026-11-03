@@ -1,0 +1,32 @@
+Reading D:/modeltech_10.2c/tcl/vsim/pref.tcl 
+
+# 10.2c
+
+# vsim -do {onerror {quit -code 1 -f};onbreak {quit -code 1 -f};run -all;quit -code 0 -f} -c work.tb_key_fps_opt 
+# //  ModelSim SE 10.2c Jul 18 2013 
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading sv_std.std
+# Loading work.tb_key_fps(fast)
+# Loading work.demo_key(fast)
+# Loading work.demo_fps(fast)
+# Loading work.demo_fps_period(fast)
+# ** Warning: (vsim-3017) D:/FUSHENG_TASK1_CODE_AUDIT_20261103/working/M7_RISCV_R8/verification/tb_demo_ui.sv(8): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /tb_key_fps/meter
+# ** Warning: (vsim-3722) D:/FUSHENG_TASK1_CODE_AUDIT_20261103/working/M7_RISCV_R8/verification/tb_demo_ui.sv(8): [TFMPC] - Missing connection for port 'ink_fps_x10'.
+# 
+# onerror {quit -code 1 -f} 
+#  Warning: onerror command for use within macro
+# onbreak {quit -code 1 -f} 
+#  Warning: onbreak command for use within macro
+# run -all 
+# DEMO_UI PASS debounce_bounce_hold_release_cycle_reset=1 fps_windows=5
+# ** Note: $finish    : D:/FUSHENG_TASK1_CODE_AUDIT_20261103/working/M7_RISCV_R8/verification/tb_demo_ui.sv(20)
+#    Time: 11010 ns  Iteration: 1  Instance: /tb_key_fps

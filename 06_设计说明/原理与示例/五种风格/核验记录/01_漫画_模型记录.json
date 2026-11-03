@@ -1,0 +1,264 @@
+{
+  "fpga/deployment_contract.json": {
+    "model_id": "TinyComic_rgbedge_pool4_4x8dw8x8x3_v1",
+    "style": "compact comic/cel-shading with quantized color regions and learned dark ink contours",
+    "input": {
+      "shape_NCHW": [
+        1,
+        3,
+        480,
+        640
+      ],
+      "order": "RGB",
+      "dtype": "uint8",
+      "range": [
+        0,
+        255
+      ]
+    },
+    "preprocess": {
+      "pool_RGB": "per channel low=(sum of4x4+8)>>4",
+      "lowres_WH": [
+        160,
+        120
+      ],
+      "edge_feature": {
+        "formula": "lum=(77*R+150*G+29*B+128)>>8; dx=abs(lum[y,x+1]-lum[y,x]); dy=abs(lum[y+1,x]-lum[y,x]); edge=min(2*max(dx,dy),255)",
+        "padding": "after computing forward differences on width159/height119, replicate last computed difference into final column/row; NOT a zero difference",
+        "bytes_per_frame": 19200,
+        "dtype": "uint8",
+        "order": "HWC fourth channel after pooled RGB"
+      },
+      "cnn_input": "pooled RGB plus edge feature as channel4"
+    },
+    "layers": [
+      {
+        "index": 0,
+        "weight_shape_OIHW": [
+          8,
+          4,
+          3,
+          3
+        ],
+        "kernel": 3,
+        "padding": "replicate1",
+        "stride": 1,
+        "groups": 1,
+        "right_shift": 5,
+        "weight_scale": 0.03125,
+        "activation_scale": 0.00392156862745098,
+        "activation_zero_point": 0,
+        "activation": "clamp_0_255",
+        "weight_clipped_elements": 0,
+        "worst_case_acc_abs_bound": 111391,
+        "MAC_per_frame": 5529600
+      },
+      {
+        "index": 1,
+        "weight_shape_OIHW": [
+          8,
+          1,
+          3,
+          3
+        ],
+        "kernel": 3,
+        "padding": "replicate1",
+        "stride": 1,
+        "groups": 8,
+        "right_shift": 3,
+        "weight_scale": 0.125,
+        "activation_scale": 0.00392156862745098,
+        "activation_zero_point": 0,
+        "activation": "clamp_0_255",
+        "weight_clipped_elements": 0,
+        "worst_case_acc_abs_bound": 27986,
+        "MAC_per_frame": 1382400
+      },
+      {
+        "index": 2,
+        "weight_shape_OIHW": [
+          8,
+          8,
+          1,
+          1
+        ],
+        "kernel": 1,
+        "padding": 0,
+        "stride": 1,
+        "groups": 1,
+        "right_shift": 5,
+        "weight_scale": 0.03125,
+        "activation_scale": 0.00392156862745098,
+        "activation_zero_point": 0,
+        "activation": "clamp_0_255",
+        "weight_clipped_elements": 0,
+        "worst_case_acc_abs_bound": 58405,
+        "MAC_per_frame": 1228800
+      },
+      {
+        "index": 3,
+        "weight_shape_OIHW": [
+          3,
+          8,
+          1,
+          1
+        ],
+        "kernel": 1,
+        "padding": 0,
+        "stride": 1,
+        "groups": 1,
+        "right_shift": 7,
+        "weight_scale": 0.0078125,
+        "activation_scale": 0.00392156862745098,
+        "activation_zero_point": 0,
+        "activation": "clamp_0_255",
+        "weight_clipped_elements": 0,
+        "worst_case_acc_abs_bound": 73378,
+        "MAC_per_frame": 460800
+      }
+    ],
+    "postprocess": "First y=UINT8 CNN output; q=((y*5+127)//255)*51 per RGB channel; where input edge>110 replace RGB with[12,12,16]; nearest-neighbor x4. This LUT/ink stage is REQUIRED",
+    "integer_equation": "acc=sum(uint8_activation*int8_weight)+int32_bias; out=clip((acc+2^(shift-1)) arithmetic_right_shift shift,0,255)",
+    "rounding": "nearest ties toward positive infinity",
+    "weight_order": "OIHW C-order signed int8; layer1 DW groups8",
+    "bias_order": "output-channel signed little endian int32",
+    "activation_order": "HWC UINT8 golden maps",
+    "padding": "replicate-edge1 at first two3x3 layers",
+    "normalization": "3 BatchNorm layers folded before QAT",
+    "accumulator_bits": 32,
+    "hardware_compatibility": "requires RGB pool4, integer luma differences, edge feature channel, first two replicate-padded3x3 convolutions, DW8 and four layers; old loaders/BIT require adaptation",
+    "limits": "This is supervised approximation of local comic/cel-shading target, not semantic segmentation or perceptual comic style transfer; thin detail may be lost",
+    "board_verified": false
+  },
+  "fpga/resource_and_throughput_budget.json": {
+    "full_WH": [
+      640,
+      480
+    ],
+    "learned_WH": [
+      160,
+      120
+    ],
+    "required_postprocess_palette_LUT_bytes": 256,
+    "parameters": 475,
+    "weight_elements": 448,
+    "int8_weight_bytes": 448,
+    "int32_bias_bytes": 108,
+    "edge_feature_bytes_per_frame": 19200,
+    "conv_MAC_per_frame": 8601600,
+    "conv_MAC_per_second_15fps": 129024000,
+    "conv_MAC_per_second_30fps": 258048000,
+    "activation_bytes": {
+      "input_rgb_edge": 76800,
+      "hidden0": 153600,
+      "hidden1": 153600,
+      "hidden2": 153600,
+      "output_low_rgb": 57600
+    },
+    "hypothetical_100MHz": {
+      "one_MAC_conv_ms": 86.016,
+      "four_MAC_conv_ms": 21.504,
+      "eight_MAC_conv_ms": 10.752,
+      "input_output_rgb_scan_ms_if_one_pixel_per_cycle": 6.144,
+      "four_MAC_ideal_total_ms": 27.648000000000003,
+      "eight_MAC_ideal_total_ms": 16.896,
+      "not_included": "edge feature generation, required palette LUT and ink selection, controls, buffering, DDR, stalls, actual Fmax"
+    },
+    "target_frame_budget_ms": {
+      "15fps": 66.66666666666667,
+      "30fps": 33.333333333333336
+    },
+    "rgb_input_output_MB_s_at15fps": 27.648,
+    "synthesized": false,
+    "pnr_passed": false,
+    "board_verified": false
+  },
+  "evidence/training_receipt.json": {
+    "pytorch": "2.8.0+cu128",
+    "python": "3.12.13 | packaged by Anaconda, Inc. | (main, Jul  9 2026, 14:26:47) [MSC v.1942 64 bit (AMD64)]",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "seed": 20261036,
+    "training_optimizer_steps_completed": 18000,
+    "fp_steps_completed": 12000,
+    "qat_steps_completed": 6000,
+    "selected_float_step": 11600,
+    "selected_qat_step": 3600,
+    "selected_checkpoint_lineage_steps": 15200,
+    "best_qat_validation_mse": 0.002054645447060466,
+    "wall_seconds": 154.67601619999914,
+    "train_images": 280,
+    "checkpoint_selection_validation_images": 20,
+    "official_test_images_used_for_training_or_selection": 0,
+    "shifts": [
+      5,
+      3,
+      5,
+      7
+    ],
+    "initialization": "random; no other style weights reused",
+    "training_kind": "supervised distillation of local comic/cel-shading target; quantized edge feature computed at deployment",
+    "teacher_runs_at_deployment": false,
+    "board_verified": false
+  },
+  "evidence/evaluation_summary.json": {
+    "test_images": 200,
+    "test_used_for_gradient_or_checkpoint_selection": false,
+    "design_review_test_files": [
+      "100039.jpg"
+    ],
+    "design_unseen_test_images": 199,
+    "numpy_pytorch_bit_exact_images": 200,
+    "teacher_psnr_int8_db": 26.84339391840598,
+    "teacher_psnr_fp32_db": 28.014635195113886,
+    "raw_pooled_rgb_teacher_psnr_db": 17.717879010997567,
+    "int8_teacher_mse_reduction_vs_raw_percent": 87.76937898005994,
+    "int8_fp32_mae_0_255": 4.467286545632948,
+    "onnx_full_frame_check_max_errors": [
+      0.0,
+      0.0
+    ],
+    "special_cases": [
+      {
+        "name": "black",
+        "bit_exact": true
+      },
+      {
+        "name": "white",
+        "bit_exact": true
+      },
+      {
+        "name": "ramp",
+        "bit_exact": true
+      },
+      {
+        "name": "noise",
+        "bit_exact": true
+      }
+    ],
+    "full_resolution_preprocess_checks": [
+      {
+        "name": "random",
+        "numpy_torch_onnx_exact": true
+      },
+      {
+        "name": "white",
+        "numpy_torch_onnx_exact": true
+      },
+      {
+        "name": "red",
+        "numpy_torch_onnx_exact": true
+      }
+    ],
+    "max_observed_acc_per_layer": [
+      32791,
+      5392,
+      27808,
+      38762
+    ],
+    "worst_case_acc_bound": 111391,
+    "limits": "Teacher PSNR is only a fit measure for the simple procedural target, not semantic recognition or style quality",
+    "teacher_metric_scope": "Raw trained CNN before required palette/ink postprocessing",
+    "design_unseen_teacher_psnr_int8_db": 26.851464955706618
+  }
+}

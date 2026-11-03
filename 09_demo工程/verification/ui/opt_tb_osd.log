@@ -1,0 +1,15 @@
+Model Technology ModelSim SE vopt 10.2c Compiler 2013.07 Jul 18 2013
+
+Top level modules:
+	tb_osd
+
+Analyzing design...
+-- Loading module tb_osd
+-- Loading module demo_osd
+Incremental compilation check found no design-units (out of 2) may be reused.
+Optimizing 2 design-units (inlining 0 instances):
+-- Optimizing module demo_osd(fast)
+-- Optimizing module tb_osd(fast)
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\verification\tb_demo_ui.sv(26): (vopt-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 16, found 15.
+** Warning: D:\FUSHENG_TASK1_CODE_AUDIT_20261103\working\M7_RISCV_R8\verification\tb_demo_ui.sv(26): (vopt-2718) [TFMPC] - Missing connection for port 'cpu_text'.
+Optimized design name is tb_osd_opt

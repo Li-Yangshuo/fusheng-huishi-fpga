@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "Glass": "Original trained HD6 graph, geometry, weights and biases; only equivalent output row RAM read addressing changed.",
+  "Comic": "Byte-identical original M8 core, weights and biases.",
+  "source_sha256": {
+    "rtl/hd720_fused_core.sv": "835ceef2c51090f260d9133e4a1b4dd840e30be0d5e970150162d4c135582867",
+    "references/glass_core.sv": "54f913262ae6e4afb18152fd04a9386fb3652b735eb1e8c134f4103909ed1877",
+    "rtl/tinycomic_fused_core.sv": "6bab956f76e119e902f35a5c82ffbd3dfa56a027aa6eb48d8ae2bfdecbc068aa",
+    "references/comic_core.sv": "6bab956f76e119e902f35a5c82ffbd3dfa56a027aa6eb48d8ae2bfdecbc068aa",
+    "structure/board_r6/project/hd_weights.mem": "de58b177a3630272b801acd3f2e41fdea5aaa44f92e226a7c833266f0ca24b71",
+    "references/Glass/hd_weights.mem": "de58b177a3630272b801acd3f2e41fdea5aaa44f92e226a7c833266f0ca24b71",
+    "structure/board_r6/project/hd_bias.mem": "2b6c433177c892dc3b2caf308419a0c66723f17e12a199828461913f232bdd42",
+    "references/Glass/hd_bias.mem": "2b6c433177c892dc3b2caf308419a0c66723f17e12a199828461913f232bdd42",
+    "structure/board_r6/project/hd_geometry.mem": "6eff4eb9b0f9eed17fe35e29f0cb128a31f1c59126d1cc1bcd144b0b272b4ab6",
+    "references/Glass/hd_geometry.mem": "6eff4eb9b0f9eed17fe35e29f0cb128a31f1c59126d1cc1bcd144b0b272b4ab6",
+    "structure/board_r6/project/comic_weights.mem": "3b7de4befbcdc6453ae24a4deb2dadd7f5c46b2d46c0805a6b50cb16de65aeb0",
+    "references/Comic/hd_weights.mem": "3b7de4befbcdc6453ae24a4deb2dadd7f5c46b2d46c0805a6b50cb16de65aeb0",
+    "structure/board_r6/project/comic_bias.mem": "ba1e220fdac16b85adbc7b73fad526459e45b3db2841e5d78da7deeaa4a0652a",
+    "references/Comic/hd_bias.mem": "ba1e220fdac16b85adbc7b73fad526459e45b3db2841e5d78da7deeaa4a0652a"
+  },
+  "reference_bits": {
+    "Glass": {
+      "path": "C:\\Users\\Lenovo\\Desktop\\TINYGLASS_HD6_SCENE_720P15_20261031\\ti60f225_oob_hd6.bit",
+      "bytes": 3113829,
+      "sha256": "14a6beb13d61bc91e7c18e2e1ff12442b2a3f0b931698fb066c4261d273b1cdc"
+    },
+    "Comic": {
+      "path": "C:\\Users\\Lenovo\\Desktop\\TINYCOMIC_M8_20261101\\BIT\\TinyComic_M8.bit",
+      "bytes": 2775045,
+      "sha256": "ea73ad8c54c7357536d2787a28815ace5e9b19fe09763c85ec15e8d05a4d1db4"
+    }
+  },
+  "hardware_accessed": false
+}

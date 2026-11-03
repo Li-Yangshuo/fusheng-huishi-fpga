@@ -1,0 +1,31 @@
+`timescale 1ns/1ps
+module tb_display_chain;
+ reg core_clk=0;always #5 core_clk=~core_clk;
+ reg hdmi_tx_slow_clk=0;always #6.734006734 hdmi_tx_slow_clk=~hdmi_tx_slow_clk;
+ reg i_arstn=0,i_pll_locked=1,pll_locked=1,user_pll_locked=1,cal_done=0,i_view_key_n=1;
+ wire base_rstn=i_arstn&i_pll_locked&pll_locked&user_pll_locked;
+ wire axi_rstn,pix_rstn,diag_rstn,monitor_rstn;
+ ab09_reset_release diag_reset(.clk(hdmi_tx_slow_clk),.arstn(i_arstn&user_pll_locked),.rstn(diag_rstn));
+ ab09_reset_release monitor_reset(.clk(core_clk),.arstn(i_arstn&i_pll_locked),.rstn(monitor_rstn));
+ ab09_reset_release sys_reset(.clk(core_clk),.arstn(base_rstn&cal_done),.rstn(axi_rstn));
+ ab09_reset_release pix_reset(.clk(hdmi_tx_slow_clk),.arstn(base_rstn&cal_done),.rstn(pix_rstn));
+ wire left_pixel_valid,right_pixel_valid;
+ wire left_pixel_ready,right_pixel_ready;
+ wire[23:0] left_pixel_rgb,right_pixel_rgb;
+ wire[31:0] left_pixel_frame_id,right_pixel_frame_id;
+ wire[10:0] left_pixel_x,right_pixel_x;
+ wire[9:0] left_pixel_y,right_pixel_y;
+ wire left_pixel_sof,left_pixel_eol,left_pixel_eof,right_pixel_sof,right_pixel_eol,right_pixel_eof;
+ wire left_boundary,right_boundary;
+ wire [31:0] right_pixel_model;
+ reg ready=0,source_ink=0;
+ reg [11:0] dx1,dy1,dx2,dy2;
+ wire snapshot_request=0;wire snapshot_busy,snapshot_valid;wire[639:0] snapshot_data;
+ wire[7:0] result_fps=0;wire cam_valid=0,cam_eof=0;
+ wire[31:0] cpu_debug_pc=32'hf9000270,cpu_debug_trap_value=0;wire[3:0]cpu_debug_trap_cause=0;
+ wire raw_start=0,raw_de=0,rgb_valid=0,camera_configured=0,camera_config_error=0,cpu_trap=0,view_key_mode=0;
+ wire[3:0] basic_vga_error_code=0,source_error_code=0,capture_error_code=0,watchdog_trips=0;
+ wire[7:0] loader_error_code=0,ownership_error_code=0;
+ wire[31:0] nn_commits=0,capture_commits=0;
+ wire[8:0] status={6'd0,1'b0,1'b0,cal_done};
+ // Exact production display fragment is inserted here by the runner.

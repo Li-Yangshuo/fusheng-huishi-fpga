@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "Actual compiled C firmware on delivered RV32I/CSR CPU; physical-I2C behavioral ACK/NACK/clock-stall slave; active CNN parameter memories; IRQ/mret and C-controlled UI",
+  "camera_simulation_dividers": [
+    3,
+    659
+  ],
+  "release_divider": 659,
+  "active_memories_poisoned_before_C_boot": true,
+  "hardware_accessed": false,
+  "results": [
+    "# R8_FIRMWARE PASS camera=166 weights=63 bias=9 ISR=3 KEY1=4 layouts KEY2=3 styles remote=ack exact_active_parameters=1",
+    "# R8_FIRMWARE PASS fault=1 rejected camera; C status=ee000100",
+    "# R8_FIRMWARE PASS fault=2 rejected camera; C status=ee000100",
+    "# R8_FIRMWARE PASS camera=166 weights=63 bias=9 ISR=3 KEY1=4 layouts KEY2=3 styles remote=ack exact_active_parameters=1"
+  ],
+  "source_sha256": {
+    "structure\\board_r6\\project\\rtl\\ab13_rv32i_manager.sv": "531a049e6b87d896ce5689aed42075420c2692a22777deb0858857328b975e7f",
+    "rtl\\r8_control.sv": "248545f82d41f011578e392e9bef099f5b651665d757c82f6c1b1f4004ce57cf",
+    "rtl\\r8_camera_mmio.sv": "d2d0f328851e1b083037ac6c54abbddf26e63f8adab8e77f3d62dcbbb00f4576",
+    "rtl\\hd720_fused_core.sv": "28d0670a4090e4d9ba59bf3f647eb10089ce42fda328ea00aa18e36fcefbd5bf",
+    "structure\\board_r6\\project\\rtl\\cam_i2c_ctrl\\i2c\\i2c_16addr_8data.v": "3e74995b9fa6ded4547d3689a2489193dcec583073dd05f3976b22f6f3a8c98f",
+    "structure\\board_r6\\project\\rtl\\cam_i2c_ctrl\\i2c_master\\i2c_master_top.v": "bf5dd12f2bf30dbc46a1d4cf1d3d1accc05106e14ca1cecf467fd09b46cd45c8",
+    "structure\\board_r6\\project\\rtl\\cam_i2c_ctrl\\i2c_master\\i2c_master_byte_ctrl.v": "442159006425fa36a946f67afc62391f9f80142aad379a640118a28ce67c9f80",
+    "structure\\board_r6\\project\\rtl\\cam_i2c_ctrl\\i2c_master\\i2c_master_bit_ctrl.v": "2df1f5d522725ea216385829a4dec38fdd616e4979aaa0aef7053ac34bf8ac8c",
+    "verification\\tb_r8_firmware.sv": "679e4fa3a1939e6179408075b84d1128f9fa0b17639314341f9689e3f457f85b"
+  },
+  "boot_sha256": "0ab2771eb796484ca3fe843bbc3618a25b08a69d3b4f564d4238fcc15b10ccc5"
+}
